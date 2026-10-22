@@ -1,0 +1,29 @@
+{
+  "date_utc": "2026-10-20T21:15:42.766836+00:00",
+  "pid": 2100581,
+  "selected_gpu_uuid": "GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c",
+  "compute_before": "GPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, 2019086\nGPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, 2088852",
+  "request_sha256": "2802945848a067ba0b24257a128cf7135897a7226fd9790280b8745056b065e0",
+  "script_sha256": "8b87685034733f5b0528a321aecefaab8c012ed206466daafb80b0bb33c05ea4",
+  "model_manifest_sha256": "8f752c5f61ab46df0d729331b4e1d3d74019fe1bccdda7592ba63e3661ab16d7",
+  "model_load_s": 2.0133419167250395,
+  "speakers_supported": [
+    "aiden",
+    "dylan",
+    "eric",
+    "ono_anna",
+    "ryan",
+    "serena",
+    "sohee",
+    "uncle_fu",
+    "vivian"
+  ],
+  "versions": {
+    "qwen-tts": "0.1.1",
+    "torch": "2.8.0+cu128",
+    "torchaudio": "2.8.0+cu128",
+    "transformers": "4.57.3",
+    "soundfile": "0.14.0"
+  },
+  "timing_scope": "load: before from_pretrained to CUDA synchronized; generation: before generate_custom_voice to CUDA synchronized; save excluded"
+}

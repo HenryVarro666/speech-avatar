@@ -1,0 +1,8 @@
+{
+  "source_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n9.0-latest-linux64-gpl-9.0.tar.xz",
+  "checksum_url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/checksums.sha256",
+  "archive_sha256": "293f28e27d79dfe5f83f988707a8c3c09df3d6e2b661ad7ad17ef8aeab3f0611",
+  "ffprobe_sha256": "ed99b6705d0ad04c6a951c8f085858223904a66945a13d27ed48bfd33d57ffae",
+  "ffprobe_version": "ffprobe version n9.0.2-29-g6dfaba896f-20261020 Copyright (c) 2007-2026 the FFmpeg developers",
+  "ffmpeg": "existing experiment-local imageio FFmpeg7.0.2 retained; no system binaries changed"
+}

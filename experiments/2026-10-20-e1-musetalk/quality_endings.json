@@ -1,0 +1,98 @@
+[
+  {
+    "trial_id": "avatar-a-dev-en-01",
+    "last_video_frame_s": 2.76,
+    "audio_duration_s": 2.8076875,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -64.50407908429631,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-a-dev-en-02",
+    "last_video_frame_s": 3.64,
+    "audio_duration_s": 3.7011875,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -84.78231653807242,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-a-dev-en-03",
+    "last_video_frame_s": 2.48,
+    "audio_duration_s": 2.55675,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -75.13580235471572,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-a-dev-en-04",
+    "last_video_frame_s": 3.92,
+    "audio_duration_s": 3.9770625,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -67.19300952519552,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-a-dev-zh-01",
+    "last_video_frame_s": 3.76,
+    "audio_duration_s": 3.812125,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -46.082558594773346,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-a-dev-zh-02",
+    "last_video_frame_s": 3.84,
+    "audio_duration_s": 3.9181875,
+    "last_200ms_all_samples_zero": true,
+    "last_200ms_rms_dbfs": -240.0,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-en-01",
+    "last_video_frame_s": 2.76,
+    "audio_duration_s": 2.8076875,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -64.50407908429631,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-en-02",
+    "last_video_frame_s": 3.64,
+    "audio_duration_s": 3.7011875,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -84.78231653807242,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-en-03",
+    "last_video_frame_s": 2.48,
+    "audio_duration_s": 2.55675,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -75.13580235471572,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-en-04",
+    "last_video_frame_s": 3.92,
+    "audio_duration_s": 3.9770625,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -67.19300952519552,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-zh-01",
+    "last_video_frame_s": 3.76,
+    "audio_duration_s": 3.812125,
+    "last_200ms_all_samples_zero": false,
+    "last_200ms_rms_dbfs": -46.082558594773346,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  },
+  {
+    "trial_id": "avatar-b-dev-zh-02",
+    "last_video_frame_s": 3.84,
+    "audio_duration_s": 3.9181875,
+    "last_200ms_all_samples_zero": true,
+    "last_200ms_rms_dbfs": -240.0,
+    "note": "dBFS floor -240; RMS alone is not a phoneme or human silence label."
+  }
+]

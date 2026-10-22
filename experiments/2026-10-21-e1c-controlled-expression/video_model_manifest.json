@@ -1,0 +1,268 @@
+{
+  "created_at_utc": "2026-10-20T21:53:43.687191+00:00",
+  "download_and_hash_wall_s": 446.67811356671154,
+  "repositories": [
+    {
+      "repo_id": "meituan-longcat/LongCat-Video-Avatar-1.5",
+      "revision": "92016c71d5d318d0f5d84e4db30015a571484ab6",
+      "folder": "LongCat-Video-Avatar-1.5",
+      "patterns": [
+        "base_model_int8/*",
+        "lora/dmd_lora.safetensors",
+        "scheduler/*",
+        "vocal_separator/*",
+        "whisper-large-v3/config.json",
+        "whisper-large-v3/generation_config.json",
+        "whisper-large-v3/preprocessor_config.json",
+        "whisper-large-v3/tokenizer*.json",
+        "whisper-large-v3/vocab.json",
+        "whisper-large-v3/merges.txt",
+        "whisper-large-v3/normalizer.json",
+        "whisper-large-v3/added_tokens.json",
+        "whisper-large-v3/special_tokens_map.json",
+        "whisper-large-v3/model.safetensors",
+        "config.json",
+        "model_index.json",
+        "README.md"
+      ],
+      "files": [
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/README.md",
+          "bytes": 13488,
+          "sha256": "d4b5dc706d13a511cc1aac623f75c10ac1dff902ffd915a411e398218b675cb4"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/config.json",
+          "bytes": 853,
+          "sha256": "cc2a21199db9a311b51e42b73f7921ea5d1d58b9fa0273563ab6edd7850adf76"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantization_config.json",
+          "bytes": 193,
+          "sha256": "828eab210d88f7e8afdc6910c0467ccf83c9ccd445754f15afc5addd23dc3a5b"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantized_model-00001-of-00004.safetensors",
+          "bytes": 4264635792,
+          "sha256": "ccf575d8cdf8e762272e2d4e52ae1a7c0b5d1fa81e26dfa4592867de4dd9a4fd"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantized_model-00002-of-00004.safetensors",
+          "bytes": 4275232472,
+          "sha256": "af6ddb737ad66d12fd5892adee568c14314143ebd4388d3ab9cc6065754b3688"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantized_model-00003-of-00004.safetensors",
+          "bytes": 4275232472,
+          "sha256": "6a349b76592b4752c2967235af457824d8938e3514bad8e78cfa86009e8a9bf5"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantized_model-00004-of-00004.safetensors",
+          "bytes": 3065282200,
+          "sha256": "ab54b648a3f6a53946f07dd0a21441e2a8cb1aa8da17996b5f3f7f2e1370705b"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/base_model_int8/quantized_model.safetensors.index.json",
+          "bytes": 201884,
+          "sha256": "480ca179ba2d53fa1c28b7c403ce4ba1f159bb708a584499d6645024bf12acff"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/config.json",
+          "bytes": 48,
+          "sha256": "3e933de02d6f88c84b049cd9c6324f68c7feefed13f0d5d0f28f387d52d750c4"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/lora/dmd_lora.safetensors",
+          "bytes": 2523077984,
+          "sha256": "d969115a7f3fbc212a277ed4399f77a1a065d170148c6d4bc272e980cd3e907a"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/model_index.json",
+          "bytes": 48,
+          "sha256": "3e933de02d6f88c84b049cd9c6324f68c7feefed13f0d5d0f28f387d52d750c4"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/scheduler/scheduler_config.json",
+          "bytes": 213,
+          "sha256": "853cc585fa05aadcd91dac89743db59fba6d0eb4062fb7de636a90f3fff3e969"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/vocal_separator/Kim_Vocal_2.onnx",
+          "bytes": 66759214,
+          "sha256": "ce74ef3b6a6024ce44211a07be9cf8bc6d87728cc852a68ab34eb8e58cde9c8b"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/vocal_separator/download_checks.json",
+          "bytes": 17194,
+          "sha256": "2fcb8e7f28cc7720a59fd373e7482163a88451ecdc0034e0bc97a410b889f1df"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/vocal_separator/mdx_model_data.json",
+          "bytes": 11975,
+          "sha256": "7b5bcc54884cf2a68c9857c0a3bfb0e0a86dc2d56188ced2ed7b9e17311eb0b8"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/vocal_separator/vr_model_data.json",
+          "bytes": 4380,
+          "sha256": "6a2021b9aa355c10f845b68c73944d47bd9e1fdf37b8a584b14ce8f88b09bb2f"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/added_tokens.json",
+          "bytes": 34648,
+          "sha256": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/config.json",
+          "bytes": 1272,
+          "sha256": "ad0e8d1e46f4d01f7861a21509e5d0f977d6cc1f367a370603c92541d819807b"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/generation_config.json",
+          "bytes": 3903,
+          "sha256": "fbdfa70135de9b1d31553393f14e80aaeb1936ea36576b2ba864055943c09d23"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/merges.txt",
+          "bytes": 493869,
+          "sha256": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/model.safetensors",
+          "bytes": 3087130976,
+          "sha256": "a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/normalizer.json",
+          "bytes": 52666,
+          "sha256": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/preprocessor_config.json",
+          "bytes": 340,
+          "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/special_tokens_map.json",
+          "bytes": 2072,
+          "sha256": "1c70773c078cb2ca96e0fcff113102f1d3e2b1504272c3bb63b035d4a6700d87"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/tokenizer.json",
+          "bytes": 2480617,
+          "sha256": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/tokenizer_config.json",
+          "bytes": 282843,
+          "sha256": "844b642c73a91359722f47b35705f7174686df33d252695d8572cf9ac03a6389"
+        },
+        {
+          "path": "weights/LongCat-Video-Avatar-1.5/whisper-large-v3/vocab.json",
+          "bytes": 1036558,
+          "sha256": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387"
+        }
+      ]
+    },
+    {
+      "repo_id": "meituan-longcat/LongCat-Video",
+      "revision": "03b55529b1d1d4045f5fbe14d65c8c6e8116b278",
+      "folder": "LongCat-Video",
+      "patterns": [
+        "tokenizer/*",
+        "text_encoder/*",
+        "vae/*",
+        "README.md",
+        "LICENSE",
+        "config.json",
+        "model_index.json"
+      ],
+      "files": [
+        {
+          "path": "weights/LongCat-Video/LICENSE",
+          "bytes": 1063,
+          "sha256": "dfdbf36556065706ef8b26e5866acb85209b6465af0395578d38b63470e0bed0"
+        },
+        {
+          "path": "weights/LongCat-Video/README.md",
+          "bytes": 10068,
+          "sha256": "2dc318ceb6f9de22da8e9df4df4d21969d65476de6d832fc62445bf6e3507d30"
+        },
+        {
+          "path": "weights/LongCat-Video/config.json",
+          "bytes": 37,
+          "sha256": "0121461c0aae6083e23217414ddfdd78c4ff4d088838e9c88c1f483b8c6cefd1"
+        },
+        {
+          "path": "weights/LongCat-Video/model_index.json",
+          "bytes": 37,
+          "sha256": "0121461c0aae6083e23217414ddfdd78c4ff4d088838e9c88c1f483b8c6cefd1"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/config.json",
+          "bytes": 854,
+          "sha256": "4087b6192155a4643f6d29fd326c4610103130674011ef4d0a53f8bce5de967d"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model-00001-of-00005.safetensors",
+          "bytes": 4972389712,
+          "sha256": "c0ef3a140898e228a3520c9adec60743d2e8e5b3d229651bb37f1a3921919f99"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model-00002-of-00005.safetensors",
+          "bytes": 4899225672,
+          "sha256": "481c7b2b39771c44df6dd8d13ee12ed072d731b4a650bd092885d4d52db229ad"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model-00003-of-00005.safetensors",
+          "bytes": 4966309504,
+          "sha256": "f93148bcc04052a169e1e49bfcf6125df6cf9bf243cb9c627da75266cf8e35c3"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model-00004-of-00005.safetensors",
+          "bytes": 4999880704,
+          "sha256": "a451792c739c05bca4606190cc2dd16731411bac03b4cf6aacc5767321f857c9"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model-00005-of-00005.safetensors",
+          "bytes": 2885866152,
+          "sha256": "7e76e18d224531b8197a46231cb53daf7f2f6ca707130252becf933026ac4eea"
+        },
+        {
+          "path": "weights/LongCat-Video/text_encoder/model.safetensors.index.json",
+          "bytes": 22476,
+          "sha256": "8af791f24a6447aa30c95786f40adf23d3c9df97470d2f36159c8f1113f120b4"
+        },
+        {
+          "path": "weights/LongCat-Video/tokenizer/special_tokens_map.json",
+          "bytes": 7079,
+          "sha256": "456b58fd240a06c743a7c2cf8008bec501240d68ebd1fc4018ea569505fea270"
+        },
+        {
+          "path": "weights/LongCat-Video/tokenizer/spiece.model",
+          "bytes": 4548313,
+          "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458"
+        },
+        {
+          "path": "weights/LongCat-Video/tokenizer/tokenizer.json",
+          "bytes": 16837459,
+          "sha256": "20a46ac256746594ed7e1e3ef733b83fbc5a6f0922aa7480eda961743de080ef"
+        },
+        {
+          "path": "weights/LongCat-Video/tokenizer/tokenizer_config.json",
+          "bytes": 61758,
+          "sha256": "1d8d2a216bf8e70ac15b7ddcea566c4dd0433c024b39a58ca5e4c66bd78defbd"
+        },
+        {
+          "path": "weights/LongCat-Video/vae/config.json",
+          "bytes": 724,
+          "sha256": "f0c1cc1d7decb5badc384f54691746a27a9aeff49f7ebca974e583389342d527"
+        },
+        {
+          "path": "weights/LongCat-Video/vae/diffusion_pytorch_model.safetensors",
+          "bytes": 507591892,
+          "sha256": "d6e524b3fffede1787a74e81b30976dce5400c4439ba64222168e607ed19e793"
+        }
+      ]
+    }
+  ]
+}

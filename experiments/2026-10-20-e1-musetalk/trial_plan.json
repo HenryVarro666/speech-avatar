@@ -1,0 +1,142 @@
+{
+  "e0_manifest_sha256": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "upstream_revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+  "version": "v15",
+  "fps": 25,
+  "batch_size": 8,
+  "use_float16": true,
+  "trials": [
+    {
+      "trial_id": "avatar-a-dev-en-01",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-en-01",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-01.wav",
+      "audio_sha256": "2c26d306ae1ae5885d19f88cee545c3b085d3bcd2dcc4dedf621e68ae668a341",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 2.8076875
+    },
+    {
+      "trial_id": "avatar-a-dev-en-02",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-en-02",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-02.wav",
+      "audio_sha256": "d940e992b5fd707fe07e4198150e8d2117cb1b352c5fc200a9ae7e9cda42be06",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 3.7011875
+    },
+    {
+      "trial_id": "avatar-a-dev-en-03",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-en-03",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-03.wav",
+      "audio_sha256": "581d46940480d7e8f444568ff9911f0782b761c77c46e5d1b8008bd1df81a5b9",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 2.55675
+    },
+    {
+      "trial_id": "avatar-a-dev-en-04",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-en-04",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-04.wav",
+      "audio_sha256": "0e4bfc55a48aaf1a93d35a68d74e5d638f92d72f98546aab1861b458b2dbbda2",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 3.9770625
+    },
+    {
+      "trial_id": "avatar-a-dev-zh-01",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-zh-01",
+      "language": "zh",
+      "audio_path": "data/private/audio/dev/dev-zh-01.wav",
+      "audio_sha256": "34cddf0bf8e85f204f7d6bfc944d9b67297d00e4caefb550becf2d6b36bb558a",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 3.812125
+    },
+    {
+      "trial_id": "avatar-a-dev-zh-02",
+      "avatar_id": "avatar-a",
+      "audio_id": "dev-zh-02",
+      "language": "zh",
+      "audio_path": "data/private/audio/dev/dev-zh-02.wav",
+      "audio_sha256": "19d33bf9d3dca5e35f3f2240295e422d2003e9d4f83c8fb6f7ec31d9b7c7e0cf",
+      "video_path": "data/private/avatars/avatar-a/reference.mp4",
+      "video_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "expected_audio_duration_s": 3.9181875
+    },
+    {
+      "trial_id": "avatar-b-dev-en-01",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-en-01",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-01.wav",
+      "audio_sha256": "2c26d306ae1ae5885d19f88cee545c3b085d3bcd2dcc4dedf621e68ae668a341",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 2.8076875
+    },
+    {
+      "trial_id": "avatar-b-dev-en-02",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-en-02",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-02.wav",
+      "audio_sha256": "d940e992b5fd707fe07e4198150e8d2117cb1b352c5fc200a9ae7e9cda42be06",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 3.7011875
+    },
+    {
+      "trial_id": "avatar-b-dev-en-03",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-en-03",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-03.wav",
+      "audio_sha256": "581d46940480d7e8f444568ff9911f0782b761c77c46e5d1b8008bd1df81a5b9",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 2.55675
+    },
+    {
+      "trial_id": "avatar-b-dev-en-04",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-en-04",
+      "language": "en",
+      "audio_path": "data/private/audio/dev/dev-en-04.wav",
+      "audio_sha256": "0e4bfc55a48aaf1a93d35a68d74e5d638f92d72f98546aab1861b458b2dbbda2",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 3.9770625
+    },
+    {
+      "trial_id": "avatar-b-dev-zh-01",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-zh-01",
+      "language": "zh",
+      "audio_path": "data/private/audio/dev/dev-zh-01.wav",
+      "audio_sha256": "34cddf0bf8e85f204f7d6bfc944d9b67297d00e4caefb550becf2d6b36bb558a",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 3.812125
+    },
+    {
+      "trial_id": "avatar-b-dev-zh-02",
+      "avatar_id": "avatar-b",
+      "audio_id": "dev-zh-02",
+      "language": "zh",
+      "audio_path": "data/private/audio/dev/dev-zh-02.wav",
+      "audio_sha256": "19d33bf9d3dca5e35f3f2240295e422d2003e9d4f83c8fb6f7ec31d9b7c7e0cf",
+      "video_path": "data/private/avatars/avatar-b/reference.mp4",
+      "video_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "expected_audio_duration_s": 3.9181875
+    }
+  ]
+}

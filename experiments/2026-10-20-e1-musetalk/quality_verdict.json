@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-20",
+  "audit_completed": true,
+  "overall_disposition": "NEEDS_WORK_NOT_SIGNED_OFF",
+  "technical_render_gate_passed": true,
+  "quality_gate_passed": false,
+  "quality_gate": ">=10/12 human-rated acceptable clips spanning both languages and avatars",
+  "human_rated_count": 0,
+  "human_acceptable_count": null,
+  "human_failed_count": null,
+  "reason": "Systematic estimated AV offset, soft teeth, incomplete neutral ending and static references; no captured human continuous AV listening ratings. Unrated is not failed.",
+  "browser_played_to_end_count": 12,
+  "all_frame_visual_inspection_count": 1032,
+  "syncnet_offset_frames_range": [
+    -3,
+    -2
+  ],
+  "syncnet_offset_frames_median": -2.0,
+  "syncnet_estimated_direction": "video leads audio by 80-120 ms; model estimate, not perceptual ground truth",
+  "syncnet_confidence_range": [
+    5.053098678588867,
+    9.727781295776367
+  ],
+  "embedding_index_shift_controls": {
+    "count": 24,
+    "exact_recovery_count": 24,
+    "limitation": "Bookkeeping/sensitivity diagnostic on cached embeddings; not an independent end-to-end or perceptual calibration."
+  },
+  "protocol_sha256": "c7e6280e0d33792862f21940ead4c0d1651611988f29e523c9bc5ba998037bb6",
+  "metrics_file": "quality_metrics.json",
+  "trial_review": "quality_review.csv",
+  "input_outputs_modified": false,
+  "environment_access": "local_CPU_only_no_SSH",
+  "preview": {
+    "url": "http://127.0.0.1:63129/index.html",
+    "bind": "127.0.0.1",
+    "server_pid": 12312,
+    "served_root": "outputs/e1",
+    "note": "User-requested local preview only; no remote service."
+  }
+}

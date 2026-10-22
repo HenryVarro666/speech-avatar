@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-20",
+  "audio_full_decode_and_hash_passed": 2,
+  "served_audio_hashes_match": 2,
+  "browser_ended_count": 2,
+  "media_errors": 0,
+  "browser_warning_error_logs": 0,
+  "human_acceptance": "pending",
+  "review_fields_untouched": true,
+  "manifest_frozen": false,
+  "new_videos": 0,
+  "longcat_install_or_inference": false,
+  "preflight_red_failures_observed": 3,
+  "complete_local_unit_tests_passed": 8,
+  "e0_manifest_sha256_unchanged": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "original_e1_mp4_hashes_unchanged": 12,
+  "executed_script_request_weight_manifest_hashes_match": true,
+  "initial_draft_hash_preserved": true,
+  "markdown_files_checked": 22,
+  "local_links_checked": 266,
+  "missing_local_links": [],
+  "staged_files": 0,
+  "remotes": [],
+  "head_commit_exists": false,
+  "private_media_ignored": true,
+  "own_gpu_worker_exited": true,
+  "other_gpu_pids_preserved": [
+    2019086,
+    2088852
+  ],
+  "local_preview": {
+    "url": "http://127.0.0.1:56750/index.html",
+    "pid": 63566,
+    "bind": "127.0.0.1"
+  },
+  "new_candidate_sha256": {
+    "e1b-zh-female-01": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+    "e1b-zh-male-01": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda"
+  }
+}

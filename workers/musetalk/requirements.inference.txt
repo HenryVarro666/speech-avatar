@@ -1,0 +1,24 @@
+# Inference-only subset of pinned upstream; omit Gradio, TensorFlow and training.
+# Install torch/torchvision/torchaudio from the official cu118 index first.
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+numpy==1.23.5
+diffusers==0.30.2
+accelerate==0.28.0
+opencv-python==4.9.0.80
+soundfile==0.12.1
+transformers==4.39.2
+huggingface_hub==0.30.2
+librosa==0.11.0
+einops==0.8.1
+omegaconf==2.3.0
+ffmpeg-python==0.2.0
+imageio-ffmpeg==0.6.0
+mmengine==0.10.7
+mmdet==3.1.0
+mmpose==1.1.0
+gdown==5.2.0
+scipy==1.10.1
+matplotlib==3.7.5
+# mmcv==2.0.1 is installed separately from official OpenMMLab prebuilt wheels.

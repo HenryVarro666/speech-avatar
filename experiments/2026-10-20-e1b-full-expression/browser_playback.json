@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "url": "http://127.0.0.1:56750/index.html",
+  "server_pid": 63566,
+  "bind": "127.0.0.1",
+  "browser": "Codex in-app browser",
+  "tab_id": "2",
+  "clips": [
+    {
+      "id": "female",
+      "duration": 4.96,
+      "currentTime": 4.96,
+      "ended": true,
+      "paused": true,
+      "error": null
+    },
+    {
+      "id": "male",
+      "duration": 5.36,
+      "currentTime": 5.36,
+      "ended": true,
+      "paused": true,
+      "error": null
+    }
+  ],
+  "browser_error_warning_logs": [],
+  "human_acceptance": "pending; browser completion is not listening approval"
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-22T04:47:12.140289+00:00",
+  "venv": "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat",
+  "selected_gpu": "GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c",
+  "read_only_reuse": {
+    "data": "/data/speech-avatar-exx-20261020/e1b-video/data",
+    "weights": "/data/speech-avatar-exx-20261020/e1b-video/weights",
+    "vendor": "/data/speech-avatar-exx-20261020/e1b-video/vendor",
+    "bin": "/data/speech-avatar-exx-20261020/e1b-video/bin"
+  },
+  "coordinator_pid": 3571001
+}

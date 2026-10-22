@@ -1,0 +1,30 @@
+[
+  {
+    "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+    "kind": "separator_audio",
+    "remote_path": "/data/speech-avatar-exx-20261020/e1b-video/runs/avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill/attempt-002/conditioning-vocals.wav",
+    "local_path": "data/private/e1b/conditioning/avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill/attempt-002/conditioning-vocals.wav",
+    "sha256": "30181cdd50c91e927d304e9013444e9cb5102f92ab5f32b4b6b0d7487b3d0ae4"
+  },
+  {
+    "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+    "kind": "conditioning_audio",
+    "remote_path": "/data/speech-avatar-exx-20261020/e1b-video/runs/avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill/attempt-002/conditioning-padded.wav",
+    "local_path": "data/private/e1b/conditioning/avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill/attempt-002/conditioning-padded.wav",
+    "sha256": "a8818692240f48dcdae78be903582fdb2b129574b0c0a7c268ffcd26f28708a5"
+  },
+  {
+    "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+    "kind": "separator_audio",
+    "remote_path": "/data/speech-avatar-exx-20261020/e1b-video/runs/avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill/attempt-003/conditioning-vocals.wav",
+    "local_path": "data/private/e1b/conditioning/avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill/attempt-003/conditioning-vocals.wav",
+    "sha256": "d98246357ca6afe417be8d7ceb66cc907281ffa6a8968c96757af6f627939280"
+  },
+  {
+    "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+    "kind": "conditioning_audio",
+    "remote_path": "/data/speech-avatar-exx-20261020/e1b-video/runs/avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill/attempt-003/conditioning-padded.wav",
+    "local_path": "data/private/e1b/conditioning/avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill/attempt-003/conditioning-padded.wav",
+    "sha256": "761d2479da07e8c26301981fda207a81cc2b61776ce5ccaad365bdeb2024c02c"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:51894/index.html",
+  "initial_server_unavailable": {
+    "female_playback": [
+      {
+        "currentTime": 0,
+        "duration": 4.96,
+        "ended": false,
+        "error": null,
+        "id": "female-a"
+      }
+    ],
+    "notes": "old own loopback server connection refused; pending play interrupted by switching clips; no media decode error"
+  },
+  "post_restart_playback": [
+    {
+      "currentTime": 4.96,
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "id": "female-a"
+    },
+    {
+      "currentTime": 4.96,
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "id": "female-b"
+    },
+    {
+      "currentTime": 5.36,
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "id": "male-a"
+    },
+    {
+      "currentTime": 5.36,
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "id": "male-b"
+    }
+  ],
+  "post_restart_logs": [],
+  "delivered_state": {
+    "paused": true,
+    "revealed": "false"
+  },
+  "human_audiovisual_review": "not performed; system audio unavailable to assistant"
+}

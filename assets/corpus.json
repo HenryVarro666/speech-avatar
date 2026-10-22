@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "family_definition": "One authored utterance and all of its voice variants; each family belongs to one split. General phonetic categories are shared across splits.",
+  "voices": {
+    "en": ["Samantha (English (US))", "Daniel (English (UK))"],
+    "zh": ["Tingting", "Flo (Chinese (China mainland))"]
+  },
+  "dev": {
+    "en": [
+      ["closed-lips", "Please book my appointment for Monday at five thirty."],
+      ["labiodental", "Five available visits fit very well on Friday afternoon."],
+      ["round-vowels", "Would you move the blue room booking to two o'clock?"],
+      ["hesitation", "I would like Wednesday... actually, make that Thursday morning."],
+      ["negation", "No, do not cancel it. Keep the appointment as it is."],
+      ["long-turn", "The first option is too early, so please check a later time and tell me what is available."]
+    ],
+    "zh": [
+      ["closed-lips", "麻烦帮妈妈预约明天下午三点半的服务。"],
+      ["labiodental", "非常方便的话，请安排周五上午的访问。"],
+      ["round-vowels", "我想把中午的预约改到周二下午五点。"],
+      ["hesitation", "我想约在周三，等一下，还是改到周四早上吧。"],
+      ["negation", "不要取消这个预约，请保留原来的时间。"],
+      ["code-switch", "请把 meeting 改到下周，再给我一个确认消息。"]
+    ]
+  },
+  "test": {
+    "en": [
+      ["closed-lips", "Bob may bring a paper map before the meeting begins."],
+      ["labiodental", "Violet found four fresh flowers beside the front window."],
+      ["round-vowels", "Choose the new room with two blue stools near the door."],
+      ["dates", "The delivery arrives on October twenty ninth at eleven fifteen."],
+      ["numbers", "Your reference number is six zero eight, followed by nine two."],
+      ["negation", "This is a price estimate, and it does not include the deposit."],
+      ["pause", "Let me check the address... yes, the second building is correct."],
+      ["soft-ending", "You can leave the package by the side entrance, thank you."],
+      ["long-turn", "After the morning session finishes, we can discuss the remaining questions and decide which documents are still needed."],
+      ["repeated-syllables", "Maybe Peter will prepare a proper plan before breakfast tomorrow."],
+      ["confirmation", "I heard Saturday at ten forty, but please confirm the month."],
+      ["question", "Could you explain why the evening workshop has moved upstairs?"]
+    ],
+    "zh": [
+      ["closed-lips", "爸爸把白色背包放在旁边的木板上。"],
+      ["labiodental", "服务负责人发现房间里还有一份文件。"],
+      ["round-vowels", "叔叔坐在屋外，慢慢喝了一口温水。"],
+      ["dates", "包裹会在十月二十八日上午九点二十分送到。"],
+      ["numbers", "查询编号是七零四，再加上八六两个数字。"],
+      ["negation", "这个金额不包含押金，也不是最终的账单。"],
+      ["pause", "我先看看地图，稍等一下，入口应该在左边。"],
+      ["soft-ending", "东西放在门口的小桌子上就可以了，谢谢。"],
+      ["long-turn", "上午的讨论结束以后，我们再检查剩下的材料，并决定下一次见面需要准备哪些文件。"],
+      ["repeated-syllables", "门边摆着八把木椅，每把旁边都有一本书。"],
+      ["confirmation", "我听到的是星期六十点四十分，请再确认一下月份。"],
+      ["code-switch", "收到邮件以后，请把新的 address 发给 Linda 确认。"]
+    ]
+  }
+}

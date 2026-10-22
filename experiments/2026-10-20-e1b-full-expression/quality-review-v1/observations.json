@@ -1,0 +1,131 @@
+{
+  "reviewer": "assistant",
+  "date": "2026-10-20",
+  "method": "visual frame inspection plus model diagnostics; no direct system-audio perception",
+  "scope": "four immutable E1b outputs",
+  "decision": "LongCat offline presentation development candidate; MuseTalk regression baseline; neither signed off for polished delivery or real-time",
+  "user_video_rating_modified": false,
+  "findings": [
+    {
+      "id": "SYNC-01",
+      "severity": "review_before_delivery",
+      "clips": [
+        "female-musetalk",
+        "male-musetalk",
+        "female-longcat",
+        "male-longcat"
+      ],
+      "finding": "estimated video lead120/80/80/40ms; male LongCat final window80ms",
+      "evidence": "diagnostics.json; three strict valid windows plus known-shift controls",
+      "status": "model_estimate_not_human_acceptance"
+    },
+    {
+      "id": "EXPR-01",
+      "severity": "presentation_optimization",
+      "clips": [
+        "female-musetalk",
+        "male-musetalk"
+      ],
+      "time_range_s": [
+        0,
+        5.36
+      ],
+      "finding": "near-static upper face and head; no visible blink in these clips",
+      "evidence": "fullframe sheets108samples and fixed-eye ROI difference"
+    },
+    {
+      "id": "EXPR-02",
+      "severity": "presentation_optimization",
+      "clips": [
+        "female-longcat",
+        "male-longcat"
+      ],
+      "time_ranges_s": [
+        [
+          1.0,
+          1.8
+        ],
+        [
+          2.8,
+          3.4
+        ]
+      ],
+      "finding": "visible exaggerated articulation/inner brow lift for calm booking confirmation; motion availability exceeds static baseline but is not automatically naturalness",
+      "evidence": "fullframe and teeth sheets; native male1.4s"
+    },
+    {
+      "id": "TEETH-01",
+      "severity": "presentation_optimization",
+      "clips": [
+        "female-musetalk",
+        "male-musetalk"
+      ],
+      "finding": "soft white bands and weak tooth detail",
+      "evidence": "matched-time teeth sheets at0.8/1.2/2.4s"
+    },
+    {
+      "id": "TEETH-02",
+      "severity": "presentation_optimization",
+      "clips": [
+        "female-longcat",
+        "male-longcat"
+      ],
+      "finding": "teeth visible but bright/block-like with unstable separation detail; no tooth-count anomaly certified",
+      "evidence": "matched-time teeth sheets,0.8/1.2/2.8/4.6s"
+    },
+    {
+      "id": "HANDS-01",
+      "severity": "presentation_optimization",
+      "clips": [
+        "female-longcat",
+        "male-longcat"
+      ],
+      "female_example_times_s": [
+        1.0,
+        1.4,
+        2.64
+      ],
+      "male_example_times_s": [
+        1.4,
+        3.4,
+        4.6
+      ],
+      "finding": "generated fingers/hands partially cross lower frame edge; anatomy mostly truncated and cannot be signed off",
+      "evidence": "native framesf025/f066female,f035/f115male and hand timeline sheets",
+      "confirmed_extra_fingers": null
+    },
+    {
+      "id": "JOIN-01",
+      "severity": "no_major_jump_found_in_review",
+      "clips": [
+        "female-longcat",
+        "male-longcat"
+      ],
+      "time_range_s": [
+        3.4,
+        4.04
+      ],
+      "finding": "no gross identity/frame break found; female blink spans boundary; mouth pixel change not global outlier",
+      "evidence": "all68join frames across four clips; diagnostics join percentiles"
+    },
+    {
+      "id": "END-01",
+      "severity": "unmeasured_neutral_tail",
+      "clips": [
+        "female-musetalk",
+        "male-musetalk",
+        "female-longcat",
+        "male-longcat"
+      ],
+      "finding": "no separately designed neutral ending interval; source tail contains activity; final mouth state alone cannot prove silent speaking",
+      "evidence": "source audio tail plus final frame in full/mouth sheets"
+    },
+    {
+      "id": "PREVIEW-01",
+      "severity": "local_lifecycle_recovered",
+      "finding": "previous own loopback server exited between turns; browser cached only metadata for female videos; own same-port local server restored",
+      "evidence": "preview_restart.json; subsequent browser_playback.json",
+      "backend_render_failure": false
+    }
+  ]
+}

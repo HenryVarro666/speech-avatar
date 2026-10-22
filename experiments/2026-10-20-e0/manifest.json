@@ -1,0 +1,2248 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-20T19:55:36.782107+00:00",
+  "corpus_sha256": "c95a8bca61cf527d028862605cdc7824bf9fba5c8bda1318e3bfce33a7e9ca05",
+  "family_definition": "One authored utterance and all of its voice variants; each family belongs to one split. General phonetic categories are shared across splits.",
+  "audio": [
+    {
+      "id": "dev-en-01",
+      "family_id": "dev-en-01",
+      "split": "dev",
+      "language": "en",
+      "feature": "closed-lips",
+      "voice": "Samantha (English (US))",
+      "text": "Please book my appointment for Monday at five thirty.",
+      "audio_path": "data/private/audio/dev/dev-en-01.wav",
+      "sha256": "2c26d306ae1ae5885d19f88cee545c3b085d3bcd2dcc4dedf621e68ae668a341",
+      "source_sha256": "2a81adfa120786dd31a43788994fe62c0da9757c399cf6f1370181a20cbdf31c",
+      "source_path": "data/private/audio/dev/dev-en-01.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 44923,
+      "duration_s": 2.8076875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 44923,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Please book my appointment for Monday at five thirty.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-01.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-01.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-en-02",
+      "family_id": "dev-en-02",
+      "split": "dev",
+      "language": "en",
+      "feature": "labiodental",
+      "voice": "Daniel (English (UK))",
+      "text": "Five available visits fit very well on Friday afternoon.",
+      "audio_path": "data/private/audio/dev/dev-en-02.wav",
+      "sha256": "d940e992b5fd707fe07e4198150e8d2117cb1b352c5fc200a9ae7e9cda42be06",
+      "source_sha256": "34dd6fa073f096cbf2f64a816ab15991cba10425a898d15eb59792404e184d0f",
+      "source_path": "data/private/audio/dev/dev-en-02.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 59219,
+      "duration_s": 3.7011875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 59219,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Five available visits fit very well on Friday afternoon.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-02.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-02.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-en-03",
+      "family_id": "dev-en-03",
+      "split": "dev",
+      "language": "en",
+      "feature": "round-vowels",
+      "voice": "Samantha (English (US))",
+      "text": "Would you move the blue room booking to two o'clock?",
+      "audio_path": "data/private/audio/dev/dev-en-03.wav",
+      "sha256": "581d46940480d7e8f444568ff9911f0782b761c77c46e5d1b8008bd1df81a5b9",
+      "source_sha256": "415377bd88377b49ef7999a9572eeab75da2771507609782db3c14f745d9b48f",
+      "source_path": "data/private/audio/dev/dev-en-03.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 40908,
+      "duration_s": 2.55675,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 40908,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Would you move the blue room booking to two o'clock?",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-03.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-03.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-en-04",
+      "family_id": "dev-en-04",
+      "split": "dev",
+      "language": "en",
+      "feature": "hesitation",
+      "voice": "Daniel (English (UK))",
+      "text": "I would like Wednesday... actually, make that Thursday morning.",
+      "audio_path": "data/private/audio/dev/dev-en-04.wav",
+      "sha256": "0e4bfc55a48aaf1a93d35a68d74e5d638f92d72f98546aab1861b458b2dbbda2",
+      "source_sha256": "7a2d300e208f907916ecfcce08915e83311c2ba4c6fd8fcf69e05e870820b32e",
+      "source_path": "data/private/audio/dev/dev-en-04.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 63633,
+      "duration_s": 3.9770625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 63633,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "I would like Wednesday... actually, make that Thursday morning.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-04.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-04.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-en-05",
+      "family_id": "dev-en-05",
+      "split": "dev",
+      "language": "en",
+      "feature": "negation",
+      "voice": "Samantha (English (US))",
+      "text": "No, do not cancel it. Keep the appointment as it is.",
+      "audio_path": "data/private/audio/dev/dev-en-05.wav",
+      "sha256": "5cca77ebf1c4f4801ec1f6417177bf43416f7fc42e54251d500746db4af93769",
+      "source_sha256": "a3955ed821881f3ebc3c16f10c72db5952c78da17afdcfbc644d424a74230698",
+      "source_path": "data/private/audio/dev/dev-en-05.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 58072,
+      "duration_s": 3.6295,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 58072,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "No, do not cancel it. Keep the appointment as it is.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-05.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-05.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-en-06",
+      "family_id": "dev-en-06",
+      "split": "dev",
+      "language": "en",
+      "feature": "long-turn",
+      "voice": "Daniel (English (UK))",
+      "text": "The first option is too early, so please check a later time and tell me what is available.",
+      "audio_path": "data/private/audio/dev/dev-en-06.wav",
+      "sha256": "ec4a4b567ffb1619713dc3ff3548baf9d4d15d9e73bb0a53e379b00e8d210c84",
+      "source_sha256": "823374b3c62ae17bcbcb0293e2abb5d08b29c96657acaf7cae171229c2558ae8",
+      "source_path": "data/private/audio/dev/dev-en-06.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 83035,
+      "duration_s": 5.1896875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 83035,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "The first option is too early, so please check a later time and tell me what is available.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-06.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-en-06.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-01",
+      "family_id": "dev-zh-01",
+      "split": "dev",
+      "language": "zh",
+      "feature": "closed-lips",
+      "voice": "Tingting",
+      "text": "麻烦帮妈妈预约明天下午三点半的服务。",
+      "audio_path": "data/private/audio/dev/dev-zh-01.wav",
+      "sha256": "34cddf0bf8e85f204f7d6bfc944d9b67297d00e4caefb550becf2d6b36bb558a",
+      "source_sha256": "2e09fbde684df2e2738d655fa9bcc33a14b56982db45ca231e3b82f4b09617fb",
+      "source_path": "data/private/audio/dev/dev-zh-01.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 60994,
+      "duration_s": 3.812125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 60994,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "麻烦帮妈妈预约明天下午三点半的服务。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-01.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-01.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-02",
+      "family_id": "dev-zh-02",
+      "split": "dev",
+      "language": "zh",
+      "feature": "labiodental",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "非常方便的话，请安排周五上午的访问。",
+      "audio_path": "data/private/audio/dev/dev-zh-02.wav",
+      "sha256": "19d33bf9d3dca5e35f3f2240295e422d2003e9d4f83c8fb6f7ec31d9b7c7e0cf",
+      "source_sha256": "606fae687f691ece0d2c39edaaeaa9c58f1d4f7d76629908cd43263edbfeaa0f",
+      "source_path": "data/private/audio/dev/dev-zh-02.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 62691,
+      "duration_s": 3.9181875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 62691,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "非常方便的话，请安排周五上午的访问。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-02.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-02.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-03",
+      "family_id": "dev-zh-03",
+      "split": "dev",
+      "language": "zh",
+      "feature": "round-vowels",
+      "voice": "Tingting",
+      "text": "我想把中午的预约改到周二下午五点。",
+      "audio_path": "data/private/audio/dev/dev-zh-03.wav",
+      "sha256": "1f7c1b1290ccb390cbb109dc6857e6278a58e27fc89e8ece125aa5004a18703d",
+      "source_sha256": "14c61e1d9e9946cb1a3eaa23db39d71eab2ec0a46fa43cb4ab0321c5cf91f866",
+      "source_path": "data/private/audio/dev/dev-zh-03.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 55419,
+      "duration_s": 3.4636875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 55419,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "我想把中午的预约改到周二下午五点。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-03.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-03.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-04",
+      "family_id": "dev-zh-04",
+      "split": "dev",
+      "language": "zh",
+      "feature": "hesitation",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "我想约在周三，等一下，还是改到周四早上吧。",
+      "audio_path": "data/private/audio/dev/dev-zh-04.wav",
+      "sha256": "c890bc708ddd0341cb39bc5227149e8fba67841d32c3b2ff7526da97f8eb0f1d",
+      "source_sha256": "255183f096e4c226b8e898880cd912147e6c7bb81aa2720475fcd5ec019d5a48",
+      "source_path": "data/private/audio/dev/dev-zh-04.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 68794,
+      "duration_s": 4.299625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 68794,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "我想约在周三，等一下，还是改到周四早上吧。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-04.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-04.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-05",
+      "family_id": "dev-zh-05",
+      "split": "dev",
+      "language": "zh",
+      "feature": "negation",
+      "voice": "Tingting",
+      "text": "不要取消这个预约，请保留原来的时间。",
+      "audio_path": "data/private/audio/dev/dev-zh-05.wav",
+      "sha256": "dfa575600f165551f367fdf52dd9df37ff8e07ad01401cf7261880573078b157",
+      "source_sha256": "7ff3e39d459913a5f24a2ff39ed8828f7897ae45005c56b2674b97f384a15c84",
+      "source_path": "data/private/audio/dev/dev-zh-05.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 62787,
+      "duration_s": 3.9241875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 62787,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "不要取消这个预约，请保留原来的时间。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-05.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-05.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "dev-zh-06",
+      "family_id": "dev-zh-06",
+      "split": "dev",
+      "language": "zh",
+      "feature": "code-switch",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "请把 meeting 改到下周，再给我一个确认消息。",
+      "audio_path": "data/private/audio/dev/dev-zh-06.wav",
+      "sha256": "4ae552c635d01eef7d93bfbaae7480d5fdd1b189bb0d53b74f1ba17a8b8ba6e0",
+      "source_sha256": "8e48094e386e7d05df59325d81da8b3c7d9cfc86fa041d891bc2b92169594ec1",
+      "source_path": "data/private/audio/dev/dev-zh-06.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 67405,
+      "duration_s": 4.2128125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 67405,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "请把 meeting 改到下周，再给我一个确认消息。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-06.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/dev/dev-zh-06.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-01",
+      "family_id": "test-en-01",
+      "split": "test",
+      "language": "en",
+      "feature": "closed-lips",
+      "voice": "Samantha (English (US))",
+      "text": "Bob may bring a paper map before the meeting begins.",
+      "audio_path": "data/private/audio/test/test-en-01.wav",
+      "sha256": "e5ff34d2678514c5b450475c36d294f0a596a650c451438cd13ddcdf645235c6",
+      "source_sha256": "059eaf2beca12249e1795bf407fb9efcc38c0c623f21d6594c6561fef478ebb8",
+      "source_path": "data/private/audio/test/test-en-01.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 47437,
+      "duration_s": 2.9648125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 47437,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Bob may bring a paper map before the meeting begins.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-01.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-01.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-02",
+      "family_id": "test-en-02",
+      "split": "test",
+      "language": "en",
+      "feature": "labiodental",
+      "voice": "Daniel (English (UK))",
+      "text": "Violet found four fresh flowers beside the front window.",
+      "audio_path": "data/private/audio/test/test-en-02.wav",
+      "sha256": "7af8779e16ea4b6aebd2fbac879d0460d692093e57d23fabe92b70a3f564d367",
+      "source_sha256": "61e87e56643374eeec5fa352468bc3a6496df3c3ec259fa4d6bea5b43f3a0ef3",
+      "source_path": "data/private/audio/test/test-en-02.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 55214,
+      "duration_s": 3.450875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 55214,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Violet found four fresh flowers beside the front window.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-02.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-02.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-03",
+      "family_id": "test-en-03",
+      "split": "test",
+      "language": "en",
+      "feature": "round-vowels",
+      "voice": "Samantha (English (US))",
+      "text": "Choose the new room with two blue stools near the door.",
+      "audio_path": "data/private/audio/test/test-en-03.wav",
+      "sha256": "89557570aa5dfe6c27ddb94bada7c2f1c67026ace46641ff8dd34cbe4d034add",
+      "source_sha256": "b53a02651922c63b2042f95c6acb3701d0b9c18429eeb0c1301ef15dfe2cf761",
+      "source_path": "data/private/audio/test/test-en-03.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 43623,
+      "duration_s": 2.7264375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 43623,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Choose the new room with two blue stools near the door.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-03.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-03.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-04",
+      "family_id": "test-en-04",
+      "split": "test",
+      "language": "en",
+      "feature": "dates",
+      "voice": "Daniel (English (UK))",
+      "text": "The delivery arrives on October twenty ninth at eleven fifteen.",
+      "audio_path": "data/private/audio/test/test-en-04.wav",
+      "sha256": "add1ac66cc7a2e0799f5eecd1e510a4dfcb64112488213b68ba20623533f9f88",
+      "source_sha256": "7de9036a706a5a7481524b77ae4f378cc4f0fa2b7f5010c218a6a717cf1c1db0",
+      "source_path": "data/private/audio/test/test-en-04.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 62748,
+      "duration_s": 3.92175,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 62748,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "The delivery arrives on October twenty ninth at eleven fifteen.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-04.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-04.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-05",
+      "family_id": "test-en-05",
+      "split": "test",
+      "language": "en",
+      "feature": "numbers",
+      "voice": "Samantha (English (US))",
+      "text": "Your reference number is six zero eight, followed by nine two.",
+      "audio_path": "data/private/audio/test/test-en-05.wav",
+      "sha256": "7dd28a4ee0553cf53040464cc57ad7b500bb1413d204365d1b2d759da49c2793",
+      "source_sha256": "db76abd40fe7b03630ecbcabcc24802a3224ae917a74fe4acc70877ba1f007d7",
+      "source_path": "data/private/audio/test/test-en-05.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 61361,
+      "duration_s": 3.8350625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 61361,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Your reference number is six zero eight, followed by nine two.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-05.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-05.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-06",
+      "family_id": "test-en-06",
+      "split": "test",
+      "language": "en",
+      "feature": "negation",
+      "voice": "Daniel (English (UK))",
+      "text": "This is a price estimate, and it does not include the deposit.",
+      "audio_path": "data/private/audio/test/test-en-06.wav",
+      "sha256": "48b9cb6718bd4967d20b86bf216027184b8b32ffba84e4ad706127fa924813ca",
+      "source_sha256": "5e798ce4ee8bdbfea41e8536824372fe0ca736f5dfd28c48178f74d1f2b01f96",
+      "source_path": "data/private/audio/test/test-en-06.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 59777,
+      "duration_s": 3.7360625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 59777,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "This is a price estimate, and it does not include the deposit.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-06.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-06.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-07",
+      "family_id": "test-en-07",
+      "split": "test",
+      "language": "en",
+      "feature": "pause",
+      "voice": "Samantha (English (US))",
+      "text": "Let me check the address... yes, the second building is correct.",
+      "audio_path": "data/private/audio/test/test-en-07.wav",
+      "sha256": "74c39ffd968101a06aba0630cb51078b8df0d0cea5bba65538a69360a55183bc",
+      "source_sha256": "279a623594719bde1c6816f514f1a23f7e0d7fa7f4a700fcb6a2c5e4d4264ce9",
+      "source_path": "data/private/audio/test/test-en-07.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 64521,
+      "duration_s": 4.0325625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 64521,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Let me check the address... yes, the second building is correct.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-07.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-07.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-08",
+      "family_id": "test-en-08",
+      "split": "test",
+      "language": "en",
+      "feature": "soft-ending",
+      "voice": "Daniel (English (UK))",
+      "text": "You can leave the package by the side entrance, thank you.",
+      "audio_path": "data/private/audio/test/test-en-08.wav",
+      "sha256": "99e992e34e4e79ecfe0eb20abb40593f5d615b29946921a7e6efee7fa9bd815f",
+      "source_sha256": "8872148c8ed6404451e64f65aa0e3a4b054e5990fa9fa5c6b01cd1d863aa412d",
+      "source_path": "data/private/audio/test/test-en-08.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 58925,
+      "duration_s": 3.6828125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 58925,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "You can leave the package by the side entrance, thank you.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-08.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-08.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-09",
+      "family_id": "test-en-09",
+      "split": "test",
+      "language": "en",
+      "feature": "long-turn",
+      "voice": "Samantha (English (US))",
+      "text": "After the morning session finishes, we can discuss the remaining questions and decide which documents are still needed.",
+      "audio_path": "data/private/audio/test/test-en-09.wav",
+      "sha256": "8d55ca5f189c6a54a85f008c59105669c2ba9dadb99e6b8c81255c9f4129b0ca",
+      "source_sha256": "17b8c119314aed9bfbcda84d83a55f9d59d2b8debe153e5610ce150307c13302",
+      "source_path": "data/private/audio/test/test-en-09.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 104158,
+      "duration_s": 6.509875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 104158,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "After the morning session finishes, we can discuss the remaining questions and decide which documents are still needed.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-09.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-09.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-10",
+      "family_id": "test-en-10",
+      "split": "test",
+      "language": "en",
+      "feature": "repeated-syllables",
+      "voice": "Daniel (English (UK))",
+      "text": "Maybe Peter will prepare a proper plan before breakfast tomorrow.",
+      "audio_path": "data/private/audio/test/test-en-10.wav",
+      "sha256": "a24bbbd7f7bb8537df0aef9a9a468ae844da6760054bcfb347d2071202c05d16",
+      "source_sha256": "094f7d41b06c7d3e67e313ec31fe2b53b3598dfd2015029dd839181bf9d8fdfb",
+      "source_path": "data/private/audio/test/test-en-10.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 62272,
+      "duration_s": 3.892,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 62272,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Maybe Peter will prepare a proper plan before breakfast tomorrow.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-10.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-10.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-11",
+      "family_id": "test-en-11",
+      "split": "test",
+      "language": "en",
+      "feature": "confirmation",
+      "voice": "Samantha (English (US))",
+      "text": "I heard Saturday at ten forty, but please confirm the month.",
+      "audio_path": "data/private/audio/test/test-en-11.wav",
+      "sha256": "c8c4aab6bef824b0512693dc85d31db500708db1097b528dbeb8c64c9ff0092b",
+      "source_sha256": "8f325c5131b9ed7a699031fc6e1985528aac7f1e055ccb24104d0e6282e5e84c",
+      "source_path": "data/private/audio/test/test-en-11.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 56591,
+      "duration_s": 3.5369375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 56591,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "I heard Saturday at ten forty, but please confirm the month.",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Samantha (English (US))",
+        "command": [
+          "say",
+          "-v",
+          "Samantha (English (US))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-11.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-11.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-en-12",
+      "family_id": "test-en-12",
+      "split": "test",
+      "language": "en",
+      "feature": "question",
+      "voice": "Daniel (English (UK))",
+      "text": "Could you explain why the evening workshop has moved upstairs?",
+      "audio_path": "data/private/audio/test/test-en-12.wav",
+      "sha256": "e3a406baad57949f005393a428e85e2757b72071bd3eb2413bde5463587bdfdc",
+      "source_sha256": "c2682d45bddf91f275dc8323914548fe9f2ae10f17e1c2695077e68b06655845",
+      "source_path": "data/private/audio/test/test-en-12.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 58352,
+      "duration_s": 3.647,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 58352,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "Could you explain why the evening workshop has moved upstairs?",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Daniel (English (UK))",
+        "command": [
+          "say",
+          "-v",
+          "Daniel (English (UK))",
+          "-r",
+          "160",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-12.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-en-12.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-01",
+      "family_id": "test-zh-01",
+      "split": "test",
+      "language": "zh",
+      "feature": "closed-lips",
+      "voice": "Tingting",
+      "text": "爸爸把白色背包放在旁边的木板上。",
+      "audio_path": "data/private/audio/test/test-zh-01.wav",
+      "sha256": "1faaab28949e98aba69fe5ebafb9df3b2b0f7efdf61b02dc38ea1242a01985ca",
+      "source_sha256": "2e9f0f33b7b580e22d18b4fa2dad9c89930e7064f0f22e36af674a9e5a618424",
+      "source_path": "data/private/audio/test/test-zh-01.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 55542,
+      "duration_s": 3.471375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 55542,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "爸爸把白色背包放在旁边的木板上。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-01.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-01.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-02",
+      "family_id": "test-zh-02",
+      "split": "test",
+      "language": "zh",
+      "feature": "labiodental",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "服务负责人发现房间里还有一份文件。",
+      "audio_path": "data/private/audio/test/test-zh-02.wav",
+      "sha256": "54ec5334c646dacf051e1f2feee51d311756e21684a8cd4978793d133bba2c24",
+      "source_sha256": "379743a3fe824226ccaecb68c9c766742dcbf9ab2bd931f77da422108efc63a9",
+      "source_path": "data/private/audio/test/test-zh-02.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 53812,
+      "duration_s": 3.36325,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 53812,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "服务负责人发现房间里还有一份文件。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-02.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-02.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-03",
+      "family_id": "test-zh-03",
+      "split": "test",
+      "language": "zh",
+      "feature": "round-vowels",
+      "voice": "Tingting",
+      "text": "叔叔坐在屋外，慢慢喝了一口温水。",
+      "audio_path": "data/private/audio/test/test-zh-03.wav",
+      "sha256": "1d0fd90fd110474c6bd5aa26b0c7c8e7be072c96cf973964946948e0b82e7a85",
+      "source_sha256": "975a93a65d900092c6bca646b9e74c4ca45a26e210c406ecb0ed83871b4fc2dd",
+      "source_path": "data/private/audio/test/test-zh-03.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 60020,
+      "duration_s": 3.75125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 60020,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "叔叔坐在屋外，慢慢喝了一口温水。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-03.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-03.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-04",
+      "family_id": "test-zh-04",
+      "split": "test",
+      "language": "zh",
+      "feature": "dates",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "包裹会在十月二十八日上午九点二十分送到。",
+      "audio_path": "data/private/audio/test/test-zh-04.wav",
+      "sha256": "c22dc4ac3c11a20b76418257f17cfafcfd18fafebd0910b85fd4c2b06738fa5e",
+      "source_sha256": "663f81a9a02eca7bcd1c3d30b698782caff3c69c14fa2bc74f330b5a42ac5594",
+      "source_path": "data/private/audio/test/test-zh-04.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 60192,
+      "duration_s": 3.762,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 60192,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "包裹会在十月二十八日上午九点二十分送到。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-04.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-04.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-05",
+      "family_id": "test-zh-05",
+      "split": "test",
+      "language": "zh",
+      "feature": "numbers",
+      "voice": "Tingting",
+      "text": "查询编号是七零四，再加上八六两个数字。",
+      "audio_path": "data/private/audio/test/test-zh-05.wav",
+      "sha256": "6d511e36becdd4576a08900423b9c23c9cb257b083044b09f5bbf6e3391af35e",
+      "source_sha256": "6fe85e262568df8c3c74a683eae2195fb12d6035115917045bb6b6772edc8afa",
+      "source_path": "data/private/audio/test/test-zh-05.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 74248,
+      "duration_s": 4.6405,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 74248,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "查询编号是七零四，再加上八六两个数字。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-05.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-05.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-06",
+      "family_id": "test-zh-06",
+      "split": "test",
+      "language": "zh",
+      "feature": "negation",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "这个金额不包含押金，也不是最终的账单。",
+      "audio_path": "data/private/audio/test/test-zh-06.wav",
+      "sha256": "46f3b8a1f603d5ba83cc594f31ca0ab6548eebc971f0ac9a06d25ff364a97205",
+      "source_sha256": "cff6a147e7189d40683b62b0fd1d5e994294af1b3458f8e36083153e496aab78",
+      "source_path": "data/private/audio/test/test-zh-06.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 57231,
+      "duration_s": 3.5769375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 57231,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "这个金额不包含押金，也不是最终的账单。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-06.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-06.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-07",
+      "family_id": "test-zh-07",
+      "split": "test",
+      "language": "zh",
+      "feature": "pause",
+      "voice": "Tingting",
+      "text": "我先看看地图，稍等一下，入口应该在左边。",
+      "audio_path": "data/private/audio/test/test-zh-07.wav",
+      "sha256": "ffd71a2ec92961c9296d2a23f97e2f76731eef4828057682e7cb58bf24bf9199",
+      "source_sha256": "1328a2759ce4c53999c60394b0e28de86f192145151dea93413ca2b6c9467d8f",
+      "source_path": "data/private/audio/test/test-zh-07.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 78267,
+      "duration_s": 4.8916875,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 78267,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "我先看看地图，稍等一下，入口应该在左边。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-07.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-07.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-08",
+      "family_id": "test-zh-08",
+      "split": "test",
+      "language": "zh",
+      "feature": "soft-ending",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "东西放在门口的小桌子上就可以了，谢谢。",
+      "audio_path": "data/private/audio/test/test-zh-08.wav",
+      "sha256": "5a3f65d56c90d9b28e38b4a3114bf791d2d231c2afdc10156a36bec555755a7d",
+      "source_sha256": "fc68b3f640d299194c9668e6379fde6757cb4e2c54ac336aaf9b00b4d0a7b66b",
+      "source_path": "data/private/audio/test/test-zh-08.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 61857,
+      "duration_s": 3.8660625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 61857,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "东西放在门口的小桌子上就可以了，谢谢。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-08.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-08.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-09",
+      "family_id": "test-zh-09",
+      "split": "test",
+      "language": "zh",
+      "feature": "long-turn",
+      "voice": "Tingting",
+      "text": "上午的讨论结束以后，我们再检查剩下的材料，并决定下一次见面需要准备哪些文件。",
+      "audio_path": "data/private/audio/test/test-zh-09.wav",
+      "sha256": "d80a255631073a5cb7f29abfae460310aeb50442be00d09b7f6e0caea718a1e8",
+      "source_sha256": "56cdbd5b7bd31771d52f3125f7b3882c922de4f2db4eaab78a90de0d06cc41b9",
+      "source_path": "data/private/audio/test/test-zh-09.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 136553,
+      "duration_s": 8.5345625,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 136553,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "上午的讨论结束以后，我们再检查剩下的材料，并决定下一次见面需要准备哪些文件。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-09.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-09.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-10",
+      "family_id": "test-zh-10",
+      "split": "test",
+      "language": "zh",
+      "feature": "repeated-syllables",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "门边摆着八把木椅，每把旁边都有一本书。",
+      "audio_path": "data/private/audio/test/test-zh-10.wav",
+      "sha256": "7f24fdb2d3e91ca48100d09238cb8ac8a638bffa39f892974b22d65e0d8868ef",
+      "source_sha256": "e6f793ae829530d06f8ee8818cebe375ffb9d2720cdf81cfa1b4a96a99bdb921",
+      "source_path": "data/private/audio/test/test-zh-10.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 63799,
+      "duration_s": 3.9874375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 63799,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "门边摆着八把木椅，每把旁边都有一本书。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-10.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-10.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-11",
+      "family_id": "test-zh-11",
+      "split": "test",
+      "language": "zh",
+      "feature": "confirmation",
+      "voice": "Tingting",
+      "text": "我听到的是星期六十点四十分，请再确认一下月份。",
+      "audio_path": "data/private/audio/test/test-zh-11.wav",
+      "sha256": "d2162fe0879744f7a2f4cad415965ac19e24c1b2f7eca0d779e372d2ccc226f1",
+      "source_sha256": "f0d5606489059f7269b3ffe819ccdd4d8e7f3a77c267f3073b85299eaa4a170e",
+      "source_path": "data/private/audio/test/test-zh-11.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 85327,
+      "duration_s": 5.3329375,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 85327,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "我听到的是星期六十点四十分，请再确认一下月份。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Tingting",
+        "command": [
+          "say",
+          "-v",
+          "Tingting",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-11.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-11.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    },
+    {
+      "id": "test-zh-12",
+      "family_id": "test-zh-12",
+      "split": "test",
+      "language": "zh",
+      "feature": "code-switch",
+      "voice": "Flo (Chinese (China mainland))",
+      "text": "收到邮件以后，请把新的 address 发给 Linda 确认。",
+      "audio_path": "data/private/audio/test/test-zh-12.wav",
+      "sha256": "759ae5309f48229b6b7a0b3bcd9015d6dbe60f1c1024aed02f1f8e71e6bf836a",
+      "source_sha256": "219adad23e98f9b5e1c7d53f0c1b7a1ddc7a9451d7f3b86eefb54a3065bc874c",
+      "source_path": "data/private/audio/test/test-zh-12.aiff",
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "s16le",
+      "sample_count": 74530,
+      "duration_s": 4.658125,
+      "crop": {
+        "start_sample": 0,
+        "end_sample": 74530,
+        "kind": "none"
+      },
+      "transcript": {
+        "text": "收到邮件以后，请把新的 address 发给 Linda 确认。",
+        "source": "synthesis_input",
+        "human_verified": false
+      },
+      "provenance": {
+        "kind": "synthetic",
+        "generator": "macOS /usr/bin/say",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "voice": "Flo (Chinese (China mainland))",
+        "command": [
+          "say",
+          "-v",
+          "Flo (Chinese (China mainland))",
+          "-r",
+          "180",
+          "-f",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-12.txt",
+          "-o",
+          "/Users/caochao/Documents/speech-avatar/data/private/audio/test/test-zh-12.aiff"
+        ],
+        "redistribution": "not_reviewed_private_only"
+      }
+    }
+  ],
+  "avatars": [
+    {
+      "id": "avatar-a",
+      "reference_kind": "generated_still_image_loop",
+      "reference_path": "data/private/avatars/avatar-a/reference.mp4",
+      "provenance": {
+        "generator": "built-in image_gen",
+        "prompt": "Use case: photorealistic-natural. Asset type: synthetic portrait reference for a local lip-sync research experiment. Create one completely fictional adult East Asian woman, approximately 32 years old, short dark hair tucked behind ears, plain muted blue shirt. Frontal head and shoulders, face centered and large, entire head visible with space above, eyes looking straight into camera. Mouth gently closed with relaxed natural lips, no teeth visible, no smile. Even soft studio light, sharp high-detail face, plain light gray background, natural skin texture. Single subject, square 1024x1024 composition. No text, no logos, no watermark, no glasses, no hands, no jewelry near the face. This is a fictional synthetic identity, not a depiction or imitation of any real person.",
+        "identity": "fictional_adult_no_real_person_reference",
+        "redistribution": "private_experiment_only",
+        "visual_inspection": "frontal face, visible closed mouth, no occlusion; inspected from tool output"
+      },
+      "files": [
+        {
+          "path": "data/private/avatars/avatar-a/source.png",
+          "sha256": "81cf8bca30619cb63c1eeaec94cab4994c2fbf5f532efc5f4284adff04ec17e0",
+          "bytes": 2199044,
+          "probe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "png",
+                "codec_long_name": "PNG (Portable Network Graphics) image",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "codec_tag": "0x0000",
+                "width": 1254,
+                "height": 1254,
+                "coded_width": 1254,
+                "coded_height": 1254,
+                "has_b_frames": 0,
+                "pix_fmt": "rgb24",
+                "level": -99,
+                "color_range": "pc",
+                "color_space": "gbr",
+                "r_frame_rate": "25/1",
+                "avg_frame_rate": "25/1",
+                "time_base": "1/25",
+                "disposition": {
+                  "default": 0,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                }
+              }
+            ],
+            "format": {
+              "filename": "/Users/caochao/Documents/speech-avatar/data/private/avatars/avatar-a/source.png",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "png_pipe",
+              "format_long_name": "piped png sequence",
+              "size": "2199044",
+              "probe_score": 99
+            }
+          }
+        },
+        {
+          "path": "data/private/avatars/avatar-a/reference.mp4",
+          "sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+          "bytes": 38850,
+          "probe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "codec_tag": "0x31637661",
+                "mime_codec_string": "avc1.64001e",
+                "width": 512,
+                "height": 512,
+                "coded_width": 512,
+                "coded_height": 512,
+                "has_b_frames": 2,
+                "pix_fmt": "yuv420p",
+                "level": 30,
+                "chroma_location": "left",
+                "field_order": "progressive",
+                "is_avc": "true",
+                "nal_length_size": "4",
+                "id": "0x1",
+                "r_frame_rate": "25/1",
+                "avg_frame_rate": "25/1",
+                "time_base": "1/12800",
+                "start_pts": 0,
+                "start_time": "0.000000",
+                "duration_ts": 25600,
+                "duration": "2.000000",
+                "bit_rate": "149572",
+                "bits_per_raw_sample": "8",
+                "nb_frames": "50",
+                "extradata_size": 45,
+                "disposition": {
+                  "default": 1,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                },
+                "tags": {
+                  "language": "und",
+                  "handler_name": "VideoHandler",
+                  "encoder": "Lavc63.1.102 libx264"
+                }
+              }
+            ],
+            "format": {
+              "filename": "/Users/caochao/Documents/speech-avatar/data/private/avatars/avatar-a/reference.mp4",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+              "format_long_name": "QuickTime / MOV",
+              "start_time": "0.000000",
+              "duration": "2.000000",
+              "size": "38850",
+              "bit_rate": "155400",
+              "probe_score": 100,
+              "tags": {
+                "major_brand": "isom",
+                "minor_version": "512",
+                "compatible_brands": "isomiso2avc1mp41",
+                "encoder": "Lavf63.1.102"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "avatar-b",
+      "reference_kind": "generated_still_image_loop",
+      "reference_path": "data/private/avatars/avatar-b/reference.mp4",
+      "provenance": {
+        "generator": "built-in image_gen",
+        "prompt": "Use case: photorealistic-natural. Asset type: synthetic portrait reference for a local lip-sync research experiment. Create one completely fictional adult man with medium brown skin, approximately 38 years old, short neatly cropped hair, clean shaven, plain dark green shirt. Frontal head and shoulders, face centered and large, entire head visible with space above, eyes looking straight into camera. Mouth gently closed with relaxed natural lips, no teeth visible, no smile. Even soft studio light, sharp high-detail face, plain light gray background, natural skin texture. Single subject, square 1024x1024 composition. No text, no logos, no watermark, no glasses, no hands, no jewelry near the face. This is a fictional synthetic identity, not a depiction or imitation of any real person.",
+        "identity": "fictional_adult_no_real_person_reference",
+        "redistribution": "private_experiment_only",
+        "visual_inspection": "frontal face, visible closed mouth, no occlusion; inspected from tool output"
+      },
+      "files": [
+        {
+          "path": "data/private/avatars/avatar-b/source.png",
+          "sha256": "edc6681ffa2686e430d6d067f2dbc2e45b8b662b3389c50111ffeebb48063b7a",
+          "bytes": 2260156,
+          "probe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "png",
+                "codec_long_name": "PNG (Portable Network Graphics) image",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "codec_tag": "0x0000",
+                "width": 1254,
+                "height": 1254,
+                "coded_width": 1254,
+                "coded_height": 1254,
+                "has_b_frames": 0,
+                "pix_fmt": "rgb24",
+                "level": -99,
+                "color_range": "pc",
+                "color_space": "gbr",
+                "r_frame_rate": "25/1",
+                "avg_frame_rate": "25/1",
+                "time_base": "1/25",
+                "disposition": {
+                  "default": 0,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                }
+              }
+            ],
+            "format": {
+              "filename": "/Users/caochao/Documents/speech-avatar/data/private/avatars/avatar-b/source.png",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "png_pipe",
+              "format_long_name": "piped png sequence",
+              "size": "2260156",
+              "probe_score": 99
+            }
+          }
+        },
+        {
+          "path": "data/private/avatars/avatar-b/reference.mp4",
+          "sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+          "bytes": 42112,
+          "probe": {
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "codec_tag": "0x31637661",
+                "mime_codec_string": "avc1.64001e",
+                "width": 512,
+                "height": 512,
+                "coded_width": 512,
+                "coded_height": 512,
+                "has_b_frames": 2,
+                "pix_fmt": "yuv420p",
+                "level": 30,
+                "chroma_location": "left",
+                "field_order": "progressive",
+                "is_avc": "true",
+                "nal_length_size": "4",
+                "id": "0x1",
+                "r_frame_rate": "25/1",
+                "avg_frame_rate": "25/1",
+                "time_base": "1/12800",
+                "start_pts": 0,
+                "start_time": "0.000000",
+                "duration_ts": 25600,
+                "duration": "2.000000",
+                "bit_rate": "162620",
+                "bits_per_raw_sample": "8",
+                "nb_frames": "50",
+                "extradata_size": 45,
+                "disposition": {
+                  "default": 1,
+                  "dub": 0,
+                  "original": 0,
+                  "comment": 0,
+                  "lyrics": 0,
+                  "karaoke": 0,
+                  "forced": 0,
+                  "hearing_impaired": 0,
+                  "visual_impaired": 0,
+                  "clean_effects": 0,
+                  "attached_pic": 0,
+                  "timed_thumbnails": 0,
+                  "non_diegetic": 0,
+                  "captions": 0,
+                  "descriptions": 0,
+                  "metadata": 0,
+                  "dependent": 0,
+                  "still_image": 0,
+                  "multilayer": 0
+                },
+                "tags": {
+                  "language": "und",
+                  "handler_name": "VideoHandler",
+                  "encoder": "Lavc63.1.102 libx264"
+                }
+              }
+            ],
+            "format": {
+              "filename": "/Users/caochao/Documents/speech-avatar/data/private/avatars/avatar-b/reference.mp4",
+              "nb_streams": 1,
+              "nb_programs": 0,
+              "nb_stream_groups": 0,
+              "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+              "format_long_name": "QuickTime / MOV",
+              "start_time": "0.000000",
+              "duration": "2.000000",
+              "size": "42112",
+              "bit_rate": "168448",
+              "probe_score": 100,
+              "tags": {
+                "major_brand": "isom",
+                "minor_version": "512",
+                "compatible_brands": "isomiso2avc1mp41",
+                "encoder": "Lavf63.1.102"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "validation_stats": [
+    {
+      "id": "dev-en-01",
+      "duration_s": 2.8076875,
+      "samples": 44923,
+      "peak": 0.745086669921875,
+      "rms": 0.16519045633696805
+    },
+    {
+      "id": "dev-en-02",
+      "duration_s": 3.7011875,
+      "samples": 59219,
+      "peak": 0.793548583984375,
+      "rms": 0.11705301113646335
+    },
+    {
+      "id": "dev-en-03",
+      "duration_s": 2.55675,
+      "samples": 40908,
+      "peak": 0.732818603515625,
+      "rms": 0.1742398227422167
+    },
+    {
+      "id": "dev-en-04",
+      "duration_s": 3.9770625,
+      "samples": 63633,
+      "peak": 0.824951171875,
+      "rms": 0.09557474915941802
+    },
+    {
+      "id": "dev-en-05",
+      "duration_s": 3.6295,
+      "samples": 58072,
+      "peak": 0.735321044921875,
+      "rms": 0.15178735823847264
+    },
+    {
+      "id": "dev-en-06",
+      "duration_s": 5.1896875,
+      "samples": 83035,
+      "peak": 0.74658203125,
+      "rms": 0.11473709618490607
+    },
+    {
+      "id": "dev-zh-01",
+      "duration_s": 3.812125,
+      "samples": 60994,
+      "peak": 0.636871337890625,
+      "rms": 0.1355947212919604
+    },
+    {
+      "id": "dev-zh-02",
+      "duration_s": 3.9181875,
+      "samples": 62691,
+      "peak": 0.5037841796875,
+      "rms": 0.10383029688581523
+    },
+    {
+      "id": "dev-zh-03",
+      "duration_s": 3.4636875,
+      "samples": 55419,
+      "peak": 0.6981201171875,
+      "rms": 0.1329653218704866
+    },
+    {
+      "id": "dev-zh-04",
+      "duration_s": 4.299625,
+      "samples": 68794,
+      "peak": 0.665191650390625,
+      "rms": 0.09898685150988723
+    },
+    {
+      "id": "dev-zh-05",
+      "duration_s": 3.9241875,
+      "samples": 62787,
+      "peak": 0.655303955078125,
+      "rms": 0.1271970173074936
+    },
+    {
+      "id": "dev-zh-06",
+      "duration_s": 4.2128125,
+      "samples": 67405,
+      "peak": 0.756439208984375,
+      "rms": 0.1022716066478027
+    },
+    {
+      "id": "test-en-01",
+      "duration_s": 2.9648125,
+      "samples": 47437,
+      "peak": 0.74188232421875,
+      "rms": 0.1718419689409297
+    },
+    {
+      "id": "test-en-02",
+      "duration_s": 3.450875,
+      "samples": 55214,
+      "peak": 0.8021240234375,
+      "rms": 0.10853263188211494
+    },
+    {
+      "id": "test-en-03",
+      "duration_s": 2.7264375,
+      "samples": 43623,
+      "peak": 0.756195068359375,
+      "rms": 0.17688261476826136
+    },
+    {
+      "id": "test-en-04",
+      "duration_s": 3.92175,
+      "samples": 62748,
+      "peak": 0.800689697265625,
+      "rms": 0.11412080260637149
+    },
+    {
+      "id": "test-en-05",
+      "duration_s": 3.8350625,
+      "samples": 61361,
+      "peak": 0.76007080078125,
+      "rms": 0.16457030963817043
+    },
+    {
+      "id": "test-en-06",
+      "duration_s": 3.7360625,
+      "samples": 59777,
+      "peak": 0.80084228515625,
+      "rms": 0.11046874900369487
+    },
+    {
+      "id": "test-en-07",
+      "duration_s": 4.0325625,
+      "samples": 64521,
+      "peak": 0.7291259765625,
+      "rms": 0.14703044371877524
+    },
+    {
+      "id": "test-en-08",
+      "duration_s": 3.6828125,
+      "samples": 58925,
+      "peak": 0.89349365234375,
+      "rms": 0.09140063403873823
+    },
+    {
+      "id": "test-en-09",
+      "duration_s": 6.509875,
+      "samples": 104158,
+      "peak": 0.80535888671875,
+      "rms": 0.16703865919355262
+    },
+    {
+      "id": "test-en-10",
+      "duration_s": 3.892,
+      "samples": 62272,
+      "peak": 0.775726318359375,
+      "rms": 0.11852295013126171
+    },
+    {
+      "id": "test-en-11",
+      "duration_s": 3.5369375,
+      "samples": 56591,
+      "peak": 0.734954833984375,
+      "rms": 0.15570847059136317
+    },
+    {
+      "id": "test-en-12",
+      "duration_s": 3.647,
+      "samples": 58352,
+      "peak": 0.855560302734375,
+      "rms": 0.1139182090034373
+    },
+    {
+      "id": "test-zh-01",
+      "duration_s": 3.471375,
+      "samples": 55542,
+      "peak": 0.6597900390625,
+      "rms": 0.12643056300624325
+    },
+    {
+      "id": "test-zh-02",
+      "duration_s": 3.36325,
+      "samples": 53812,
+      "peak": 0.518310546875,
+      "rms": 0.11198815507410542
+    },
+    {
+      "id": "test-zh-03",
+      "duration_s": 3.75125,
+      "samples": 60020,
+      "peak": 0.676422119140625,
+      "rms": 0.12481492521354541
+    },
+    {
+      "id": "test-zh-04",
+      "duration_s": 3.762,
+      "samples": 60192,
+      "peak": 0.814666748046875,
+      "rms": 0.11333019609670505
+    },
+    {
+      "id": "test-zh-05",
+      "duration_s": 4.6405,
+      "samples": 74248,
+      "peak": 0.63037109375,
+      "rms": 0.1204684272704099
+    },
+    {
+      "id": "test-zh-06",
+      "duration_s": 3.5769375,
+      "samples": 57231,
+      "peak": 0.63311767578125,
+      "rms": 0.1038464024036174
+    },
+    {
+      "id": "test-zh-07",
+      "duration_s": 4.8916875,
+      "samples": 78267,
+      "peak": 0.642425537109375,
+      "rms": 0.11643077955144887
+    },
+    {
+      "id": "test-zh-08",
+      "duration_s": 3.8660625,
+      "samples": 61857,
+      "peak": 0.549072265625,
+      "rms": 0.09394595878843867
+    },
+    {
+      "id": "test-zh-09",
+      "duration_s": 8.5345625,
+      "samples": 136553,
+      "peak": 0.752716064453125,
+      "rms": 0.12657504861423155
+    },
+    {
+      "id": "test-zh-10",
+      "duration_s": 3.9874375,
+      "samples": 63799,
+      "peak": 0.571136474609375,
+      "rms": 0.10721772190484023
+    },
+    {
+      "id": "test-zh-11",
+      "duration_s": 5.3329375,
+      "samples": 85327,
+      "peak": 0.688385009765625,
+      "rms": 0.12327482107272102
+    },
+    {
+      "id": "test-zh-12",
+      "duration_s": 4.658125,
+      "samples": 74530,
+      "peak": 0.5748291015625,
+      "rms": 0.09661415382014528
+    }
+  ],
+  "limits": [
+    "synthetic speech only",
+    "transcripts are synthesis inputs, not human listening labels",
+    "fictional still-image avatar references",
+    "not native speech model or microphone trials"
+  ]
+}

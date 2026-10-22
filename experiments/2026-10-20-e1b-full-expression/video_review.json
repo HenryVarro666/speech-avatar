@@ -1,0 +1,59 @@
+{
+  "status": "pending_user_video_review",
+  "reviewer": null,
+  "source_audio_accepted": true,
+  "clips": [
+    {
+      "blind_id": "female-a",
+      "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+      "candidate_sha256": "f0ef77110536538c443c93ca3b343103db289463c0807b30b822e8db784aa3a6",
+      "reviewed_video_sha256": null,
+      "sync_acceptable": null,
+      "identity_acceptable": null,
+      "expression_appropriate": null,
+      "teeth_acceptable": null,
+      "ending_acceptable": null,
+      "accepted": null,
+      "feedback": null
+    },
+    {
+      "blind_id": "female-b",
+      "trial_id": "avatar-a-e1b-zh-female-01-musetalk-v15",
+      "candidate_sha256": "c444f8ac3ea935513df74621ed98ef5a96fc1223865c36796cf7e13fd3ec4461",
+      "reviewed_video_sha256": null,
+      "sync_acceptable": null,
+      "identity_acceptable": null,
+      "expression_appropriate": null,
+      "teeth_acceptable": null,
+      "ending_acceptable": null,
+      "accepted": null,
+      "feedback": null
+    },
+    {
+      "blind_id": "male-a",
+      "trial_id": "avatar-b-e1b-zh-male-01-musetalk-v15",
+      "candidate_sha256": "bcac6b1ced5b84cf6ccfda12e16c8e1418de1e704a70dc05669cc20e03a65f36",
+      "reviewed_video_sha256": null,
+      "sync_acceptable": null,
+      "identity_acceptable": null,
+      "expression_appropriate": null,
+      "teeth_acceptable": null,
+      "ending_acceptable": null,
+      "accepted": null,
+      "feedback": null
+    },
+    {
+      "blind_id": "male-b",
+      "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+      "candidate_sha256": "48e2edb3ca4375914083645123dc04ef4f8b92b12ebf77e7568d27bc0e457412",
+      "reviewed_video_sha256": null,
+      "sync_acceptable": null,
+      "identity_acceptable": null,
+      "expression_appropriate": null,
+      "teeth_acceptable": null,
+      "ending_acceptable": null,
+      "accepted": null,
+      "feedback": null
+    }
+  ]
+}

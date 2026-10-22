@@ -1,0 +1,82 @@
+{
+  "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+  "assignment_seed": 20261020,
+  "assignment_method": "fixed seeded order for female, reversed for male; no score-based assignment",
+  "manifest_sha256": "1e80a7f93d0dc15c31d403a3f7e8f8005268856bcb74b2454b67d9f723085a0c",
+  "preview_protocol_sha256": "972f5fa6d608ca7dabd98be455be88e6daca2ec7d0c3c61c4d50d30765dcdc47",
+  "blinding": "interface single blind only; source and files remain inspectable",
+  "groups": [
+    {
+      "label": "女角色",
+      "short_label": "女声",
+      "voice": "Serena · 已确认普通话配音 · 4.96 秒",
+      "source_audio_sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+      "clips": [
+        {
+          "id": "female-a",
+          "blind_label": "A",
+          "label": "LongCat Avatar 1.5",
+          "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+          "backend": "longcat-avatar-v15-int8-distill",
+          "sha256": "f0ef77110536538c443c93ca3b343103db289463c0807b30b822e8db784aa3a6",
+          "filename": "review-media/female-a.mp4",
+          "poster": "review-media/female-a.png",
+          "width": 640,
+          "height": 608,
+          "duration_s": 4.96,
+          "process_wall_s": 270.7205731635913
+        },
+        {
+          "id": "female-b",
+          "blind_label": "B",
+          "label": "MuseTalk 1.5",
+          "trial_id": "avatar-a-e1b-zh-female-01-musetalk-v15",
+          "backend": "musetalk-v15",
+          "sha256": "c444f8ac3ea935513df74621ed98ef5a96fc1223865c36796cf7e13fd3ec4461",
+          "filename": "review-media/female-b.mp4",
+          "poster": "review-media/female-b.png",
+          "width": 512,
+          "height": 512,
+          "duration_s": 4.96,
+          "process_wall_s": 23.916489893570542
+        }
+      ]
+    },
+    {
+      "label": "男角色",
+      "short_label": "男声",
+      "voice": "Uncle_Fu · 已确认普通话配音 · 5.36 秒",
+      "source_audio_sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+      "clips": [
+        {
+          "id": "male-a",
+          "blind_label": "A",
+          "label": "MuseTalk 1.5",
+          "trial_id": "avatar-b-e1b-zh-male-01-musetalk-v15",
+          "backend": "musetalk-v15",
+          "sha256": "bcac6b1ced5b84cf6ccfda12e16c8e1418de1e704a70dc05669cc20e03a65f36",
+          "filename": "review-media/male-a.mp4",
+          "poster": "review-media/male-a.png",
+          "width": 512,
+          "height": 512,
+          "duration_s": 5.36,
+          "process_wall_s": 23.606738010421395
+        },
+        {
+          "id": "male-b",
+          "blind_label": "B",
+          "label": "LongCat Avatar 1.5",
+          "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+          "backend": "longcat-avatar-v15-int8-distill",
+          "sha256": "48e2edb3ca4375914083645123dc04ef4f8b92b12ebf77e7568d27bc0e457412",
+          "filename": "review-media/male-b.mp4",
+          "poster": "review-media/male-b.png",
+          "width": 640,
+          "height": 608,
+          "duration_s": 5.36,
+          "process_wall_s": 267.7278447970748
+        }
+      ]
+    }
+  ]
+}

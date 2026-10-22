@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/data/speech-avatar-exx-20261020/e1b-tts/.venv/bin/python",
+    "-u",
+    "/data/speech-avatar-exx-20261020/e1b-tts/generate_custom_voice.py",
+    "/data/speech-avatar-exx-20261020/e1b-tts",
+    "--gpu-uuid",
+    "GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c"
+  ],
+  "exit_code": 0,
+  "process_wall_s": 19.860183187760413,
+  "scope": "subprocess launch to exit, including imports, load, two generations and WAV/raw saves; excludes environment setup, model download and transfer"
+}

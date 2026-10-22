@@ -1,0 +1,17 @@
+test_changed_manifest_is_rejected_before_media_validation (test_e0.FrozenInputsTest.test_changed_manifest_is_rejected_before_media_validation) ... ok
+test_corrupted_frozen_file_is_rejected (test_e0.FrozenInputsTest.test_corrupted_frozen_file_is_rejected) ... ok
+test_missing_provenance_is_rejected (test_e0.FrozenInputsTest.test_missing_provenance_is_rejected) ... ok
+test_same_family_across_splits_is_rejected_even_for_different_voices (test_e0.FrozenInputsTest.test_same_family_across_splits_is_rejected_even_for_different_voices) ... ok
+test_silent_wave_is_rejected (test_e0.FrozenInputsTest.test_silent_wave_is_rejected) ... ok
+test_existing_waveform_is_never_overwritten (test_tts_preflight.TTSPreflightTests.test_existing_waveform_is_never_overwritten) ... ok
+test_other_gpu_is_allowed_but_selected_gpu_is_protected (test_tts_preflight.TTSPreflightTests.test_other_gpu_is_allowed_but_selected_gpu_is_protected) ... ok
+test_unrecognizable_gpu_output_fails_closed (test_tts_preflight.TTSPreflightTests.test_unrecognizable_gpu_output_fails_closed) ... ok
+test_missing_ffprobe_is_rejected_before_gpu_work (test_video_pilot.VideoPilotGuards.test_missing_ffprobe_is_rejected_before_gpu_work) ... ok
+test_modified_audio_is_rejected (test_video_pilot.VideoPilotGuards.test_modified_audio_is_rejected) ... ok
+test_short_coverage_and_existing_output_are_rejected (test_video_pilot.VideoPilotGuards.test_short_coverage_and_existing_output_are_rejected) ... ok
+test_unaccepted_voice_is_rejected_even_with_consistent_hashes (test_video_pilot.VideoPilotGuards.test_unaccepted_voice_is_rejected_even_with_consistent_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.115s
+
+OK

@@ -1,0 +1,120 @@
+{
+  "url": "http://127.0.0.1:51894/index.html",
+  "playback": [
+    {
+      "currentTime": 4.96,
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "height": 608,
+      "id": "female-a",
+      "paused": true,
+      "width": 640
+    },
+    {
+      "currentTime": 4.96,
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "height": 512,
+      "id": "female-b",
+      "paused": true,
+      "width": 512
+    },
+    {
+      "currentTime": 5.36,
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "height": 512,
+      "id": "male-a",
+      "paused": true,
+      "width": 512
+    },
+    {
+      "currentTime": 5.36,
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "height": 608,
+      "id": "male-b",
+      "paused": true,
+      "width": 640
+    }
+  ],
+  "singleOwnerProof": [
+    {
+      "ended": false,
+      "error": null,
+      "id": "female-a",
+      "paused": true
+    },
+    {
+      "ended": true,
+      "error": null,
+      "id": "female-b",
+      "paused": true
+    },
+    {
+      "ended": true,
+      "error": null,
+      "id": "male-a",
+      "paused": true
+    },
+    {
+      "ended": false,
+      "error": null,
+      "id": "male-b",
+      "paused": false
+    }
+  ],
+  "stoppedProof": true,
+  "revealProof": {
+    "metadata": [
+      "640×608 · 25 fps · 4.96 秒 · 完整调用 270.7 秒",
+      "512×512 · 25 fps · 4.96 秒 · 完整调用 23.9 秒",
+      "512×512 · 25 fps · 5.36 秒 · 完整调用 23.6 秒",
+      "640×608 · 25 fps · 5.36 秒 · 完整调用 267.7 秒"
+    ],
+    "revealed": "true",
+    "titles": [
+      "样片 A · LongCat Avatar 1.5",
+      "样片 B · MuseTalk 1.5",
+      "样片 A · MuseTalk 1.5",
+      "样片 B · LongCat Avatar 1.5"
+    ]
+  },
+  "warning_error_logs": [],
+  "deliveredState": {
+    "revealed": "false",
+    "titles": [
+      "样片 A",
+      "样片 B",
+      "样片 A",
+      "样片 B"
+    ],
+    "videos": [
+      {
+        "currentTime": 0,
+        "id": "female-a",
+        "paused": true
+      },
+      {
+        "currentTime": 0,
+        "id": "female-b",
+        "paused": true
+      },
+      {
+        "currentTime": 0,
+        "id": "male-a",
+        "paused": true
+      },
+      {
+        "currentTime": 0,
+        "id": "male-b",
+        "paused": true
+      }
+    ]
+  },
+  "human_av_review": "pending"
+}

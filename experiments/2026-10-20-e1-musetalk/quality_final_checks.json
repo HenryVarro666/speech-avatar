@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-20",
+  "markdown_files_checked": 14,
+  "local_links_checked": 66,
+  "missing_local_links": [],
+  "original_mp4_hashes_unchanged": 12,
+  "e0_manifest_sha256": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "existing_integrity_tests_passed": 5,
+  "decode_and_audio_integrity_passed": true,
+  "browser_ended_count": 12,
+  "frames_inspected": 1032,
+  "quality_metrics_overwrite_guard": "passed_expected_nonzero_exit_original_unchanged",
+  "audit_script_sha256_match": true,
+  "protocol_sha256_match": true,
+  "human_acceptable_count": null,
+  "quality_gate_passed": false,
+  "staged_files": 0,
+  "remotes": [],
+  "head_commit_exists": false,
+  "preview_screenshot_sha256": "d46366ead66d0163c684f73a015d0ba51d1f1ca9d225f9f7ac51de99a107cf06",
+  "source_review_script_sha256": {
+    "scripts/inspect_e1_endings.py": "dc47d9fe45daf3505a08113ec9431c495d1bc5a0d2521ad023421696095849f9"
+  },
+  "coordination_speech_avatar_links_checked": 14
+}

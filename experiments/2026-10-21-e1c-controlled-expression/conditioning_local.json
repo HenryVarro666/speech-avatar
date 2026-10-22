@@ -1,0 +1,42 @@
+[
+  {
+    "trial_id": "e1c-female-controlled-motion",
+    "kind": "separator_audio",
+    "local_path": "data/private/e1c/conditioning/e1c-female-controlled-motion/conditioning-vocals.wav",
+    "path": "runs/e1c-female-controlled-motion/attempt-001/conditioning-vocals.wav",
+    "sha256": "30181cdd50c91e927d304e9013444e9cb5102f92ab5f32b4b6b0d7487b3d0ae4",
+    "sample_rate_hz": 44100,
+    "duration_s": 4.96,
+    "known_offset_s": null
+  },
+  {
+    "trial_id": "e1c-female-controlled-motion",
+    "kind": "conditioning_audio",
+    "local_path": "data/private/e1c/conditioning/e1c-female-controlled-motion/conditioning-padded.wav",
+    "path": "runs/e1c-female-controlled-motion/attempt-001/conditioning-padded.wav",
+    "sha256": "bd424974c309bc349108b338da43145a25ea032cf21aef2c05f0d68576d4baca",
+    "sample_rate_hz": 16000,
+    "duration_s": 6.92,
+    "transform": "native vocal separation, librosa16k resample, native zero padding to generated coverage"
+  },
+  {
+    "trial_id": "e1c-male-controlled-motion",
+    "kind": "separator_audio",
+    "local_path": "data/private/e1c/conditioning/e1c-male-controlled-motion/conditioning-vocals.wav",
+    "path": "runs/e1c-male-controlled-motion/attempt-001/conditioning-vocals.wav",
+    "sha256": "d98246357ca6afe417be8d7ceb66cc907281ffa6a8968c96757af6f627939280",
+    "sample_rate_hz": 44100,
+    "duration_s": 5.36,
+    "known_offset_s": null
+  },
+  {
+    "trial_id": "e1c-male-controlled-motion",
+    "kind": "conditioning_audio",
+    "local_path": "data/private/e1c/conditioning/e1c-male-controlled-motion/conditioning-padded.wav",
+    "path": "runs/e1c-male-controlled-motion/attempt-001/conditioning-padded.wav",
+    "sha256": "981a4a9646a9d7e786c65f51d6b82c853b9c87f6368de573829af5a3f22a27c1",
+    "sample_rate_hz": 16000,
+    "duration_s": 6.92,
+    "transform": "native vocal separation, librosa16k resample, native zero padding to generated coverage"
+  }
+]

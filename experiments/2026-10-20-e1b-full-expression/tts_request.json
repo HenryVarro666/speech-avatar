@@ -1,0 +1,29 @@
+{
+  "experiment_id": "2026-10-20-e1b-full-expression",
+  "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "package": "qwen-tts==0.1.1",
+  "language": "Chinese",
+  "seed": 42,
+  "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+  "instruct": "用自然、亲切、从容的普通话说话，像面对面确认一次预约。语速适中，停顿自然，不要播音腔。",
+  "generation": {
+    "max_new_tokens": 1024
+  },
+  "attention": "sdpa",
+  "dtype": "bfloat16",
+  "voices": [
+    {
+      "audio_id": "e1b-zh-female-01",
+      "avatar_id": "avatar-a",
+      "speaker": "Serena",
+      "persona_voice": "female"
+    },
+    {
+      "audio_id": "e1b-zh-male-01",
+      "avatar_id": "avatar-b",
+      "speaker": "Uncle_Fu",
+      "persona_voice": "male"
+    }
+  ]
+}

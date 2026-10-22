@@ -1,0 +1,1 @@
+{"trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill", "attempt": 2, "full_decode": true, "source_samples_16k": 79360, "output_samples_16k": 79872, "zero_lag_audio_correlation": 0.998677819010584, "last300ms_correlation": 0.9956787304053605, "passed": true}

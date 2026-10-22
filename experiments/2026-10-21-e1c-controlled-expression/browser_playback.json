@@ -1,0 +1,324 @@
+{
+  "checked_at_utc": "2026-10-22T05:00:48.634Z",
+  "url": "http://127.0.0.1:55219/index.html",
+  "playback": [
+    {
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "id": "motion-female-a",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/motion-female-a.mp4",
+      "time": 4.96
+    },
+    {
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "id": "motion-female-b",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/motion-female-b.mp4",
+      "time": 4.96
+    },
+    {
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "id": "motion-male-a",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/motion-male-a.mp4",
+      "time": 5.36
+    },
+    {
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "id": "motion-male-b",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/motion-male-b.mp4",
+      "time": 5.36
+    },
+    {
+      "duration": 4.96,
+      "ended": true,
+      "error": null,
+      "id": "sync-female-r1-a",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-female-99ea2cdd2ffd.mp4",
+      "time": 4.96
+    },
+    {
+      "duration": 5,
+      "ended": true,
+      "error": null,
+      "id": "sync-female-r1-b",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-female-7329b02973fc.mp4",
+      "time": 5
+    },
+    {
+      "duration": 5.04,
+      "ended": true,
+      "error": null,
+      "id": "sync-female-r1-c",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-female-c83ee8b0e8d5.mp4",
+      "time": 5.04
+    },
+    {
+      "duration": 5.44,
+      "ended": true,
+      "error": null,
+      "id": "sync-male-r1-a",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-male-ee1bd29f6337.mp4",
+      "time": 5.44
+    },
+    {
+      "duration": 5.4,
+      "ended": true,
+      "error": null,
+      "id": "sync-male-r1-b",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-male-6b11bf356c91.mp4",
+      "time": 5.4
+    },
+    {
+      "duration": 5.36,
+      "ended": true,
+      "error": null,
+      "id": "sync-male-r1-c",
+      "ready": 4,
+      "source": "http://127.0.0.1:55219/review-media/sync-male-470ca4db3ae5.mp4",
+      "time": 5.36
+    }
+  ],
+  "rounds": [
+    [
+      {
+        "id": "sync-female-r1-a",
+        "src": "review-media/sync-female-99ea2cdd2ffd.mp4"
+      },
+      {
+        "id": "sync-female-r1-b",
+        "src": "review-media/sync-female-7329b02973fc.mp4"
+      },
+      {
+        "id": "sync-female-r1-c",
+        "src": "review-media/sync-female-c83ee8b0e8d5.mp4"
+      },
+      {
+        "id": "sync-male-r1-a",
+        "src": "review-media/sync-male-ee1bd29f6337.mp4"
+      },
+      {
+        "id": "sync-male-r1-b",
+        "src": "review-media/sync-male-6b11bf356c91.mp4"
+      },
+      {
+        "id": "sync-male-r1-c",
+        "src": "review-media/sync-male-470ca4db3ae5.mp4"
+      }
+    ],
+    [
+      {
+        "id": "sync-female-r2-a",
+        "paused": true,
+        "src": "review-media/sync-female-7329b02973fc.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-female-r2-b",
+        "paused": true,
+        "src": "review-media/sync-female-c83ee8b0e8d5.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-female-r2-c",
+        "paused": true,
+        "src": "review-media/sync-female-99ea2cdd2ffd.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r2-a",
+        "paused": true,
+        "src": "review-media/sync-male-6b11bf356c91.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r2-b",
+        "paused": true,
+        "src": "review-media/sync-male-470ca4db3ae5.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r2-c",
+        "paused": true,
+        "src": "review-media/sync-male-ee1bd29f6337.mp4",
+        "time": 0
+      }
+    ],
+    [
+      {
+        "id": "sync-female-r3-a",
+        "paused": true,
+        "src": "review-media/sync-female-c83ee8b0e8d5.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-female-r3-b",
+        "paused": true,
+        "src": "review-media/sync-female-99ea2cdd2ffd.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-female-r3-c",
+        "paused": true,
+        "src": "review-media/sync-female-7329b02973fc.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r3-a",
+        "paused": true,
+        "src": "review-media/sync-male-470ca4db3ae5.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r3-b",
+        "paused": true,
+        "src": "review-media/sync-male-ee1bd29f6337.mp4",
+        "time": 0
+      },
+      {
+        "id": "sync-male-r3-c",
+        "paused": true,
+        "src": "review-media/sync-male-6b11bf356c91.mp4",
+        "time": 0
+      }
+    ]
+  ],
+  "exclusive": [
+    {
+      "ended": false,
+      "id": "motion-female-a",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "motion-female-b",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "motion-male-a",
+      "muted": false,
+      "paused": false
+    },
+    {
+      "ended": false,
+      "id": "motion-male-b",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-female-r3-a",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-female-r3-b",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-female-r3-c",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-male-r3-a",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-male-r3-b",
+      "muted": false,
+      "paused": true
+    },
+    {
+      "ended": false,
+      "id": "sync-male-r3-c",
+      "muted": false,
+      "paused": true
+    }
+  ],
+  "stop_all_resets": false,
+  "final_ui": {
+    "allPaused": true,
+    "count": 10,
+    "round": "当前第1轮 / 共3轮",
+    "unrevealed": "当前未揭示。属于界面单盲，文件/源码仍可检查；技术诊断不会代填你的偏好。"
+  },
+  "limitations": "Playback ended/error state is technical QA, not human continuous audiovisual acceptance. One status locator timed out before playback completed; actual media ended and was read directly.",
+  "stop_all_pauses": true,
+  "stop_observation": [
+    {
+      "id": "motion-female-a",
+      "paused": true,
+      "time": 0.205775
+    },
+    {
+      "id": "motion-female-b",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "motion-male-a",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "motion-male-b",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-female-r1-a",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-female-r1-b",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-female-r1-c",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-male-r1-a",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-male-r1-b",
+      "paused": true,
+      "time": 0
+    },
+    {
+      "id": "sync-male-r1-c",
+      "paused": true,
+      "time": 0
+    }
+  ],
+  "stop_behavior": "Pause all at current positions; each replay button resets its selected clip. Rotation/reload reconstructs clips at zero."
+}

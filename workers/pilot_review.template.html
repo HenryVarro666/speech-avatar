@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E1b · MuseTalk 与 LongCat 四段对照</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;background:#101722;color:#edf3fc}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:30px 24px 50px}h1{font-size:30px;margin:12px 0}h2{font-size:23px;margin:30px 0 8px}h3{font-size:20px;margin:0 0 8px}p{line-height:1.7;color:#c0cde0}.tag{color:#9ee1cd;font-size:13px}.line{padding:18px;background:#1b293d;border-radius:10px;font-size:19px;line-height:1.8}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{padding:18px;background:#1a2537;border:1px solid #34445c;border-radius:14px}video{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#080b10;border-radius:8px}.meta{font-size:13px;color:#afc0d8;margin:8px 0 13px}.actions{display:flex;align-items:center;gap:14px;margin:14px 0 4px}button{background:#a8ead6;color:#0d251e;border:0;border-radius:8px;padding:10px 18px;min-height:44px;font-size:16px;font-weight:600;cursor:pointer}button:focus-visible,video:focus-visible{outline:3px solid #f2cb82;outline-offset:3px}.status{font-size:13px;color:#c6d5e8}.footer{border-top:1px solid #34445c;margin-top:28px;padding-top:14px;font-size:14px}.hint{font-size:14px}a{color:#9ee1cd}@media(max-width:700px){main{padding:24px 15px}.pair{grid-template-columns:1fr}h1{font-size:25px}.line{font-size:17px}}
+</style>
+<main>
+<div class="tag">SPEECH AVATAR · E1b · 4 / 4 已生成</div>
+<h1>同一配音，比较嘴形与完整表情</h1>
+<p>男女各一组，先按 A/B 比较。两种后端使用同一份已确认音频与同一人物底图；画面按相同宽度展示，保留原生成品。看完后可在页面底部揭示模型与耗时。</p>
+<div class="line" id="script"></div>
+<p class="hint">先看嘴形和声音是否一致，再看牙齿、眨眼、眉眼、头动与句尾。请留意约 3.72 秒附近及片尾是否跳变。</p>
+<button id="stop" type="button">停止全部播放</button>
+<div id="groups"></div>
+<div class="footer">
+<button id="reveal" type="button">看完后揭示后端与耗时</button>
+<p id="reveal-state">当前未揭示。每组 A/B 顺序固定，两组左右位置已平衡；属于界面单盲，本地源码和文件仍可查看。</p>
+<p>每次只播放一段的声音。两条配音已经确认，视频自然度、同步和偏好仍等待你反馈；完整解码和浏览器播完都不代表人工质量通过。</p>
+<p>耗时为独立进程完整调用，包含模型加载和编码。每个后端只有两例，不能代表稳定延迟或实时交互性能。此页面只回放已有 MP4。</p>
+</div>
+</main>
+<script>
+const data = __DATA_JSON__;
+document.querySelector('#script').textContent = data.text;
+const groups = document.querySelector('#groups');
+const videos = [];
+const revealers = [];
+document.documentElement.dataset.revealed = 'false';
+for (const group of data.groups) {
+  const heading = document.createElement('h2'); heading.textContent = group.label; groups.appendChild(heading);
+  const voice = document.createElement('p'); voice.className = 'meta'; voice.textContent = group.voice; groups.appendChild(voice);
+  const pair = document.createElement('section'); pair.className = 'pair'; pair.setAttribute('aria-label',group.label + '后端对照');
+  for (const clip of group.clips) {
+    const card = document.createElement('article'); card.className = 'card';
+    const title = document.createElement('h3'); title.textContent = '样片 '+clip.blind_label;
+    const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = '同一已确认音轨 · '+clip.duration_s.toFixed(2)+' 秒 · 25 fps';
+    const video = document.createElement('video'); video.src = clip.filename; video.poster = clip.poster; video.controls = true; video.preload = 'metadata'; video.playsInline = true; video.id = clip.id; video.setAttribute('aria-label',group.label+' 样片'+clip.blind_label+'视频'); videos.push(video);
+    const actions = document.createElement('div'); actions.className = 'actions';
+    const button = document.createElement('button'); button.type = 'button'; button.textContent = '播放 '+group.short_label+' '+clip.blind_label;
+    const state = document.createElement('span'); state.className = 'status'; state.id = clip.id+'-state'; state.textContent = '待播放'; state.setAttribute('aria-live','polite');
+    button.addEventListener('click',async()=>{for(const other of videos)if(other!==video)other.pause();video.currentTime=0;try{await video.play()}catch(error){state.textContent='无法播放：'+error.message}});
+    video.addEventListener('play',()=>{for(const other of videos)if(other!==video)other.pause();state.textContent='正在播放'});
+    video.addEventListener('pause',()=>{if(!video.ended)state.textContent='已暂停'});
+    video.addEventListener('ended',()=>{state.textContent='播放完毕 · 待你评价'});
+    video.addEventListener('error',()=>{state.textContent='媒体加载失败，请在会话中告知'});
+    revealers.push(()=>{title.textContent='样片 '+clip.blind_label+' · '+clip.label;meta.textContent=clip.width+'×'+clip.height+' · 25 fps · '+clip.duration_s.toFixed(2)+' 秒 · 完整调用 '+clip.process_wall_s.toFixed(1)+' 秒';video.setAttribute('aria-label',group.label+' 样片'+clip.blind_label+' '+clip.label+'视频')});
+    actions.append(button,state);card.append(title,meta,video,actions);pair.appendChild(card);
+  }
+  groups.appendChild(pair);
+}
+document.querySelector('#stop').addEventListener('click',()=>{for(const video of videos)video.pause()});
+document.querySelector('#reveal').addEventListener('click',()=>{for(const show of revealers)show();document.documentElement.dataset.revealed='true';document.querySelector('#reveal-state').textContent='后端与耗时已揭示，A/B 编号保持不变。';document.querySelector('#reveal').disabled=true});
+</script>
+</html>

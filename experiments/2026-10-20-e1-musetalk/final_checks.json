@@ -1,0 +1,14 @@
+{
+  "markdown_files": 16,
+  "local_links": 133,
+  "broken_links": 0,
+  "unit_tests_passed": 5,
+  "e0_manifest_unchanged": true,
+  "e1_full_decode_passed": 12,
+  "e1_audio_checks_passed": 12,
+  "visual_acceptability": "pending_continuous_review",
+  "git_head_exists": false,
+  "staged_files": 0,
+  "remotes": 0,
+  "media_and_vendor_ignored": true
+}

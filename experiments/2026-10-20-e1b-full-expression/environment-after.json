@@ -1,0 +1,7 @@
+{
+  "date_utc": "2026-10-20T21:16:07.371692+00:00",
+  "gpu": "0, GPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, NVIDIA H100 NVL, 39228 MiB, 56092 MiB, 0 %\n1, GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c, NVIDIA H100 NVL, 14 MiB, 95306 MiB, 0 %",
+  "compute": "GPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, 2019086, .venv/bin/python, 19600 MiB\nGPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, 2088852, .venv/bin/python, 19600 MiB",
+  "own_worker_pid": 2100581,
+  "own_worker_exited": true
+}

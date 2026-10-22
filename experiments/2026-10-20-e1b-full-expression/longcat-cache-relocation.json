@@ -1,0 +1,7 @@
+{
+  "scope": "only torch2.6+cu124 cache archive created after this task began; installed environments unchanged; original cache path retained as link",
+  "source": "/home/exx/.cache/uv/archive-v0/R-SzW2S9yrTUyJ2M",
+  "target": "/data/speech-avatar-exx-20261020/e1b-video/cache/relocated-task-torch26",
+  "home_free_gib_before": 0.20863723754882812,
+  "home_free_gib_after": 1.6839103698730469
+}

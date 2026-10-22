@@ -1,0 +1,6 @@
+{
+  "stopped_own_temporary_server_pid": 3145,
+  "verified_command": "/opt/homebrew/Cellar/python@3.12/3.12.15/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python /Users/caochao/Documents/speech-avatar/.cache/e1c-codec-server.py",
+  "stopped_at_utc": "2026-10-22T05:03:46.807412+00:00",
+  "main_preview_preserved": true
+}

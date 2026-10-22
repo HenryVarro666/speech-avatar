@@ -1,0 +1,11 @@
+# Quality review execution log
+
+2026-10-20,America/Chicago. Local CPU only, no remote queries/generation, no agents or git mutation. Before new diagnostics, wrote input lock and disclosed post-hoc review plan; reused original weights and13-frame tracked crops. Full4 curves reproduced, all8 nonzero400ms controls recovered exactly. New strict windows/fixed-ROI temporal diagnostics and timestamped original-frame evidence saved separately.
+
+Inspected516mouth/108full/48detail/68join frames plus native hands. No source video, WAV, old metrics or pending user rating changed. Original browser variable from prior turn was unavailable; rebound the known current tab. Initially female playback stayed atmetadata because the earlier own local server had exited between turns; old process/session was absent and direct loopback request got connection refused. Restored only own same URL/port loopback server, then all4 playback ended without media or console error. Left original A/B mapping/page unrevealed. No browser listening claim: system audio is not delivered to the assistant.
+
+Initial final-verification command used systemPython withoutnumpy and failed before mutation; corrected to the existing.venv-quality. Final checks passed:locked10files,old12E1MP4,4decode/audio/browser,24new evidence-image hashes;30Markdown/368local links zero missing. Added reproducible verify_review.py and overview builder. Diagnostic overwrite guard rejects reruns without changing previous JSON;12existing preflight tests pass. Errors and recovered preview lifecycle kept separate from renderer failures.
+
+REVIEW.md and NEXT_EXPERIMENTS.md provide a backend decision and bounded0GPU+2+conditional2-render plan, not execution of that optimization. User video acceptance is still untouched. Both workspace status/evolution, bilingualREADME and route entries synchronized; no staging/commit/push or apex access.
+
+Comprehensive review final verification2026-10-20:4 original outputs and12 oldE1 hashes unchanged;4fresh decode/audio/browser checks,4whole sync curves reproduced,8signed shift controls exact,12existing tests pass, overwrite guard preserves prior diagnostics. 31Markdown/368local links, zero missing targets. No new render/remote access/staging/commit/push; human AV ratings unchanged.

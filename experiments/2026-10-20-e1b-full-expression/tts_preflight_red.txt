@@ -1,0 +1,41 @@
+test_existing_waveform_is_never_overwritten (test_tts_preflight.TTSPreflightTests.test_existing_waveform_is_never_overwritten) ... FAIL
+test_other_gpu_is_allowed_but_selected_gpu_is_protected (test_tts_preflight.TTSPreflightTests.test_other_gpu_is_allowed_but_selected_gpu_is_protected) ... FAIL
+test_unrecognizable_gpu_output_fails_closed (test_tts_preflight.TTSPreflightTests.test_unrecognizable_gpu_output_fails_closed) ... FAIL
+
+======================================================================
+FAIL: test_existing_waveform_is_never_overwritten (test_tts_preflight.TTSPreflightTests.test_existing_waveform_is_never_overwritten)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 24, in test_existing_waveform_is_never_overwritten
+    worker = self.worker()
+             ^^^^^^^^^^^^^
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 11, in worker
+    self.assertTrue(path.exists(), "TTS preflight worker is not implemented")
+AssertionError: False is not true : TTS preflight worker is not implemented
+
+======================================================================
+FAIL: test_other_gpu_is_allowed_but_selected_gpu_is_protected (test_tts_preflight.TTSPreflightTests.test_other_gpu_is_allowed_but_selected_gpu_is_protected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 18, in test_other_gpu_is_allowed_but_selected_gpu_is_protected
+    worker = self.worker()
+             ^^^^^^^^^^^^^
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 11, in worker
+    self.assertTrue(path.exists(), "TTS preflight worker is not implemented")
+AssertionError: False is not true : TTS preflight worker is not implemented
+
+======================================================================
+FAIL: test_unrecognizable_gpu_output_fails_closed (test_tts_preflight.TTSPreflightTests.test_unrecognizable_gpu_output_fails_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 33, in test_unrecognizable_gpu_output_fails_closed
+    worker = self.worker()
+             ^^^^^^^^^^^^^
+  File "/Users/caochao/Documents/speech-avatar/tests/test_tts_preflight.py", line 11, in worker
+    self.assertTrue(path.exists(), "TTS preflight worker is not implemented")
+AssertionError: False is not true : TTS preflight worker is not implemented
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=3)

@@ -1,0 +1,31 @@
+{
+  "status": "awaiting_user_confirmation",
+  "reviewer": null,
+  "rule": "Require actual user feedback for both candidate hashes before freezing the video manifest or rendering any video. Playback events never count as acceptance.",
+  "clips": [
+    {
+      "audio_id": "e1b-zh-female-01",
+      "avatar_id": "avatar-a",
+      "speaker": "Serena",
+      "candidate_sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+      "reviewed_audio_sha256": null,
+      "content_correct": null,
+      "natural": null,
+      "persona_match": null,
+      "accepted": null,
+      "feedback": null
+    },
+    {
+      "audio_id": "e1b-zh-male-01",
+      "avatar_id": "avatar-b",
+      "speaker": "Uncle_Fu",
+      "candidate_sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+      "reviewed_audio_sha256": null,
+      "content_correct": null,
+      "natural": null,
+      "persona_match": null,
+      "accepted": null,
+      "feedback": null
+    }
+  ]
+}

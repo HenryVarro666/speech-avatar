@@ -1,0 +1,2 @@
+{"stage": "source_transfer", "outcome": "recovered", "reason": "Initial extraction began before upload completed; full local/remote SHA-256 match confirmed before re-extraction. No shared files affected."}
+{"stage": "dependency_setup", "outcome": "recovered", "reason": "chumpy setup imports pip but isolated build lacked pip; install in the independent environment with --no-build-isolation, then resume requirements."}

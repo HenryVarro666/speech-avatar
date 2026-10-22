@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/exx/.local/bin/uv",
+    "pip",
+    "install",
+    "--python",
+    "/data/speech-avatar-exx-20261020/e1b-tts/.venv/bin/python",
+    "qwen-tts==0.1.1",
+    "torch==2.8.0",
+    "torchaudio==2.8.0",
+    "--torch-backend",
+    "cu128"
+  ],
+  "exit_code": 0
+}

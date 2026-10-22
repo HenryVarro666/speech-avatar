@@ -1,0 +1,4 @@
+{"stage": "official_example_upstream", "status": "passed", "device": "local_cpu", "offset_frames": 3, "minimum_distance": 5.352, "confidence": 10.087, "note": "Upstream demo, batch8; fresh features will also be checked in audit script."}
+{"stage": "s3fd_download_1", "status": "timeout", "curl_exit": 28, "bytes_retained": 45090112, "expected_bytes": 89844381, "recovery": "Resume same official HTTPS URL with Range; no model inference attempted on partial weights."}
+{"stage": "s3fd_download_resume", "status": "passed", "bytes": 89844381}
+{"stage": "local_cpu_quality_audit", "status": "passed", "outputs": 12, "decoded_frames": 1032, "official_example_raw_decode": {"offset_frames": 3, "offset_ms": 120, "minimum_distance": 5.351578235626221, "confidence": 10.04721450805664, "distance_curve": "see quality_metrics.json"}, "not_a_quality_pass": true}

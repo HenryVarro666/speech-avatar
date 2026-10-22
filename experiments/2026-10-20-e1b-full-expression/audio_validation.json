@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-20",
+  "clips": [
+    {
+      "audio_id": "e1b-zh-female-01",
+      "avatar_id": "avatar-a",
+      "persona_voice": "female",
+      "speaker": "Serena",
+      "path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+      "sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_s": 4.96,
+      "samples": 119040,
+      "full_decode_passed": true,
+      "pcm_peak": 0.33203125,
+      "pcm_rms": 0.053780680029516255,
+      "last_200ms_rms": 0.03715694457367324,
+      "raw_to_pcm16_max_abs_error": 3.0502676963806152e-05,
+      "no_processing_beyond_pcm16": true,
+      "preview_copy_hash_matches": true
+    },
+    {
+      "audio_id": "e1b-zh-male-01",
+      "avatar_id": "avatar-b",
+      "persona_voice": "male",
+      "speaker": "Uncle_Fu",
+      "path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+      "sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_s": 5.36,
+      "samples": 128640,
+      "full_decode_passed": true,
+      "pcm_peak": 0.625,
+      "pcm_rms": 0.10166114258906746,
+      "last_200ms_rms": 0.04499945192565862,
+      "raw_to_pcm16_max_abs_error": 3.0502676963806152e-05,
+      "no_processing_beyond_pcm16": true,
+      "preview_copy_hash_matches": true
+    }
+  ],
+  "passed_count": 2,
+  "human_listened_count": 0,
+  "human_accepted_count": 0,
+  "note": "Signal/decoding checks only; naturalness, content and persona match pending user listening."
+}

@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/data/speech-avatar-exx-20261020/e1b-video/vendor/LongCat-Video/run_demo_avatar_single_audio_to_video.py", line 18, in <module>
+    from longcat_video.pipeline_longcat_video_avatar import LongCatVideoAvatarPipeline
+  File "/data/speech-avatar-exx-20261020/e1b-video/vendor/LongCat-Video/longcat_video/pipeline_longcat_video_avatar.py", line 19, in <module>
+    from longcat_video.modules.avatar.longcat_video_dit_avatar import LongCatVideoAvatarTransformer3DModel
+  File "/data/speech-avatar-exx-20261020/e1b-video/vendor/LongCat-Video/longcat_video/modules/avatar/longcat_video_dit_avatar.py", line 17, in <module>
+    from ..attention import MultiHeadCrossAttention
+  File "/data/speech-avatar-exx-20261020/e1b-video/vendor/LongCat-Video/longcat_video/modules/attention.py", line 10, in <module>
+    from ..block_sparse_attention.bsa_interface import flash_attn_bsa_3d
+  File "/data/speech-avatar-exx-20261020/e1b-video/vendor/LongCat-Video/longcat_video/block_sparse_attention/bsa_interface.py", line 4, in <module>
+    import triton
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/__init__.py", line 8, in <module>
+    from .runtime import (
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/runtime/__init__.py", line 1, in <module>
+    from .autotuner import (Autotuner, Config, Heuristics, autotune, heuristics)
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/runtime/autotuner.py", line 9, in <module>
+    from .jit import KernelInterface
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/runtime/jit.py", line 12, in <module>
+    from ..runtime.driver import driver
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/runtime/driver.py", line 1, in <module>
+    from ..backends import backends
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/backends/__init__.py", line 50, in <module>
+    backends = _discover_backends()
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/backends/__init__.py", line 44, in _discover_backends
+    driver = _load_module(name, os.path.join(root, name, 'driver.py'))
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/backends/__init__.py", line 12, in _load_module
+    spec.loader.exec_module(module)
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 7, in <module>
+    from triton.runtime.build import _build
+  File "/data/speech-avatar-exx-20261020/e1b-video/.venv-longcat/lib/python3.10/site-packages/triton/runtime/build.py", line 8, in <module>
+    import setuptools
+ModuleNotFoundError: No module named 'setuptools'

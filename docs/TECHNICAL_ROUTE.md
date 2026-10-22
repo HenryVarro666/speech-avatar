@@ -1,0 +1,25 @@
+# Technical scope and experiment gates
+
+Date: 2026-10-20. The approved source guide is retained in the neighboring voice_ai workspace; this repository owns only the visual branch.
+
+1. Final output waveform drives the avatar. Interpreter avatars follow translated speech, and native audio output is consumed directly without another TTS pass.
+2. E0 freezes provenance-linked audio and two avatar assets. The initial dataset uses synthetic speech and fictional still-image loops; these limits stay visible in every result.
+3. E1 evaluates MuseTalk 1.5 offline rendering on six development clips × two avatars. Frozen test audio is not used to tune this stage. Saved-frame latency, full task wall time and visual quality are separate measurements.
+4. E2 later compares idle, RMS and browser audio-to-viseme rendering using one player. E3 measures synchronization and added waiting; E4 tests cancellation, stale epochs and recovery. E5 alone adds live upstream integration.
+
+The first implementation is experiment scripts, not a multi-package framework. A future browser player can expose scheduled PCM intervals to a visual analysis branch, with a shared clock and epoch. Visual failure must not block speech or replay old outputs.
+
+The existing DSH bridge and plugin are not copied into this repository. `vendor/MuseTalk` is a private pinned dependency, ignored by this repository. Track its source revision and any future compatibility patch separately from this repository's own version.
+
+An offline MP4 can be used in a labeled demo. It does not establish causal streaming, natural head motion, live interpreting, ASR improvement or native full-duplex capability.
+
+E1 quality audit (2026-10-20): [review and next experiments](../experiments/2026-10-20-e1-musetalk/QUALITY_REVIEW.md) concludes NEEDS WORK, with model-estimated video lead of 80–120 ms, soft teeth and neutral-ending/static-reference limits. Playback and all-frame inspection are complete, but human continuous AV acceptance is unsigned. Prioritize E1-Q1 sync A/B and E1-Q2 endings before optional crop/detail or dynamic-reference experiments; keep held-out audio frozen. E2 remains unstarted.
+
+Full-expression selection review (2026-10-20): [comparison and extension plan](https://github.com/HenryVarro666/voice-ai-workspace/blob/main/reports/Avatar%20%E5%AE%8C%E6%95%B4%E8%A1%A8%E6%83%85%20%E9%80%89%E5%9E%8B%20%E6%89%A9%E5%B1%95%E8%B7%AF%E7%BA%BF.md) recommends LongCat-Video-Avatar 1.5 for the next offline comparison, OmniAvatar as the smaller/research alternative, and Hunyuan as a conditional third choice. This is a source/code-based engineering recommendation, not a local quality benchmark or implementation. vLLM-Omni currently documents offline-only LongCat support; it does not establish live serving. Natural role-matched audio should precede the proposed four-clip MuseTalk/LongCat comparison. LongCat needs enough continuation segments to avoid truncating 5–6 s inputs, and moving heads need per-frame tracking rather than E1's fixed face boxes. Existing playback clocks/epochs remain the live integration foundation. This paragraph records the earlier selection stage; execution is documented below.
+
+E1b execution update (2026-10-20): [four role-matched Chinese videos](../experiments/2026-10-20-e1b-full-expression/RESULTS.md) now complete. User-approved voices drive both MuseTalk and LongCat, with4/4 media/audio/browser checks and516 dynamically tracked frames. LongCat adds visible face/head motion at much higher complete-process cost (about268–271s vs24s, all loads included), with crop-edge hand entry and auxiliary sync flags requiring human review. This is an offline technical comparison, not a production or real-time acceptance. OmniAvatar/Hunyuan remain untested. Before further spending, collect feedback on these exact videos; then bound gesture/framing, derived neutral-tail and sync comparisons. E2–E5 and upstream AudioContext/epoch integration remain unimplemented here.
+
+E1b review decision (2026-10-20): [comprehensive review and next gates](../experiments/2026-10-20-e1b-full-expression/quality-review-v1/REVIEW.md) keeps LongCat as the bounded offline development candidate, with MuseTalk retained for mouth/regression tests. Motion is visible but style intensity/teeth/hand framing need work. Keep local sync calibration separate from prompt/neutral-tail generation; no change to E2–E5 or human acceptance.
+
+
+E1c continuation (completed2026-10-22):[results](../experiments/2026-10-21-e1c-controlled-expression/RESULTS.md) include6 local sync derivatives and2 controlled-positive-prompt LongCat videos. Media checks pass, but hand entry and emphasized expressions persist; prompt-only control does not satisfy the Qmotion gate, so Qtail was not run. Keep LongCat an offline research candidate and MuseTalk the regression baseline. Human sync/video preference is pending; next inference needs a separately frozen framing/motion-control hypothesis. No production or realtime integration occurred.

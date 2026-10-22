@@ -1,0 +1,52 @@
+{
+  "verified_utc": "2026-10-20T22:38:12.495776+00:00",
+  "manifest_sha256": "1e80a7f93d0dc15c31d403a3f7e8f8005268856bcb74b2454b67d9f723085a0c",
+  "frozen_protocol_hashes": {
+    "manifest": "1e80a7f93d0dc15c31d403a3f7e8f8005268856bcb74b2454b67d9f723085a0c",
+    "VIDEO_QUALITY_PROTOCOL": "f5e9d9ac54216c8c8361c3c1b405c13f62999b4a6cb7fa46cfb8ce495ce12ea5",
+    "PREVIEW_PROTOCOL": "972f5fa6d608ca7dabd98be455be88e6daca2ec7d0c3c61c4d50d30765dcdc47"
+  },
+  "source_input_hashes_verified": 12,
+  "audio_accepted_count": 2,
+  "audio_review_keys": [
+    "status",
+    "reviewer",
+    "rule",
+    "clips",
+    "accepted_at_utc",
+    "feedback"
+  ],
+  "attempts": 8,
+  "successful_attempts": 4,
+  "decode_passed": 4,
+  "audio_integrity_passed": 4,
+  "frames": 516,
+  "per_frame_face_detection_passed": 516,
+  "preview_copy_and_served_hashes_passed": 4,
+  "browser_ended_passed": 4,
+  "browser_warning_error_logs": 0,
+  "single_audio_owner_verified": true,
+  "delivered_preview_unrevealed": true,
+  "human_video_review": "pending; all acceptance fields null",
+  "e0_manifest_sha256": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "original_e1_output_hashes_unchanged": 12,
+  "local_unit_tests_passed": 12,
+  "e0_structural_validation_audio_passed": 36,
+  "staged_files": 0,
+  "remotes": [],
+  "head_exists": false,
+  "private_generated_vendor_environment_ignored": true,
+  "own_remote_worker_exited": true,
+  "remote_after_selected_gpu": "1, GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c, 95830, 14, 95306, 0",
+  "apex_accessed": false,
+  "preview_server": {
+    "url": "http://127.0.0.1:51894/index.html",
+    "pid": 20941,
+    "bind": "127.0.0.1",
+    "directory": "outputs/e1b"
+  },
+  "markdown_files_checked": 27,
+  "local_links_checked": 319,
+  "missing_local_links": [],
+  "source_worker_sha256": "673f5938022fb553f8c00e568ee938a0a45282e3f3416c42a6d0bcae7045305e"
+}

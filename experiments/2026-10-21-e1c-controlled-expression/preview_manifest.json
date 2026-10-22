@@ -1,0 +1,212 @@
+{
+  "seed": 20261021,
+  "groups": [
+    {
+      "role": "female",
+      "label": "女角色",
+      "sync_rounds": [
+        [
+          {
+            "id": "sync-female-r1-a",
+            "label": "A",
+            "filename": "review-media/sync-female-99ea2cdd2ffd.mp4",
+            "sha256": "99ea2cdd2ffdc1f1d32a7bbb9850fafe5f0e03a3b2518b76d80d33a79e101389",
+            "reveal": "画面延后0ms",
+            "variant_id": "female-video-delay-000ms"
+          },
+          {
+            "id": "sync-female-r1-b",
+            "label": "B",
+            "filename": "review-media/sync-female-7329b02973fc.mp4",
+            "sha256": "7329b02973fcb564ee01c382a2f49f9bbc51ac76b4fcfa49c7e7847e8a203774",
+            "reveal": "画面延后40ms",
+            "variant_id": "female-video-delay-040ms"
+          },
+          {
+            "id": "sync-female-r1-c",
+            "label": "C",
+            "filename": "review-media/sync-female-c83ee8b0e8d5.mp4",
+            "sha256": "c83ee8b0e8d583055140795c8b46810ec551180a4800e8ea44df394081518578",
+            "reveal": "画面延后80ms",
+            "variant_id": "female-video-delay-080ms"
+          }
+        ],
+        [
+          {
+            "id": "sync-female-r2-a",
+            "label": "A",
+            "filename": "review-media/sync-female-7329b02973fc.mp4",
+            "sha256": "7329b02973fcb564ee01c382a2f49f9bbc51ac76b4fcfa49c7e7847e8a203774",
+            "reveal": "画面延后40ms",
+            "variant_id": "female-video-delay-040ms"
+          },
+          {
+            "id": "sync-female-r2-b",
+            "label": "B",
+            "filename": "review-media/sync-female-c83ee8b0e8d5.mp4",
+            "sha256": "c83ee8b0e8d583055140795c8b46810ec551180a4800e8ea44df394081518578",
+            "reveal": "画面延后80ms",
+            "variant_id": "female-video-delay-080ms"
+          },
+          {
+            "id": "sync-female-r2-c",
+            "label": "C",
+            "filename": "review-media/sync-female-99ea2cdd2ffd.mp4",
+            "sha256": "99ea2cdd2ffdc1f1d32a7bbb9850fafe5f0e03a3b2518b76d80d33a79e101389",
+            "reveal": "画面延后0ms",
+            "variant_id": "female-video-delay-000ms"
+          }
+        ],
+        [
+          {
+            "id": "sync-female-r3-a",
+            "label": "A",
+            "filename": "review-media/sync-female-c83ee8b0e8d5.mp4",
+            "sha256": "c83ee8b0e8d583055140795c8b46810ec551180a4800e8ea44df394081518578",
+            "reveal": "画面延后80ms",
+            "variant_id": "female-video-delay-080ms"
+          },
+          {
+            "id": "sync-female-r3-b",
+            "label": "B",
+            "filename": "review-media/sync-female-99ea2cdd2ffd.mp4",
+            "sha256": "99ea2cdd2ffdc1f1d32a7bbb9850fafe5f0e03a3b2518b76d80d33a79e101389",
+            "reveal": "画面延后0ms",
+            "variant_id": "female-video-delay-000ms"
+          },
+          {
+            "id": "sync-female-r3-c",
+            "label": "C",
+            "filename": "review-media/sync-female-7329b02973fc.mp4",
+            "sha256": "7329b02973fcb564ee01c382a2f49f9bbc51ac76b4fcfa49c7e7847e8a203774",
+            "reveal": "画面延后40ms",
+            "variant_id": "female-video-delay-040ms"
+          }
+        ]
+      ],
+      "motion": [
+        {
+          "id": "motion-female-a",
+          "label": "A",
+          "filename": "review-media/motion-female-a.mp4",
+          "sha256": "f0ef77110536538c443c93ca3b343103db289463c0807b30b822e8db784aa3a6",
+          "reveal": "原提示",
+          "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill"
+        },
+        {
+          "id": "motion-female-b",
+          "label": "B",
+          "filename": "review-media/motion-female-b.mp4",
+          "sha256": "46522986b4ed570ddaa0948c64c814579b043efeeb09da6056ee5d15638736bc",
+          "reveal": "受控正面提示",
+          "trial_id": "e1c-female-controlled-motion"
+        }
+      ]
+    },
+    {
+      "role": "male",
+      "label": "男角色",
+      "sync_rounds": [
+        [
+          {
+            "id": "sync-male-r1-a",
+            "label": "A",
+            "filename": "review-media/sync-male-ee1bd29f6337.mp4",
+            "sha256": "ee1bd29f6337085ca5c4adea5a2a56df618a2f3da4e5ba9fb34809209d2ce586",
+            "reveal": "画面延后80ms",
+            "variant_id": "male-video-delay-080ms"
+          },
+          {
+            "id": "sync-male-r1-b",
+            "label": "B",
+            "filename": "review-media/sync-male-6b11bf356c91.mp4",
+            "sha256": "6b11bf356c919121a7ea25c5c1c329b0810d921b5d54602c4d9c9264bfe2dd50",
+            "reveal": "画面延后40ms",
+            "variant_id": "male-video-delay-040ms"
+          },
+          {
+            "id": "sync-male-r1-c",
+            "label": "C",
+            "filename": "review-media/sync-male-470ca4db3ae5.mp4",
+            "sha256": "470ca4db3ae5f750394cc4e8b842aa2dcd3e7907fdcd29b5243ad0a0d9cc9ff1",
+            "reveal": "画面延后0ms",
+            "variant_id": "male-video-delay-000ms"
+          }
+        ],
+        [
+          {
+            "id": "sync-male-r2-a",
+            "label": "A",
+            "filename": "review-media/sync-male-6b11bf356c91.mp4",
+            "sha256": "6b11bf356c919121a7ea25c5c1c329b0810d921b5d54602c4d9c9264bfe2dd50",
+            "reveal": "画面延后40ms",
+            "variant_id": "male-video-delay-040ms"
+          },
+          {
+            "id": "sync-male-r2-b",
+            "label": "B",
+            "filename": "review-media/sync-male-470ca4db3ae5.mp4",
+            "sha256": "470ca4db3ae5f750394cc4e8b842aa2dcd3e7907fdcd29b5243ad0a0d9cc9ff1",
+            "reveal": "画面延后0ms",
+            "variant_id": "male-video-delay-000ms"
+          },
+          {
+            "id": "sync-male-r2-c",
+            "label": "C",
+            "filename": "review-media/sync-male-ee1bd29f6337.mp4",
+            "sha256": "ee1bd29f6337085ca5c4adea5a2a56df618a2f3da4e5ba9fb34809209d2ce586",
+            "reveal": "画面延后80ms",
+            "variant_id": "male-video-delay-080ms"
+          }
+        ],
+        [
+          {
+            "id": "sync-male-r3-a",
+            "label": "A",
+            "filename": "review-media/sync-male-470ca4db3ae5.mp4",
+            "sha256": "470ca4db3ae5f750394cc4e8b842aa2dcd3e7907fdcd29b5243ad0a0d9cc9ff1",
+            "reveal": "画面延后0ms",
+            "variant_id": "male-video-delay-000ms"
+          },
+          {
+            "id": "sync-male-r3-b",
+            "label": "B",
+            "filename": "review-media/sync-male-ee1bd29f6337.mp4",
+            "sha256": "ee1bd29f6337085ca5c4adea5a2a56df618a2f3da4e5ba9fb34809209d2ce586",
+            "reveal": "画面延后80ms",
+            "variant_id": "male-video-delay-080ms"
+          },
+          {
+            "id": "sync-male-r3-c",
+            "label": "C",
+            "filename": "review-media/sync-male-6b11bf356c91.mp4",
+            "sha256": "6b11bf356c919121a7ea25c5c1c329b0810d921b5d54602c4d9c9264bfe2dd50",
+            "reveal": "画面延后40ms",
+            "variant_id": "male-video-delay-040ms"
+          }
+        ]
+      ],
+      "motion": [
+        {
+          "id": "motion-male-a",
+          "label": "A",
+          "filename": "review-media/motion-male-a.mp4",
+          "sha256": "584fcac7404549ef6baa54877109abc15df63d76e47c3fd21e3a73b89f97a151",
+          "reveal": "受控正面提示",
+          "trial_id": "e1c-male-controlled-motion"
+        },
+        {
+          "id": "motion-male-b",
+          "label": "B",
+          "filename": "review-media/motion-male-b.mp4",
+          "sha256": "48e2edb3ca4375914083645123dc04ef4f8b92b12ebf77e7568d27bc0e457412",
+          "reveal": "原提示",
+          "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill"
+        }
+      ]
+    }
+  ],
+  "manifest_sha256": "c70813196cb525e04128050dfe49534c125b55f3016299fdcdea7495805db405",
+  "blinding": "interface only;3Latin rotations put each sync candidate in each position once",
+  "human_review": "pending"
+}

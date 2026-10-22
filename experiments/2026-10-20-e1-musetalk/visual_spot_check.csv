@@ -1,0 +1,13 @@
+trial_id,reviewer_type,sampling,mouth_changes_visible,gross_face_corruption_in_samples,continuous_av_sync_rating,notes
+avatar-a-dev-en-01,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-a-dev-en-02,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-a-dev-en-03,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-a-dev-en-04,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-a-dev-zh-01,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-a-dev-zh-02,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-en-01,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-en-02,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-en-03,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-en-04,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-zh-01,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."
+avatar-b-dev-zh-02,assistant_static_frame_review,0/25/50/75 percent frames,True,False,pending,"Still-reference head; sampled frames do not verify continuous sync, fine teeth quality or natural head motion."

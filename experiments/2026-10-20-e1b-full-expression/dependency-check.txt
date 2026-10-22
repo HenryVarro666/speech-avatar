@@ -1,0 +1,3 @@
+Using Python 3.12.13 environment at: /data/speech-avatar-exx-20261020/e1b-tts/.venv
+Checked 103 packages in 1ms
+All installed packages are compatible

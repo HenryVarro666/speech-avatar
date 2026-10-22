@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:51894/index.html",
+  "pid": 22743,
+  "bind": "127.0.0.1",
+  "directory": "outputs/e1b",
+  "reason": "previous temporary server exited between turns; restart own loopback preview only"
+}

@@ -1,0 +1,58 @@
+{
+  "verified_utc": "2026-10-21T02:44:54.898871+00:00",
+  "scope": "local CPU review only; no SSH or apex",
+  "locked_files_unchanged": 10,
+  "original_videos_unchanged": 4,
+  "old_e1_videos_unchanged": 12,
+  "user_video_review_sha256_unchanged": "a712eed64c3aa3e3a9e22f49fd2ae8be46f50e4bda941cf0278ee4922446d0b1",
+  "full_decode_passed": 4,
+  "fresh_audio_integrity": [
+    {
+      "trial_id": "avatar-a-e1b-zh-female-01-musetalk-v15",
+      "correlation": 0.9986777652409005,
+      "best_lag_ms": 0,
+      "duration_delta_ms": 0.0,
+      "last300ms_correlation": 0.9956786129532748
+    },
+    {
+      "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+      "correlation": 0.9986777652409005,
+      "best_lag_ms": 0,
+      "duration_delta_ms": 0.0,
+      "last300ms_correlation": 0.9956786129532748
+    },
+    {
+      "trial_id": "avatar-b-e1b-zh-male-01-musetalk-v15",
+      "correlation": 0.9989461677546428,
+      "best_lag_ms": 0,
+      "duration_delta_ms": 0.0,
+      "last300ms_correlation": 0.9982022533077979
+    },
+    {
+      "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+      "correlation": 0.9989461677546428,
+      "best_lag_ms": 0,
+      "duration_delta_ms": 0.0,
+      "last300ms_correlation": 0.9982022533077979
+    }
+  ],
+  "whole_curves_reproduced": 4,
+  "known_nonzero_shift_controls_exact": 8,
+  "evidence_image_hashes_verified": 24,
+  "overview_sha256": "17577e7b82b1d251c9b59dc82f99cf293ac88d593433f1b21fb4aa1a7fa5c2bd",
+  "browser_complete_after_restart": 4,
+  "browser_logs_after_restart": [],
+  "delivered_preview_unrevealed": true,
+  "markdown_files_checked": 31,
+  "local_links_checked": 368,
+  "missing_local_links": [],
+  "new_video_renders": 0,
+  "human_av_acceptance": "pending; no scores changed",
+  "staged_files": 0,
+  "remotes": [],
+  "head_exists": false,
+  "existing_unit_tests_passed": 12,
+  "diagnostic_overwrite_guard_preserves_existing": true,
+  "review_report_sha256": "a8107337893116437166c3b022044182ecdcabed38449cb18716c19146764aa6",
+  "next_plan_sha256": "8657c2eda3eb5a24007a8db1b16d5b0b9f9a9ff375fc4158d83e08391fb16acc"
+}

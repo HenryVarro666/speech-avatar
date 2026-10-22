@@ -1,0 +1,154 @@
+{
+  "verified_utc": "2026-10-22T05:03:49.755590+00:00",
+  "verification_scope": "local integrity/decode/audio/HTTP checks; no new model inference or SSH",
+  "parent_locked_files_unchanged": 10,
+  "old_e1_videos_unchanged": 12,
+  "original_audio_and_portraits_unchanged": true,
+  "executed_new_prompt_verified": 2,
+  "only_backend_config_change": "positive prompt",
+  "conditioning_hashes_verified": 4,
+  "fresh_sync_frame_pcm_checks": [
+    {
+      "id": "female-video-delay-000ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    },
+    {
+      "id": "female-video-delay-040ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    },
+    {
+      "id": "female-video-delay-080ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    },
+    {
+      "id": "male-video-delay-000ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    },
+    {
+      "id": "male-video-delay-040ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    },
+    {
+      "id": "male-video-delay-080ms",
+      "all_source_frames_identical": true,
+      "speech_pcm_unchanged": true,
+      "exact_zero_tail": true
+    }
+  ],
+  "fresh_decode_audio_checks": [
+    {
+      "id": "female-video-delay-000ms",
+      "full_decode": true,
+      "correlation": 0.9999504916579565,
+      "lag_ms": 0,
+      "last300ms": 0.9998758803737777,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "female-video-delay-040ms",
+      "full_decode": true,
+      "correlation": 0.9999504916579565,
+      "lag_ms": 0,
+      "last300ms": 0.9998758803737777,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "female-video-delay-080ms",
+      "full_decode": true,
+      "correlation": 0.9999504916579565,
+      "lag_ms": 0,
+      "last300ms": 0.9998758803737777,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "male-video-delay-000ms",
+      "full_decode": true,
+      "correlation": 0.9999219523175366,
+      "lag_ms": 0,
+      "last300ms": 0.9998412085994901,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "male-video-delay-040ms",
+      "full_decode": true,
+      "correlation": 0.9999219523094435,
+      "lag_ms": 0,
+      "last300ms": 0.999841206739123,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "male-video-delay-080ms",
+      "full_decode": true,
+      "correlation": 0.9999219523094435,
+      "lag_ms": 0,
+      "last300ms": 0.999841206739123,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "e1c-female-controlled-motion",
+      "full_decode": true,
+      "correlation": 0.9986777652409005,
+      "lag_ms": 0,
+      "last300ms": 0.9956786129532748,
+      "duration_delta_ms": 0.0
+    },
+    {
+      "id": "e1c-male-controlled-motion",
+      "full_decode": true,
+      "correlation": 0.9989461677546428,
+      "lag_ms": 0,
+      "last300ms": 0.9982022533077979,
+      "duration_delta_ms": 0.0
+    }
+  ],
+  "qmotion_single_face_frames": 258,
+  "qmotion_attempts_success": 2,
+  "qtail_generations": 0,
+  "served_media_hashes": 10,
+  "browser_ended": 10,
+  "balanced_rotations": 3,
+  "single_audio_and_pause_all": true,
+  "delivered_unrevealed": true,
+  "environment_snapshot_utc": "2026-10-22T04:56:44.813452+00:00",
+  "own_gpu_workers_exited_in_snapshot": true,
+  "gpu1_compute_processes_in_snapshot": 0,
+  "gpu0_foreign_arrivals_untouched": true,
+  "markdown_files_checked": 33,
+  "local_links_checked": 345,
+  "missing_local_links": [],
+  "human_av_acceptance": "pending; no user scores written",
+  "head_exists": false,
+  "staged_files": 0,
+  "remotes": [],
+  "artifact_sha256": {
+    "experiments/2026-10-21-e1c-controlled-expression/manifest.json": "c70813196cb525e04128050dfe49534c125b55f3016299fdcdea7495805db405",
+    "experiments/2026-10-21-e1c-controlled-expression/QUALITY_PROTOCOL.md": "238a1899329784260b917d92340ca09a1b6657713931ef95265fb7597110445c",
+    "experiments/2026-10-21-e1c-controlled-expression/qsync_quality.json": "9372501c203ec79668868f7ef73bb181cffaaba0f583706fa048f41bb3436191",
+    "experiments/2026-10-21-e1c-controlled-expression/qmotion_quality.json": "832c656d2c65c3f9bd94e6279935b54e8acbaeebc89b71453650ab2bf09ef811",
+    "experiments/2026-10-21-e1c-controlled-expression/sync_variants.json": "27df28b8357007c861e956bdfbae6b968b191494010891a85aeeddc1f6602a56",
+    "experiments/2026-10-21-e1c-controlled-expression/gate_review.json": "2f3b9e3886be710587011a681b6fbac8a25a47713c494a5894243222a277955a",
+    "experiments/2026-10-21-e1c-controlled-expression/browser_playback.json": "b626988f925f8e2c1366e12f8fee624196ab047bdcf4e8fcbaad6ed694874e9e",
+    "experiments/2026-10-21-e1c-controlled-expression/user_review.json": "15bc9bd748632863a4171b745d7e28192f893c8ea946719d18e7a260240538ec",
+    "experiments/2026-10-21-e1c-controlled-expression/RESULTS.md": "e19d7292655a7106b821671620e38ace7f444861f83ca289280fef8eb35e7c87"
+  },
+  "unit_tests": {
+    "passed": 15,
+    "log_sha256": "45dd43062250b342210685a043f5accf7378862cdae7703f4942888b31187a0f"
+  },
+  "e0_structural_validation": {
+    "audio_count": 36,
+    "avatars": 2,
+    "passed": true
+  },
+  "preview_screenshot_sha256": "558b2496b93c4577f3d2fe91ecde57217c4e42224dfbcf62bf9388b8aa807964"
+}

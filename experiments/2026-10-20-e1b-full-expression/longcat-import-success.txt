@@ -1,0 +1,2 @@
+TMA benchmarks will be running with experimental grid constant TMA descriptor.
+LongCat CPU import successful

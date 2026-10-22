@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "experiment_id": "2026-10-20-e1b-full-expression",
+  "date": "2026-10-20",
+  "status": "audio_candidates_ready_awaiting_user_confirmation",
+  "frozen": false,
+  "note": "Two generated candidates have passed technical checks. Human listening is pending. Do not freeze a video manifest or render before explicit user acceptance.",
+  "e0_manifest_sha256": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "target_audio_duration_s": [
+    5,
+    6
+  ],
+  "input_policy": "Final source audio shared across backends per role; no E0 input or held-out test overwritten.",
+  "roles": [
+    {
+      "avatar_id": "avatar-a",
+      "persona_voice": "female",
+      "audio_id": "e1b-zh-female-01",
+      "image_path": "data/private/avatars/avatar-a/source.png",
+      "image_sha256": "81cf8bca30619cb63c1eeaec94cab4994c2fbf5f532efc5f4284adff04ec17e0",
+      "musetalk_reference_path": "data/private/avatars/avatar-a/reference.mp4",
+      "musetalk_reference_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "audio": {
+        "planned_path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+        "text_draft": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "language": "zh",
+        "provider": "Qwen3-TTS CustomVoice",
+        "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+        "voice_id": "Serena",
+        "sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+        "sample_rate_hz": 24000,
+        "duration_s": 4.96,
+        "transform": "float32 model waveform quantized to PCM16 only; no trimming, normalization, resampling or speed change",
+        "review": {
+          "status": "pending",
+          "reviewer": null,
+          "reviewed_audio_sha256": null,
+          "content_correct": null,
+          "natural": null,
+          "persona_match": null
+        },
+        "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "instruct": "用自然、亲切、从容的普通话说话，像面对面确认一次预约。语速适中，停顿自然，不要播音腔。",
+        "seed": 42
+      }
+    },
+    {
+      "avatar_id": "avatar-b",
+      "persona_voice": "male",
+      "audio_id": "e1b-zh-male-01",
+      "image_path": "data/private/avatars/avatar-b/source.png",
+      "image_sha256": "edc6681ffa2686e430d6d067f2dbc2e45b8b662b3389c50111ffeebb48063b7a",
+      "musetalk_reference_path": "data/private/avatars/avatar-b/reference.mp4",
+      "musetalk_reference_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "audio": {
+        "planned_path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+        "text_draft": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "language": "zh",
+        "provider": "Qwen3-TTS CustomVoice",
+        "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+        "voice_id": "Uncle_Fu",
+        "sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+        "sample_rate_hz": 24000,
+        "duration_s": 5.36,
+        "transform": "float32 model waveform quantized to PCM16 only; no trimming, normalization, resampling or speed change",
+        "review": {
+          "status": "pending",
+          "reviewer": null,
+          "reviewed_audio_sha256": null,
+          "content_correct": null,
+          "natural": null,
+          "persona_match": null
+        },
+        "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "instruct": "用自然、亲切、从容的普通话说话，像面对面确认一次预约。语速适中，停顿自然，不要播音腔。",
+        "seed": 42
+      }
+    }
+  ],
+  "backends": {
+    "musetalk-v15": {
+      "upstream_revision": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+      "seed": 42,
+      "fps": 25,
+      "batch_size": 8,
+      "use_float16": true
+    },
+    "longcat-avatar-v15-int8-distill": {
+      "upstream_revision": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+      "seed": 42,
+      "stage_1": "ai2v",
+      "model_type": "avatar-v1.5",
+      "resolution": "480p",
+      "use_distill": true,
+      "use_int8": true,
+      "effective_steps": 8,
+      "effective_text_guidance_scale": 1.0,
+      "effective_audio_guidance_scale": 1.0,
+      "context_parallel_size": 1,
+      "nproc_per_node": 1,
+      "fps": 25,
+      "frames_per_segment": 93,
+      "conditioning_frames": 13,
+      "planned_segments_for_target_duration": 2,
+      "segments_must_be_recomputed_from_frozen_duration": true,
+      "prompt": "The person in the reference image speaks calmly to the camera, with subtle natural blinking, gentle head movement, and a relaxed expression. Preserve their identity, clothing, and background. Keep the camera still."
+    }
+  },
+  "planned_trials": [
+    {
+      "trial_id": "avatar-a-e1b-zh-female-01-musetalk-v15",
+      "avatar_id": "avatar-a",
+      "audio_id": "e1b-zh-female-01",
+      "backend": "musetalk-v15",
+      "status": "awaiting_audio_confirmation",
+      "planned_output_path": "outputs/e1b/avatar-a-e1b-zh-female-01-musetalk-v15.mp4"
+    },
+    {
+      "trial_id": "avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill",
+      "avatar_id": "avatar-a",
+      "audio_id": "e1b-zh-female-01",
+      "backend": "longcat-avatar-v15-int8-distill",
+      "status": "awaiting_audio_confirmation",
+      "planned_output_path": "outputs/e1b/avatar-a-e1b-zh-female-01-longcat-avatar-v15-int8-distill.mp4"
+    },
+    {
+      "trial_id": "avatar-b-e1b-zh-male-01-musetalk-v15",
+      "avatar_id": "avatar-b",
+      "audio_id": "e1b-zh-male-01",
+      "backend": "musetalk-v15",
+      "status": "awaiting_audio_confirmation",
+      "planned_output_path": "outputs/e1b/avatar-b-e1b-zh-male-01-musetalk-v15.mp4"
+    },
+    {
+      "trial_id": "avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill",
+      "avatar_id": "avatar-b",
+      "audio_id": "e1b-zh-male-01",
+      "backend": "longcat-avatar-v15-int8-distill",
+      "status": "awaiting_audio_confirmation",
+      "planned_output_path": "outputs/e1b/avatar-b-e1b-zh-male-01-longcat-avatar-v15-int8-distill.mp4"
+    }
+  ],
+  "audio_review_passed_count": 0,
+  "rendered_count": 0,
+  "video_review_passed_count": 0
+}

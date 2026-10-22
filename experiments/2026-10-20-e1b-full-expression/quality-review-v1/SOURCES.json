@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-10-20",
+  "sources": [
+    {
+      "url": "https://github.com/meituan-longcat/LongCat-Video/blob/6b3f4b8582a8bc3f20f795735f5383716c4ba794/run_demo_avatar_single_audio_to_video.py",
+      "local_path": "vendor/LongCat-Video/run_demo_avatar_single_audio_to_video.py",
+      "sha256": "3d1125a8f9d21d2412cae0d9cc434bd8b4a497fd757d644b1ecca1fea1ae8207"
+    },
+    {
+      "url": "https://github.com/meituan-longcat/LongCat-Video/blob/6b3f4b8582a8bc3f20f795735f5383716c4ba794/longcat_video/pipeline_longcat_video_avatar.py",
+      "local_path": "vendor/LongCat-Video/longcat_video/pipeline_longcat_video_avatar.py",
+      "sha256": "49fb0ff5399512a3e5a4dfc8c811040e8b8a357d733f9a3a429302a12c483f19"
+    },
+    {
+      "url": "https://github.com/TMElyralab/MuseTalk/blob/0a89dec45a0192b824e3cf4daf96c239440c5ed8/README.md",
+      "note": "official README bbox_shift section explicitly For1.0; no new runtime claim"
+    }
+  ],
+  "method": "official pinned pages plus matching local source; no model/media upload"
+}

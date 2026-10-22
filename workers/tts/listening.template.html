@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E1b 中文配音试听</title>
+<style>
+  :root{color-scheme:light dark;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;background:#101722;color:#eaf0f8}
+  *{box-sizing:border-box}body{margin:0}main{max-width:980px;margin:auto;padding:36px 22px 50px}
+  h1{font-size:30px;margin:10px 0 14px}p{line-height:1.7;color:#becbdc}
+  .tag{font-size:13px;color:#93d9c6}.script{background:#192538;border-left:3px solid #93d9c6;padding:18px 22px;border-radius:8px;font-size:20px;line-height:1.8;margin:24px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:#192333;border:1px solid #344356;border-radius:16px;padding:22px}
+  .portrait{height:112px;width:112px;border-radius:14px;object-fit:cover;float:right;margin-left:15px}
+  h2{font-size:23px;margin:0 0 8px}.meta{font-size:14px;line-height:1.8;color:#aabbd1;min-height:64px}
+  button{display:block;min-height:46px;margin:20px 0 15px;border:0;border-radius:9px;padding:10px 24px;background:#a6ead5;color:#10251e;font-size:17px;font-weight:650;cursor:pointer}
+  button:hover{background:#c0f6e6}button:focus-visible,audio:focus-visible{outline:3px solid #f8d27c;outline-offset:4px}audio{width:100%;margin:4px 0 8px}
+  .state{font-size:14px;min-height:24px;color:#c6d5e5}.note{font-size:14px;clear:both}.footer{margin-top:28px;border-top:1px solid #344356;padding-top:18px}
+  @media(max-width:650px){main{padding:24px 16px}.grid{grid-template-columns:1fr}h1{font-size:26px}.script{font-size:18px;padding:16px}.portrait{height:90px;width:90px}}
+</style>
+<main>
+  <div class="tag">SPEECH AVATAR · E1b · 等待你的试听确认</div>
+  <h1>先选声音，再生成视频</h1>
+  <p>同一句话，两个普通话音色。请重点听语气是否自然、停顿和末字是否完整，以及声音是否适合对应人物。</p>
+  <div class="script" id="script"></div>
+  <section class="grid" aria-label="男女角色配音">
+    <article class="card">
+      <img class="portrait" src="avatar-a.png" alt="女角色，短发、蓝色上衣">
+      <h2>女角色</h2><div class="meta" id="female-meta"></div>
+      <button type="button" id="female-play">播放女声</button>
+      <audio id="female" controls preload="metadata" aria-label="女角色中文配音"></audio>
+      <div class="state" id="female-state" aria-live="polite">待试听</div>
+    </article>
+    <article class="card">
+      <img class="portrait" src="avatar-b.png" alt="男角色，短发、绿色上衣">
+      <h2>男角色</h2><div class="meta" id="male-meta"></div>
+      <button type="button" id="male-play">播放男声</button>
+      <audio id="male" controls preload="metadata" aria-label="男角色中文配音"></audio>
+      <div class="state" id="male-state" aria-live="polite">待试听</div>
+    </article>
+  </section>
+  <div class="footer">
+    <p><strong>听完直接在会话里反馈即可。</strong>例如：“女声可以，男声偏老”，或“两条都可以，开始四段对照”。</p>
+    <p class="note">播放完成只表示音频播完，不代表你已确认。本页不会启动视频生成。两条均为新合成候选，未变速、未裁剪或归一化；自然度与角色适配等待你的判断。</p>
+    <p class="note" id="model"></p>
+  </div>
+</main>
+<script>
+const data = __DATA_JSON__;
+document.querySelector('#script').textContent = data.text;
+document.querySelector('#model').textContent = '模型：' + data.model_id + ' · seed ' + data.seed;
+const tracks = ['female', 'male'].map(id => document.getElementById(id));
+for (const clip of data.clips) {
+  const audio = document.getElementById(clip.persona_voice);
+  const state = document.getElementById(clip.persona_voice + '-state');
+  audio.src = clip.filename;
+  document.getElementById(clip.persona_voice + '-meta').textContent =
+    clip.speaker + ' · 普通话\n' + clip.duration_s.toFixed(2) + ' 秒 · ' + (clip.sample_rate_hz / 1000) + ' kHz';
+  document.getElementById(clip.persona_voice + '-play').addEventListener('click', async () => {
+    for (const other of tracks) if (other !== audio) other.pause();
+    audio.currentTime = 0;
+    try { await audio.play(); } catch (error) { state.textContent = '无法播放：' + error.message; }
+  });
+  audio.addEventListener('play', () => {
+    for (const other of tracks) if (other !== audio) other.pause();
+    state.textContent = '正在播放';
+  });
+  audio.addEventListener('pause', () => { if (!audio.ended) state.textContent = '已暂停'; });
+  audio.addEventListener('ended', () => { state.textContent = '播放完毕 · 等待你的确认'; });
+  audio.addEventListener('error', () => { state.textContent = '音频加载失败，请在会话中告知'; });
+}
+</script>
+</html>

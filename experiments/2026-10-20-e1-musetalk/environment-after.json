@@ -1,0 +1,21 @@
+{
+  "verified_at_utc": "2026-10-20T20:02:14.611196+00:00",
+  "hostname": "sn4622126358",
+  "gpu": {
+    "exit_code": 0,
+    "stdout": "0, GPU-eed83181-48a7-e9f3-cb49-e851dfaf647c, NVIDIA H100 NVL, 95830 MiB, 14 MiB, 95306 MiB, 580.82.07\n1, GPU-d8788c54-b9da-d038-e5bc-aa3b718ef62c, NVIDIA H100 NVL, 95830 MiB, 14 MiB, 95306 MiB, 580.82.07",
+    "stderr": ""
+  },
+  "compute_processes": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "listening_tcp": {
+    "exit_code": 0,
+    "stdout": "State  Recv-Q Send-Q                         Local Address:Port  Peer Address:PortProcess\nLISTEN 0      128                                127.0.0.1:42201      0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:42231      0.0.0.0:*          \nLISTEN 0      4096                100.70.230.73%tailscale0:34110      0.0.0.0:*          \nLISTEN 0      4096                               127.0.0.1:46005      0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:32819      0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:33193      0.0.0.0:*          \nLISTEN 0      128                                127.0.0.1:37475      0.0.0.0:*          \nLISTEN 0      4096                           127.0.0.53%lo:53         0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:55668      0.0.0.0:*          \nLISTEN 0      128                                127.0.0.1:8768       0.0.0.0:*          \nLISTEN 0      128                                127.0.0.1:631        0.0.0.0:*          \nLISTEN 0      128                                  0.0.0.0:22         0.0.0.0:*          \nLISTEN 0      6                                  127.0.0.1:5555       0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:16494      0.0.0.0:*          \nLISTEN 0      511                                127.0.0.1:19558      0.0.0.0:*          \nLISTEN 0      4096   [fd7a:115c:a1e0::b34:e649]%tailscale0:47360         [::]:*          \nLISTEN 0      128                                    [::1]:631           [::]:*          \nLISTEN 0      128                                     [::]:22            [::]:*",
+    "stderr": ""
+  },
+  "disk_free_gib": 702.81,
+  "work_root": "/data/speech-avatar-exx-20261020"
+}
