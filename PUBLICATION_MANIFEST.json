@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "scope": "public source and reviewed metadata; no weights/credentials/raw media",
   "files": [
     {
@@ -14,13 +14,13 @@
     },
     {
       "path": "EVOLUTION.md",
-      "sha256": "f1ab849fcf326cc780fd3b635fc593b8a9612ca850f0aac1fad756070913044d",
-      "bytes": 21358
+      "sha256": "0a79b5f5bde2cef6d789f2d71f2c8499ee7c8493c78cddcb0fa7ae46f67df2b5",
+      "bytes": 21783
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "481ca1d32f7b7e444a13ce9ea6b32f380d3dfa49a472a3d9618c73ae444db074",
-      "bytes": 19697
+      "sha256": "f8cb8d3ff26738ae7fd7050de65854409c2e5d4938f2caec692b5ddedd261cc1",
+      "bytes": 20187
     },
     {
       "path": "PUBLICATION.md",

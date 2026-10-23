@@ -115,3 +115,8 @@ Final E1c verification2026-10-22:15tests pass;36 E0inputs/2avatars structurally 
 ## 2026-10-22 Public source backup
 
 User authorized public source backup and README/index organization. Separate reviewed checkout: https://github.com/HenryVarro666/speech-avatar . Code/metadata only; private media, model/vendor trees and original frozen evidence remain local. Original experiment worktree is preserved, while the publication checkout has its own commit history.15CPUtests passed; no GPU/service operations. Publication receipts are tracked in voice_ai/PUBLIC_BACKUP.md.
+
+
+## 2026-10-22 Publication-state wording follow-up
+
+Corrected the current status introduction to acknowledge the separate public source snapshot, while keeping historical no-push statements scoped to their experiment rounds. The original-workspace repeatable backup helper lives in the voice-ai-workspace documentation hub. This follow-up changes documentation only; no generation, media, GPU/service operation or Git push.

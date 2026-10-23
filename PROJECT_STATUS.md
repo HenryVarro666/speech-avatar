@@ -98,3 +98,8 @@ SeparateH100 read-only preflight2026-10-21 America/Chicago:GPU1 idle14MiB/95306M
 Environment snapshot2026-10-22 04:56:44UTC (2026-10-21 23:56CDT):own2H100workersgone;GPU1=14MiB/no compute PID. GPU0original2154793 retained and foreign3580266arrived, untouched; no claim entiremachine loadunchanged. No apex/sharedservice/environment change, agents, staging, commit, remote or push. Next:human comparison, then separately freeze a stronger framing/motion-control hypothesis; no automatic grid, Qtail or otherbackend.
 
 Final E1c verification2026-10-22:15tests pass;36 E0inputs/2avatars structurally valid;10parentlocked files and12oldE1videos unchanged; fresh6YUV/PCM preservation and8decode/audio checks pass;10served/browser files verified.33selectedMarkdown/345local links,0missing. Humanratingspending; noHEAD/staging/remotes. Verification: speech-avatar/experiments/2026-10-21-e1c-controlled-expression/final_checks.json.
+
+
+## 2026-10-22 Public source backup
+
+User authorized public source backup and README/index organization. Separate reviewed checkout: https://github.com/HenryVarro666/speech-avatar . Code/metadata only; private media, model/vendor trees and original frozen evidence remain local. Original experiment worktree is preserved, while the publication checkout has its own commit history.15CPUtests passed; no GPU/service operations. Publication receipts are tracked in voice_ai/PUBLIC_BACKUP.md.
