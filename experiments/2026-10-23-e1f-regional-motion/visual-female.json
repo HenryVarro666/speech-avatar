@@ -1,0 +1,33 @@
+{
+  "role": "female",
+  "inspector": "assistant visual review; not human AV acceptance",
+  "eye_mouth_paired_frames_inspected": 124,
+  "lower_edge_paired_frames_inspected": 124,
+  "sampled_full_frames": 14,
+  "baseline_hand_intervals_approx_s": [
+    [
+      0.92,
+      1.28
+    ],
+    [
+      2.48,
+      2.72
+    ]
+  ],
+  "candidate_visible_hand_frames": 0,
+  "mouth": "Large opening and stark bright exposed tooth areas reduced; tooth boundaries remain soft/grey and sometimes fused. Reduced opening is not a teeth repair.",
+  "eyes": "Three closure windows have native-size eyelids meeting/iris covered at frames18,56,94. Same-extractor both-eye<=15percent rule holds at10frames across all3windows. Does not certify subjective blink naturalness.",
+  "ending": "Last frame still slightly open mouth; no synthetic neutral tail.",
+  "mask_pose": "No obvious full-face/neck tear in sampled full frames; head/shoulder motion smaller than driver.",
+  "sync_diagnostic_ms": -80,
+  "human_av_accepted": null,
+  "native_full_frames_inspected": [
+    18,
+    26,
+    30,
+    56,
+    81,
+    94,
+    123
+  ]
+}

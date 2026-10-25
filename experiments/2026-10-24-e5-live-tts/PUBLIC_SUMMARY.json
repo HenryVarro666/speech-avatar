@@ -1,0 +1,37 @@
+{
+  "browser_requests": 7,
+  "complete": 5,
+  "distinct_completed_texts": 4,
+  "controlled_barge_in_cancelled": 1,
+  "injected_disconnect_incomplete": 1,
+  "explicit_retry_recovered": true,
+  "new_phrase_after_disconnect": true,
+  "stale_ui_discarded": true,
+  "new_model_audio_not_fixture_replay": true,
+  "browser_first_pcm_s": [
+    3.1328000000119207,
+    5.363199999988079
+  ],
+  "browser_planned_audio_start_s": [
+    3.183300000011918,
+    5.414800000011921
+  ],
+  "worker_rtf": [
+    3.134921589218898,
+    3.5913985991682553
+  ],
+  "worker_peak_rss_gib": [
+    5.881458282470703,
+    6.587432861328125
+  ],
+  "largest_scheduled_gap_s": 2.839999999999997,
+  "source_pcm_hash_and_samples_exact": 5,
+  "codec_rows_checked_against_official_return": 5,
+  "first_audio_before_lm_complete": 5,
+  "lifecycle_substage_pass": true,
+  "realtime_performance_gate_pass": false,
+  "human_microphone_asr_translation_tested": false,
+  "human_av_accepted": null,
+  "production_deployed": false,
+  "scope": "CPU local TTS substage E5a; not live microphone/full interpreter/hardware latency acceptance"
+}

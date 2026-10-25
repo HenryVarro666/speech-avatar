@@ -1,0 +1,119 @@
+{
+  "experiment": "E1f-R regional motion",
+  "method": "Pinned LivePortrait regional driving template;pose/non-eye0.65,eye1.0,global1.0",
+  "new_successful_outputs": 2,
+  "device": "CPU only",
+  "roles": {
+    "female": {
+      "frames": 124,
+      "duration_s": 4.96,
+      "worker_wall_s": 856.1638520257547,
+      "launch_to_exit_s": 858.6413540551439,
+      "sampled_peak_rss_kib": 2907564,
+      "video_sha256": "4d5560ae1b163b0aec8679a5264b997e16521116b88c93859d1793e1455a1f08",
+      "pcm_exact": true,
+      "syncnet_offset_ms": -80,
+      "motion": {
+        "frames": 124,
+        "head_degrees_p95_minus_p5": {
+          "pitch": 6.079780578613281,
+          "yaw": 2.882185363769531,
+          "roll": 1.1775089263916017
+        },
+        "eyes_open_p90": 0.4147715210914612,
+        "eyes_min_relative_to_p90": 0.017919570725946472,
+        "blink_like_intervals_s": [
+          [
+            0.72,
+            0.88
+          ],
+          [
+            2.16,
+            2.36
+          ],
+          [
+            3.72,
+            3.88
+          ]
+        ],
+        "blink_like_count": 3,
+        "lip_open_p95": 0.24869290143251416,
+        "both_eyes_closed_frames": [
+          18,
+          19,
+          20,
+          54,
+          55,
+          56,
+          57,
+          93,
+          94,
+          95
+        ],
+        "each_eye_min_relative": [
+          0.014387703118686295,
+          0.02139815975435565
+        ]
+      }
+    },
+    "male": {
+      "frames": 134,
+      "duration_s": 5.36,
+      "worker_wall_s": 371.4372073356062,
+      "launch_to_exit_s": 372.43786471150815,
+      "sampled_peak_rss_kib": 2943736,
+      "video_sha256": "bd883ee1ab7dbc995054bba91f1b78cc19a254d1acf3e14b3bb13096c0e41373",
+      "pcm_exact": true,
+      "syncnet_offset_ms": -80,
+      "motion": {
+        "frames": 134,
+        "head_degrees_p95_minus_p5": {
+          "pitch": 3.7550529479980463,
+          "yaw": 2.3193298339843746,
+          "roll": 1.1619632720947264
+        },
+        "eyes_open_p90": 0.37377810627222063,
+        "eyes_min_relative_to_p90": 0.02128822696635797,
+        "blink_like_intervals_s": [
+          [
+            0.68,
+            1.0
+          ],
+          [
+            2.32,
+            2.4
+          ],
+          [
+            2.64,
+            2.92
+          ],
+          [
+            4.24,
+            4.52
+          ]
+        ],
+        "blink_like_count": 4,
+        "lip_open_p95": 0.27642325311899185,
+        "both_eyes_closed_frames": [
+          18,
+          19,
+          66,
+          67,
+          68,
+          107,
+          108,
+          109,
+          110
+        ],
+        "each_eye_min_relative": [
+          0.01054408996066267,
+          0.021838363095370114
+        ]
+      }
+    }
+  },
+  "human_av_accepted": null,
+  "quality_decision": "NEEDS WORK",
+  "apex_accessed": false,
+  "source_commit_or_push": false
+}

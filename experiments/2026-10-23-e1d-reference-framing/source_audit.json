@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-10-23T05:07:25.446453+00:00",
+  "pinned_revision": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/README.md",
+      "local_file": "official-main-README.md",
+      "sha256": "195f2c382d1e55ff734f26ce22946280fa892aba5d4c38ca616256f442c449d4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/run_demo_avatar_single_audio_to_video.py",
+      "local_file": "official-main-demo.py",
+      "sha256": "3d1125a8f9d21d2412cae0d9cc434bd8b4a497fd757d644b1ecca1fea1ae8207"
+    },
+    {
+      "runtime_source": "separate H100 pinned pipeline",
+      "local_file": "pipeline_longcat_video_avatar.py",
+      "sha256": "49fb0ff5399512a3e5a4dfc8c811040e8b8a357d733f9a3a429302a12c483f19"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/6b3f4b8582a8bc3f20f795735f5383716c4ba794/longcat_video/pipeline_longcat_video_avatar.py",
+      "sha256": "49fb0ff5399512a3e5a4dfc8c811040e8b8a357d733f9a3a429302a12c483f19",
+      "matches_runtime": true
+    }
+  ],
+  "decision": "exact pre-generation reference ROI conditioning; same E1c prompt; no pose/skeleton interface established",
+  "limitations": "ref index/mask affect continuation only; current official v1.5 distill forces8steps/CFG1/1; no unsupported non-distill run",
+  "pinned_runtime_pipeline_matches_official_bytes": true
+}

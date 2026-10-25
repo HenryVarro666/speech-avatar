@@ -1,0 +1,100 @@
+{
+  "experiment_id": "2026-10-23-e1f-regional-motion",
+  "created_utc": "2026-10-24T04:03:15.370525+00:00",
+  "code_commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+  "weights_revision": "82a4fa6735ca58432b6ce39301b4b9ee066dea47",
+  "remote_root": "/mnt/raid/voice_ai/speech-avatar/e1f-regional-motion-20261023",
+  "reused_cpu_env": "/mnt/raid/voice_ai/speech-avatar/e1e-motion-control-20261023/venv",
+  "method": "LivePortrait explicit regional gain on same-person E1c driving template; portrait pasteback",
+  "controls": {
+    "pose_gain": 0.65,
+    "expression_gain": 0.65,
+    "eye_gain": 1.0,
+    "eye_indices": [
+      11,
+      13,
+      15,
+      16,
+      18
+    ],
+    "global_driving_multiplier": 1.0,
+    "relative_motion": true,
+    "driving_option": "expression-friendly",
+    "stitching": true,
+    "pasteback": true,
+    "eye_lip_retargeting": false
+  },
+  "roles": [
+    {
+      "role": "female",
+      "avatar_id": "avatar-a",
+      "files": {
+        "portrait": {
+          "path": "data/private/avatars/avatar-a/source.png",
+          "sha256": "81cf8bca30619cb63c1eeaec94cab4994c2fbf5f532efc5f4284adff04ec17e0",
+          "bytes": 2199044
+        },
+        "audio": {
+          "path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+          "sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+          "bytes": 238124
+        },
+        "driver": {
+          "path": "outputs/e1c/qmotion/e1c-female-controlled-motion.mp4",
+          "sha256": "46522986b4ed570ddaa0948c64c814579b043efeeb09da6056ee5d15638736bc",
+          "bytes": 393481
+        }
+      },
+      "expected_frames": 124,
+      "audio_samples": 119040,
+      "duration_s": 4.96,
+      "human_av_accepted": null
+    },
+    {
+      "role": "male",
+      "avatar_id": "avatar-b",
+      "files": {
+        "portrait": {
+          "path": "data/private/avatars/avatar-b/source.png",
+          "sha256": "edc6681ffa2686e430d6d067f2dbc2e45b8b662b3389c50111ffeebb48063b7a",
+          "bytes": 2260156
+        },
+        "audio": {
+          "path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+          "sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+          "bytes": 257324
+        },
+        "driver": {
+          "path": "outputs/e1c/qmotion/e1c-male-controlled-motion.mp4",
+          "sha256": "584fcac7404549ef6baa54877109abc15df63d76e47c3fd21e3a73b89f97a151",
+          "bytes": 426987
+        }
+      },
+      "expected_frames": 134,
+      "audio_samples": 128640,
+      "duration_s": 5.36,
+      "human_av_accepted": null
+    }
+  ],
+  "max_success_per_role": 1,
+  "device": "CPU only; CUDA hidden and CPU-only packages",
+  "limits": {
+    "threads": 4,
+    "nice": 19,
+    "affinity": "88-91",
+    "rss_gib": 12,
+    "timeout_s_per_role": 5400
+  },
+  "baseline": "Existing E1c same-portrait same-audio LongCat driver; female E1e global0.65 is secondary context, no male same-backend global control",
+  "confounders": [
+    "Backend and face resolution differ from LongCat; no causal claim for gains alone",
+    "Motion template eye indices from official region mapping are learned controls, not anatomy",
+    "Driver is existing generated video, not human motion; oral texture not directly controlled",
+    "No sync tuning, frame trimming, face restoration, aesthetic retry or parameter grid"
+  ],
+  "adapter_code_sha256": {
+    "experiments/2026-10-23-e1f-regional-motion/worker_cpu.py": "f29cfedbc0fe05cb7430d1c1f93b9468805030f833c314fcb0686150f9b55f25",
+    "experiments/2026-10-23-e1f-regional-motion/run_cpu.py": "e5806f5479061c4bc1797f08805632b0b9c286b0cad862625f0bec1e8a6c0cf0",
+    "workers/liveportrait/motion_template.py": "deee7231b7778e990c0efb7ee919cf42ffd7af69626182f7104d32a00ba3c539"
+  }
+}

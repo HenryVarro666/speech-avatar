@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "experiment_id": "2026-10-23-e1d-reference-framing",
+  "created_at_utc": "2026-10-23T05:06:26.841401+00:00",
+  "e0_manifest_sha256": "6c8a132f01101f447819f6cc708c2fe27d8d1fc88244f36a631a8cdb73911920",
+  "audio_review_sha256": "d450c23c04650a61cca35607853134b4f67a507ae7176a1e3b56ce5bffb77764",
+  "roles": [
+    {
+      "avatar_id": "avatar-a",
+      "persona_voice": "female",
+      "audio_id": "e1b-zh-female-01",
+      "image_path": "data/private/e1d/avatars/avatar-a/source-crop.png",
+      "image_sha256": "e23528dfe5d6ad21c7ed33925f3a8ad39f77675f5d2af37bf98d650d84e19ad0",
+      "musetalk_reference_path": "data/private/avatars/avatar-a/reference.mp4",
+      "musetalk_reference_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "audio": {
+        "planned_path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+        "text_draft": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "language": "zh",
+        "provider": "Qwen3-TTS CustomVoice",
+        "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+        "voice_id": "Serena",
+        "sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+        "sample_rate_hz": 24000,
+        "duration_s": 4.96,
+        "transform": "float32 model waveform quantized to PCM16 only; no trimming, normalization, resampling or speed change",
+        "review": {
+          "status": "accepted_by_user",
+          "reviewer": "user",
+          "reviewed_audio_sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+          "content_correct": null,
+          "natural": null,
+          "persona_match": null,
+          "accepted": true,
+          "feedback": "两条配音都可以"
+        },
+        "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "instruct": "用自然、亲切、从容的普通话说话，像面对面确认一次预约。语速适中，停顿自然，不要播音腔。",
+        "seed": 42
+      }
+    },
+    {
+      "avatar_id": "avatar-b",
+      "persona_voice": "male",
+      "audio_id": "e1b-zh-male-01",
+      "image_path": "data/private/e1d/avatars/avatar-b/source-crop.png",
+      "image_sha256": "7be9574561e5d806fd5960dd059494bd90d5e45c09c1323f3afe21e8f419343c",
+      "musetalk_reference_path": "data/private/avatars/avatar-b/reference.mp4",
+      "musetalk_reference_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "audio": {
+        "planned_path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+        "text_draft": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "language": "zh",
+        "provider": "Qwen3-TTS CustomVoice",
+        "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+        "voice_id": "Uncle_Fu",
+        "sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+        "sample_rate_hz": 24000,
+        "duration_s": 5.36,
+        "transform": "float32 model waveform quantized to PCM16 only; no trimming, normalization, resampling or speed change",
+        "review": {
+          "status": "accepted_by_user",
+          "reviewer": "user",
+          "reviewed_audio_sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+          "content_correct": null,
+          "natural": null,
+          "persona_match": null,
+          "accepted": true,
+          "feedback": "两条配音都可以"
+        },
+        "model_id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+        "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+        "instruct": "用自然、亲切、从容的普通话说话，像面对面确认一次预约。语速适中，停顿自然，不要播音腔。",
+        "seed": 42
+      }
+    }
+  ],
+  "backends": {
+    "longcat-avatar-v15-int8-distill": {
+      "upstream_revision": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+      "seed": 42,
+      "stage_1": "ai2v",
+      "model_type": "avatar-v1.5",
+      "resolution": "480p",
+      "use_distill": true,
+      "use_int8": true,
+      "effective_steps": 8,
+      "effective_text_guidance_scale": 1.0,
+      "effective_audio_guidance_scale": 1.0,
+      "context_parallel_size": 1,
+      "nproc_per_node": 1,
+      "fps": 25,
+      "frames_per_segment": 93,
+      "conditioning_frames": 13,
+      "planned_segments_for_target_duration": 2,
+      "segments_must_be_recomputed_from_frozen_duration": true,
+      "prompt": "The person calmly confirms an appointment to the camera. Maintain a mild neutral-friendly expression, relaxed eyebrows and jaw, small but clear speech articulation, and subtle natural blinking. Keep both hands below the lower frame edge throughout. Keep the shoulders relaxed and head movement gentle. Preserve the person's identity, clothing, and background. Keep the camera still."
+    }
+  },
+  "trials": [
+    {
+      "trial_id": "e1d-female-reference-framing",
+      "avatar_id": "avatar-a",
+      "audio_id": "e1b-zh-female-01",
+      "backend": "longcat-avatar-v15-int8-distill",
+      "status": "queued",
+      "planned_output_path": "outputs/e1d/e1d-female-reference-framing.mp4",
+      "seed": 42,
+      "audio_path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+      "audio_sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+      "audio_duration_s": 4.96,
+      "audio_sample_rate_hz": 24000,
+      "image_path": "data/private/e1d/avatars/avatar-a/source-crop.png",
+      "image_sha256": "e23528dfe5d6ad21c7ed33925f3a8ad39f77675f5d2af37bf98d650d84e19ad0",
+      "reference_path": "data/private/avatars/avatar-a/reference.mp4",
+      "reference_sha256": "7bafdb35e6f13f80f0c14fa0b8099659d18d5a7d0301ec916401a9cc4c5034a7",
+      "num_segments": 2,
+      "generated_coverage_s": 6.92,
+      "parent_trial_id": "e1c-female-controlled-motion"
+    },
+    {
+      "trial_id": "e1d-male-reference-framing",
+      "avatar_id": "avatar-b",
+      "audio_id": "e1b-zh-male-01",
+      "backend": "longcat-avatar-v15-int8-distill",
+      "status": "queued",
+      "planned_output_path": "outputs/e1d/e1d-male-reference-framing.mp4",
+      "seed": 42,
+      "audio_path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+      "audio_sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+      "audio_duration_s": 5.36,
+      "audio_sample_rate_hz": 24000,
+      "image_path": "data/private/e1d/avatars/avatar-b/source-crop.png",
+      "image_sha256": "7be9574561e5d806fd5960dd059494bd90d5e45c09c1323f3afe21e8f419343c",
+      "reference_path": "data/private/avatars/avatar-b/reference.mp4",
+      "reference_sha256": "54127894aaca0b5fc0ac6faa74b1de50a34e456ba6f9d1c830a90b7ea7f17340",
+      "num_segments": 2,
+      "generated_coverage_s": 6.92,
+      "parent_trial_id": "e1c-male-controlled-motion"
+    }
+  ],
+  "quality_protocol": "Full decode; source audio hash/time mapping and last-word coverage; per-frame face tracking; model-based sync only auxiliary; user AV ratings remain pending.",
+  "parent_manifest_sha256": "c70813196cb525e04128050dfe49534c125b55f3016299fdcdea7495805db405",
+  "parent_review_sha256": "a8107337893116437166c3b022044182ecdcabed38449cb18716c19146764aa6",
+  "experiment_scope": "Qsync6 local variants + Qmotion2 original-audio native LongCat videos; Qtail conditional and not frozen here",
+  "changed_generation_configuration_fields": [
+    "backends.longcat-avatar-v15-int8-distill.prompt"
+  ],
+  "reference_framing": {
+    "box_xyxy": [
+      125,
+      75,
+      1129,
+      1079
+    ],
+    "baseline_experiment": "2026-10-21-e1c-controlled-expression",
+    "only_variable": "pre-generation reference image framing"
+  }
+}

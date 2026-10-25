@@ -1,0 +1,9 @@
+# E1d preregistered diagnostics
+
+2026-10-23. No new results observed before this protocol. Same accepted audio, seed and model as E1c; reference framing only changes. New2outputs against unchangedE1c parents. Keep original aspect/nativeframes, no output crop, trim, speed/audio modification or applied sync compensation. Fullffmpeg decode; measure actualframes/duration/resolution25fps.
+
+CPU4threads, pinned S3FD/SyncNet and existing mouth crop geometry. Detect everyframe/conf0.9/scale0.25, continuityIoU and13frame median; retain raw/smoothedboxes/detectioncounts. Audio16k mono diagnostic only: originalspeech correlation>=.95, bestlag±32ms search and |lag|<=20ms, originalfinal300ms>=.95, decoded output-duration delta[-20,+100]ms. ExportedAAC is lossy; originals remain unchanged. WholeSyncNet±15frames, strict windows0.60–2.00/2.00–3.40/3.40–sourceduration-.80,40msresolution; retaincurves, no retuningafterlooking.
+
+Inspect every mouth and lower-third frame,fullframes every200ms,3.40–4.04s allframes,last500ms,native tooth/hand examples. Compare parent in same full-size display; separately matched-mouth crops are diagnostic only. Framing metrics: medianfaceboxarea/imagearea, medianfaceheight/imageheight; headcenterspan divided by medianfaceheight. These measures do not certify identity, expression or anatomy. Hand occurrence is assistant visual observation; no unvalidated automatic handdetector score or invented finger count. Record cropped hair/headroom and shoulder tradeoff.
+
+Require both roles show framing/control benefit without evident new quality loss before recommending. No additional jobs triggered; neutral-tail remains0thisround. Human scores and sync preference stay null until userfeedback. Source/protocol/manifest hashes fixed before GPU, results separatefrom frozen job status.

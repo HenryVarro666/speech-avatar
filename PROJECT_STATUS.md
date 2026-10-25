@@ -1,5 +1,13 @@
 # speech-avatar current state
 
+## 2026-10-24 E5a live TTS substage
+
+[Results](experiments/2026-10-24-e5-live-tts/RESULTS.md):7actual new-TTS browser requests,5complete/4newChinese texts,1controlled playing-time cancellation,1injected disconnect markedincomplete. Explicit retry/newphrase recovery and stale rejection pass; sourcePCM/end/sample proofs5/5. FirstPCM3.133–5.363s, planned audio start3.183–5.415s from text request; CPUworkerRTF3.135–3.591/maxgap2.840s fails realtimeperformance.36tests pass; fixed model/runtime read only, no shared-service deployment. Human microphone/ASR/translation/AV remain pending. [Guide](docs/E5_LIVE_TTS_GUIDE.md); reviewed source/metadata publication authorized, rawmedia/models/vendor/credentials excluded.
+
+## 2026-10-24 realtime browser pilot
+
+[Results](experiments/2026-10-24-e2-e5-realtime/RESULTS.md):12localfour-input×three-mode complete PCM playback comparisons; exact sample accounting, optional actual DSH playback observer and10fault/recovery checks. Planned audio start51.6–81.9ms/request; first HeadAudio active pose78–206ms/audio-start; rollingrAFintervalP95 8.8–9.3ms. These are browser engineering observations, not physical synchronization or live interpreter latency.27avatar tests and13plugin tests/typecheck/build pass. Initial rest-asset/UI callback defects preserved and corrected. Local GPU draws an approximate five-pose portrait; English-trained analysis/Chinese naturalness and neural fidelity remain unaccepted. E5live upstream and CUDA benchmark pending; no service deployment or push. [Guide](docs/REALTIME_PILOT_GUIDE.md).
+
 Date: 2026-10-22, America/Chicago.
 
 Latest: E1c bounded continuation complete:6 local sync derivatives +2 controlled-prompt LongCat videos. Technical checks pass, but hand entry and emphasized articulation persist; Qmotion NEEDS WORK, Qtail skipped by gate (0renders). [Results](experiments/2026-10-21-e1c-controlled-expression/RESULTS.md), [local preview](http://127.0.0.1:55219/index.html). 10/10 browser playback,15tests pass; human sync/video acceptance pending. No apex or git mutation.
@@ -103,3 +111,22 @@ Final E1c verification2026-10-22:15tests pass;36 E0inputs/2avatars structurally 
 ## 2026-10-22 Public source backup
 
 User authorized public source backup and README/index organization. Separate reviewed checkout: https://github.com/HenryVarro666/speech-avatar . Code/metadata only; private media, model/vendor trees and original frozen evidence remain local. Original experiment worktree is preserved, while the publication checkout has its own commit history.15CPUtests passed; no GPU/service operations. Publication receipts are tracked in voice_ai/PUBLIC_BACKUP.md.
+
+
+## 2026-10-23 E1d reference-framing result
+
+Two fixed-ROI input references were compared with E1c parents using unchanged accepted audio, prompt, seed and model. Face-box area26.62%→41.22% /27.07%→42.49%, but hands and emphasized articulation persist; tighter headroom is a tradeoff. Not adopted as a hand/expression fix. New full processes271.001/264.656s include loads,640×608/25fps;2decode/audio checks,258single-face frames,4browser playbacks and18CPUtests pass. Conditioned audio samples match the parents. Human AV ratings remain pending; next verify explicit motion/driving-video or rig interfaces before more inference. No apex, production deployment or public push.
+
+
+## 2026-10-23 E1d review recovery
+
+Completed videos were preserved and the local preview gained draft feedback export. Framing preference and explicit audiovisual acceptance are independent; defaults stay unreviewed, the export binds frozen clip hashes, and human records are never auto-filled.22CPUtests and4fresh browser playbacks pass; actual downloads, reveal, single audio and clean delivery were checked using isolated QA fixtures. No new render, model/service change or apex access; E1d remains NEEDS WORK and human acceptance pending.
+
+
+## 2026-10-23 E1f-R男女分区动作对照完成
+
+先核对显式控制接口，选LivePortrait原生模板分区：头姿/非眼表达0.65、眼区1.0、global1.0，复用原头像/已接受配音/E1c驱动。男女各attempt1成功，原生worker856.164/371.437s；共享CPU亲和性不同，见资源修订，不作速度排名。2片1254²/25fps、258单脸帧/原PCM母版通过；旧片/评分保留。深闭眼与轻头动/嘴幅可共存，下沿未见手部；牙齿仍软、末帧略张口和模型同步偏移未修，NEEDS WORK/人工接受null。[结果](experiments/2026-10-23-e1f-regional-motion/RESULTS.md)。
+
+[本地四段预览](http://127.0.0.1:54462/index.html)；本轮独立目录2026-10-23-e1f-regional-motion，和另项E1f-independent-blink互不覆盖。[每步进展总账](experiments/PROGRESS_LEDGER.md)汇总问题→改动→证据→决定；早期格式不同，主要步骤/失败有记录，不声称完整逐命令历史。无apex、共享环境/服务改动、GPU推理、子代理、暂存/源码提交或推送。公开备份仅preview/diff。
+
+E1f-R verification2026-10-23:26CPU tests,9script compiles,4browser endings/served hashes,258paired eye/mouth/lower-edge frames,29full/15native frames and4known nonzero sync controls pass. Source PCM exact,197locked parent files unchanged;human AVpending,NEEDS WORK. Noapex/shared-service restart/GPU inference/source commit/push.

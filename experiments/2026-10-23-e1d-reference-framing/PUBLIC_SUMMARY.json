@@ -1,0 +1,118 @@
+{
+  "experiment_id": "2026-10-23-e1d-reference-framing",
+  "date": "2026-10-23 America/Chicago",
+  "manifest_sha256": "002bbb0686ab4c9f2c1dba55ef2a78269a939d4f5f0da5cfefbd05bc20d1f8a4",
+  "only_variable": "pre-generation reference framing; source RGB ROI pixels preserved",
+  "input_roi_xyxy": [
+    125,
+    75,
+    1129,
+    1079
+  ],
+  "source_size": [
+    1254,
+    1254
+  ],
+  "reference_size": [
+    1004,
+    1004
+  ],
+  "accepted_source_audio_unchanged": true,
+  "conditioned_audio_payloads_identical_to_parent": 4,
+  "new_successful_renders": 2,
+  "new_failed_renders": 0,
+  "additional_tail_renders": 0,
+  "native_video_postcropping": false,
+  "full_decode_and_audio_passed": 2,
+  "tracked_single_face_frames": 258,
+  "mouth_and_lower_edge_frames_reviewed": 258,
+  "full_frame_samples_reviewed": 54,
+  "join_samples_reviewed": 34,
+  "ending_samples_reviewed": 26,
+  "browser_complete": 4,
+  "cpu_tests_passed": 18,
+  "decision": "NEEDS_WORK; do not adopt tight reference framing as hand/expression fix",
+  "human_av_acceptance": null,
+  "roles": [
+    {
+      "trial_id": "e1d-female-reference-framing",
+      "parent_trial_id": "e1c-female-controlled-motion",
+      "output_sha256": "812ffad6211ae1e549b886b46e2aa65b8d391023aaeb87d6af639031132ebebf",
+      "source_audio_duration_s": 4.96,
+      "frames": 124,
+      "size": [
+        640,
+        608
+      ],
+      "fps": 25,
+      "process_wall_s": 271.00137337017804,
+      "worker_wall_s": 264.49110675789416,
+      "first_completed_segment_file_s": 192.33199998177588,
+      "audio_correlation": 0.9986777652409005,
+      "tail300ms_correlation": 0.9956786129532748,
+      "whole_syncnet_offset_ms": -80,
+      "window_syncnet_offsets_ms": [
+        -40,
+        -80,
+        -80
+      ],
+      "parent_whole_syncnet_offset_ms": -80,
+      "framing": {
+        "median_face_area_fraction": 0.41224676352502876,
+        "median_face_height_fraction": 0.7868698082472149,
+        "head_center_span_in_face_heights_xy": [
+          0.016580208422330166,
+          0.060955599850590965
+        ]
+      },
+      "parent_framing": {
+        "median_face_area_fraction": 0.2662133603831379,
+        "median_face_height_fraction": 0.6182809942647031,
+        "head_center_span_in_face_heights_xy": [
+          0.01760380288075089,
+          0.06564413612498342
+        ]
+      }
+    },
+    {
+      "trial_id": "e1d-male-reference-framing",
+      "parent_trial_id": "e1c-male-controlled-motion",
+      "output_sha256": "48d66914198faf2c3ec817d4ef8bde89f99103b5c24b049f6e6092a1b0d614be",
+      "source_audio_duration_s": 5.36,
+      "frames": 134,
+      "size": [
+        640,
+        608
+      ],
+      "fps": 25,
+      "process_wall_s": 264.65580527391285,
+      "worker_wall_s": 258.4225035170093,
+      "first_completed_segment_file_s": 185.6270149545744,
+      "audio_correlation": 0.9989461677546428,
+      "tail300ms_correlation": 0.9982022533077979,
+      "whole_syncnet_offset_ms": -80,
+      "window_syncnet_offsets_ms": [
+        -40,
+        -80,
+        -80
+      ],
+      "parent_whole_syncnet_offset_ms": -40,
+      "framing": {
+        "median_face_area_fraction": 0.42489016062933876,
+        "median_face_height_fraction": 0.8054839686343545,
+        "head_center_span_in_face_heights_xy": [
+          0.019883114073296387,
+          0.04120980936291331
+        ]
+      },
+      "parent_framing": {
+        "median_face_area_fraction": 0.2706917138070567,
+        "median_face_height_fraction": 0.6307128228639302,
+        "head_center_span_in_face_heights_xy": [
+          0.026744603967659868,
+          0.06615302125585362
+        ]
+      }
+    }
+  ]
+}

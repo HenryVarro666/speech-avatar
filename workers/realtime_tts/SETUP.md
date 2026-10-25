@@ -1,0 +1,15 @@
+# Fixed-version Qwen3-TTS streaming adapter
+
+E5a reuses the official Qwen3-TTS12Hz1.7BCustomVoice revision `0c0e3051f131929182e2c023b9537f8b1c68adfe`, qwen-tts0.1.1 and torch2.8.0+cu128. Model parameters are explicitly onCPU/bfloat16; the CUDA-enabled wheel is not evidence of GPU inference. Existing E1b environment/weights are read only. See [frozen pins](../../experiments/2026-10-24-e5-live-tts/runtime-pin.json) and [manifest](../../experiments/2026-10-24-e5-live-tts/manifest.json).
+
+[Official API/source](https://github.com/QwenLM/Qwen3-TTS) exposes generate_custom_voice as complete waveform return. Its non_streaming_mode flag concerns text conditioning and does not make that Python return an audio iterator. This adapter reproduces its text/instruction preparation and calls the same underlying generate with a temporary forward hook. It observes each actual16-codebook row, not the first codebook alone; prefillNone/EOS are excluded. At success, captured rows must equal official returned codes before end is sent.
+
+Every12frames are decoded through the official12Hz speech tokenizer using up to25left-context frames, then only that decoder context's samples are removed. Samples-per-frame is read from decoder.total_upsample(1920here). The final incomplete block is flushed after generation. Output is modelfloat quantized toPCM16 with no normalization, speed change, speech trimming or rate conversion. Block-boundary fidelity is a new human review condition; this is not a claim of exact equality to a single monolithic decoder call.
+
+`CodecBlocks` is independently tested for context/offset/tail/cancellation. `Jobs` serializes model calls, cancels superseded work, remembers early cancel, rejects duplicate IDs and limits requests. Runtime hook checks its own cancellation,120s elapsed limit and16GiBsampledRSS ceiling. Model load requires20GiBavailableRAM, fixed source/model hashes, CPU-only parameters and bounded4threads/nice19. This machine uses80–83CPUaffinity; noGPU is acquired and no foreign process is signaled.
+
+POST /stream: id, text(1–120chars), role(female/male). Response NDJSON start(rate24000/channels1/s16le), audio(id/seq/offset/samples/base64PCM/chunkSHA), end(samples/SHA/worker timing/code proof), or error. A token-limit result is an error, never a completed truncated utterance. POST /cancel is idempotent and binds only thatID; GET /job/ID reports own state. Listening is loopback only, no production service replacement.
+
+Raw PCM and generation/cancel receipts stay under the new attempt's jobs/ID. For local preparation, visual assets live in ignored outputs/e5; scripts/prepare_e5_preview.py imports the actual existing ReplySpeaker. No key, model, vendor tree or raw audio is published. The optional missing-SoX import warning is preserved; this codec path does not callSoX. No shared package install was needed.
+
+Actual CPU smoke emitted firstPCM4.022s before LMcomplete17.611s for4.88saudio. Browser evidence and limitations: [results](../../experiments/2026-10-24-e5-live-tts/RESULTS.md). True incremental output is established; realtime performance is not.

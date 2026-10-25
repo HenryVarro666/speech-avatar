@@ -1,0 +1,39 @@
+{
+  "role": "male",
+  "inspector": "assistant visual review;not human AV acceptance",
+  "eye_mouth_paired_frames_inspected": 134,
+  "lower_edge_paired_frames_inspected": 134,
+  "sampled_full_frames": 15,
+  "baseline_hand_intervals_approx_s": [
+    [
+      0.88,
+      1.76
+    ],
+    [
+      2.8,
+      3.52
+    ],
+    [
+      4.48,
+      4.8
+    ]
+  ],
+  "candidate_visible_hand_frames": 0,
+  "mouth": "Opening/brow emphasis reduced; tooth/gum margins still soft, blurred/fused in several exposed-tooth frames, e.g.0.88-1.28s/2.76-3.00s. No tooth anatomy repair established.",
+  "eyes": "Three deep closure windows with9both-eye<=15percent frames. Native18/66/107show iris covered. An extra partial dip2.32-2.40s creates4landmark blink-like events; not4complete blinks and not automatically natural.",
+  "ending": "Last frame133nearly closed, female remains slightly open. No synthetic neutral tail.",
+  "mask_pose": "Sampled and native pitch extremes show no obvious large head/neck seam; does not establish fine identity/anatomy or absence of subtle shimmer.",
+  "native_full_frames_inspected": [
+    0,
+    18,
+    31,
+    40,
+    66,
+    102,
+    107,
+    133
+  ],
+  "sync_diagnostic_ms": -80,
+  "baseline_e1c_diagnostic_ms": -40,
+  "human_av_accepted": null
+}

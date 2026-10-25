@@ -1,0 +1,135 @@
+{
+  "experiment": "E2-E5 realtime browser pilot",
+  "created_utc": "2026-10-25T01:50:41.777997+00:00",
+  "fixtures": [
+    {
+      "id": "accepted-female",
+      "role": "female",
+      "language": "zh",
+      "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+      "path": "data/private/e1b/audio/e1b-zh-female-01.wav",
+      "sha256": "8f87250774a92b19ce30668cc170f69b7adce77400e5db6dddef56b7b935c3a2",
+      "scope": "previously accepted voice; existing sentence"
+    },
+    {
+      "id": "accepted-male",
+      "role": "male",
+      "language": "zh",
+      "text": "您好，已经帮您安排好了。明天下午三点半见，路上注意安全。",
+      "path": "data/private/e1b/audio/e1b-zh-male-01.wav",
+      "sha256": "ebe0bd7de45d298d828b481fc48dc088e80bc4e624bb7b31baecc751c915dcda",
+      "scope": "previously accepted voice; existing sentence"
+    },
+    {
+      "id": "dev-zh-03",
+      "role": "female",
+      "language": "zh",
+      "text": "我想把中午的预约改到周二下午五点。",
+      "path": "data/private/audio/dev/dev-zh-03.wav",
+      "sha256": "1f7c1b1290ccb390cbb109dc6857e6278a58e27fc89e8ece125aa5004a18703d",
+      "scope": "different content from old avatar trials; E0 dev synthetic engineering stimulus, not accepted persona voice"
+    },
+    {
+      "id": "dev-en-05",
+      "role": "female",
+      "language": "en",
+      "text": "No, do not cancel it. Keep the appointment as it is.",
+      "path": "data/private/audio/dev/dev-en-05.wav",
+      "sha256": "5cca77ebf1c4f4801ec1f6417177bf43416f7fc42e54251d500746db4af93769",
+      "scope": "different content from old avatar trials; E0 dev synthetic engineering stimulus, not accepted persona voice"
+    }
+  ],
+  "modes": [
+    "idle",
+    "rms",
+    "headaudio"
+  ],
+  "audio_owner": "actual DSH ReplySpeaker, one AudioContext per player instance; no video audio",
+  "chunk_ms": 50,
+  "wire": "mono PCM16 little endian; preserve original16000/24000rate",
+  "visual": "WebGL2 five-pose mouth atlas derived from original fictional avatar material; fixed portrait, independent procedural eye blink; approximate pose mapping, not equal to accepted offline full-face quality",
+  "head_audio": {
+    "repo": "https://github.com/met4citizen/HeadAudio",
+    "revision": "c6d8af35034068b1c98dcc0fa3ec9602d711e784",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 20012,
+        "sha256": "def167b736841800ad017a43800d5024103bd634028d1cb5b7b2ec0167624ce8"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 1070,
+        "sha256": "d45d4192f4e7502846c6b01d743eddbff20b3752e4c350a88418f59e4587a60f"
+      },
+      {
+        "path": "modules/headaudio.mjs",
+        "bytes": 6874,
+        "sha256": "f5b874faf0f01764d624dbb1434b5de6d1445834dc36051e8c2998a5533523c2"
+      },
+      {
+        "path": "modules/headworklet.mjs",
+        "bytes": 3476,
+        "sha256": "d97c6e1ee0d4c51aa849944e526341cfc654e9da523a92f920ebec431a99bbbc"
+      },
+      {
+        "path": "dist/model-en-mixed.bin",
+        "bytes": 14352,
+        "sha256": "0358f68989b5861f9b7d18871b010fa6cbf88a53bda4954a954d8c548bbcf251"
+      },
+      {
+        "path": "modules/classifier.mjs",
+        "bytes": 5169,
+        "sha256": "6a3e983b4f47e9968da2727f7ab3af2592f8503609a64c3e73e36dd05d0e8ec9"
+      },
+      {
+        "path": "modules/mfcc.mjs",
+        "bytes": 8700,
+        "sha256": "d447ec4951920ce200d5e663f9c6736bb9c074ff99ce8402fb39ec47742c6a6b"
+      },
+      {
+        "path": "modules/parameters.mjs",
+        "bytes": 2221,
+        "sha256": "d8c0c42a26b1c7caddd073cdb80e0809ed9e7c19431488563460a15a19240317"
+      },
+      {
+        "path": "modules/processor.mjs",
+        "bytes": 12009,
+        "sha256": "55be8fb5600754cefb0ce786e3dc922eeae5e58e5f5804e78c23bdb19d6dcf0e"
+      },
+      {
+        "path": "modules/ringbuffer.mjs",
+        "bytes": 3450,
+        "sha256": "185fb74b7ce5bbeffc9eaae6456dab899d2b83b43b30d315daf1567bfdcf2c45"
+      },
+      {
+        "path": "modules/training.mjs",
+        "bytes": 7477,
+        "sha256": "c622baa93f51f0dbdeffc33cc93719457a016d31c5cee0d9d4bd3746cf3fb611"
+      },
+      {
+        "path": "modules/ui-headaudio.mjs",
+        "bytes": 10793,
+        "sha256": "a147efd9debcaae3ae996eef97320b23c56774c6d47bf33578ccd7e0640f7b88"
+      },
+      {
+        "path": "modules/ui-mixer.mjs",
+        "bytes": 14277,
+        "sha256": "b45a938826cf0c69f9988c3256b3e95faf3e7b00b0c1ce15b7839fd852c2d48c"
+      },
+      {
+        "path": "modules/vadgate.mjs",
+        "bytes": 2649,
+        "sha256": "63039b57289789e2cea8045fbc41dbfb02a5af51dfa17c904819fb941bb43b75"
+      }
+    ]
+  },
+  "gates": {
+    "visual_must_not_delay_speech": true,
+    "stale_epoch_replay_allowed": false,
+    "new_neural_generation_required": false
+  },
+  "human_av_accepted": null,
+  "gpu_benchmark": "Not run: both H100cards100percentbusy at read-only preflight; no co-scheduling or foreign process changes",
+  "scope": "E2-E4 local systems validation;E5 actual DSH playback-class observer/adapter local PCM fixtures, not live ASR/translation/microphone deployment"
+}

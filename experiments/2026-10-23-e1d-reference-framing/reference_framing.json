@@ -1,0 +1,51 @@
+{
+  "script_sha256": "ac525540b082ac0547f80701b8481c96c2f91f8871ace349c4a9b044f71b14f2",
+  "crops": [
+    {
+      "avatar_id": "avatar-a",
+      "source_path": "data/private/avatars/avatar-a/source.png",
+      "output_path": "data/private/e1d/avatars/avatar-a/source-crop.png",
+      "source_sha256": "81cf8bca30619cb63c1eeaec94cab4994c2fbf5f532efc5f4284adff04ec17e0",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "box_xyxy": [
+        125,
+        75,
+        1129,
+        1079
+      ],
+      "output_size": [
+        1004,
+        1004
+      ],
+      "output_sha256": "e23528dfe5d6ad21c7ed33925f3a8ad39f77675f5d2af37bf98d650d84e19ad0",
+      "all_pixels_equal_source_roi": true,
+      "operation": "exact pre-generation reference crop; no resampling/redraw; no output-video crop"
+    },
+    {
+      "avatar_id": "avatar-b",
+      "source_path": "data/private/avatars/avatar-b/source.png",
+      "output_path": "data/private/e1d/avatars/avatar-b/source-crop.png",
+      "source_sha256": "edc6681ffa2686e430d6d067f2dbc2e45b8b662b3389c50111ffeebb48063b7a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "box_xyxy": [
+        125,
+        75,
+        1129,
+        1079
+      ],
+      "output_size": [
+        1004,
+        1004
+      ],
+      "output_sha256": "7be9574561e5d806fd5960dd059494bd90d5e45c09c1323f3afe21e8f419343c",
+      "all_pixels_equal_source_roi": true,
+      "operation": "exact pre-generation reference crop; no resampling/redraw; no output-video crop"
+    }
+  ]
+}

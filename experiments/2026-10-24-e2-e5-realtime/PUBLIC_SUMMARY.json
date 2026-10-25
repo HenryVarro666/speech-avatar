@@ -1,0 +1,67 @@
+{
+  "scope": "local PCM playback/browser engineering only; no acoustic or human sync acceptance",
+  "matrix_complete": 12,
+  "samples_exact": 12,
+  "controller_rest": 12,
+  "head_audio_active": 4,
+  "request_to_schedule_ms": [
+    1.600000023841858,
+    31.899999976158142
+  ],
+  "request_to_planned_audio_start_ms": [
+    51.60000002384257,
+    81.8999999761553
+  ],
+  "headaudio_first_active_pose_after_audio_start_ms": [
+    78.00000000000296,
+    205.99999999999952
+  ],
+  "rolling_300_raf_interval_p95_ms": [
+    8.800000000001091,
+    9.299999999995634
+  ],
+  "injected_delay_ms": 400,
+  "largest_actual_audio_gap_ms": 347.9999999999677,
+  "disconnect_samples": [
+    64800,
+    128640
+  ],
+  "stop_to_controller_rest_ms": [
+    3.599999964237213
+  ],
+  "fault_checks": {
+    "stop": true,
+    "stale_event": true,
+    "late_chunk": true,
+    "disconnect": true,
+    "model_failure_rms": true,
+    "model_restore": true,
+    "webgl_loss_static": true,
+    "new_audio_while_lost": true,
+    "webgl_restore": true,
+    "visual_prepare_parallel": true
+  },
+  "gpu_renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+  "human_av_accepted": null,
+  "production_deployed": false,
+  "head_audio_revision": "c6d8af35034068b1c98dcc0fa3ec9602d711e784",
+  "phase_state": {
+    "E2": "bounded local prototype",
+    "E3": "browser schedule metrics only",
+    "E4": "ten local fault/recovery checks",
+    "E5": "actual player adapter only; live upstream pending"
+  },
+  "gpu_inference": "pending resource gate; no CUDA run",
+  "corrections": [
+    "open-mouth rest base replaced with frozen original closed-lip portrait",
+    "active-run guard after asynchronous completion check",
+    "visual initialization moved into independent guarded task"
+  ],
+  "tests": {
+    "avatar": 27,
+    "plugin": 13,
+    "plugin_typecheck_build": true
+  },
+  "delayed_visual_ready_ms": 1527.4000000357628,
+  "delayed_visual_planned_audio_start_ms": 55.100000023839016
+}

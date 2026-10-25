@@ -1,5 +1,9 @@
 # Technical scope and experiment gates
 
+Current E5a2026-10-24: [actual TTS substage](../experiments/2026-10-24-e5-live-tts/RESULTS.md) connects a fixed-model streaming adapter, same player and isolated proxy.7actual new requests/5complete, controlled cancel/drop/recovery; CPU RTF3.135–3.591 fails realtimeperformance. New[guide](E5_LIVE_TTS_GUIDE.md). Human mic/ASR/translation and neuralGPU remain pending; earlier dated E5unimplemented notes describe prior rounds.
+
+Current realtime update2026-10-24: [E2–E5pilot](../experiments/2026-10-24-e2-e5-realtime/RESULTS.md) implements bounded idle/RMS/HeadAudio+WebGL2 and actual ReplySpeaker scheduling observations.12complete fixture runs/10fault recovery checks; E3browser timings measured, physical sync unmeasured. E5live upstream/neural GPU benchmark pending. [Operating guide](REALTIME_PILOT_GUIDE.md) and [GPUprotocol](../experiments/2026-10-24-e2-e5-realtime/GPU_PROTOCOL.md). Older dated unstarted/unchanged statements below describe their earlier rounds.
+
 Date: 2026-10-20. The approved source guide is retained in the neighboring voice_ai workspace; this repository owns only the visual branch.
 
 1. Final output waveform drives the avatar. Interpreter avatars follow translated speech, and native audio output is consumed directly without another TTS pass.
@@ -23,3 +27,23 @@ E1b review decision (2026-10-20): [comprehensive review and next gates](../exper
 
 
 E1c continuation (completed2026-10-22):[results](../experiments/2026-10-21-e1c-controlled-expression/RESULTS.md) include6 local sync derivatives and2 controlled-positive-prompt LongCat videos. Media checks pass, but hand entry and emphasized expressions persist; prompt-only control does not satisfy the Qmotion gate, so Qtail was not run. Keep LongCat an offline research candidate and MuseTalk the regression baseline. Human sync/video preference is pending; next inference needs a separately frozen framing/motion-control hypothesis. No production or realtime integration occurred.
+
+
+E1d reference framing (2026-10-23):[results](../experiments/2026-10-23-e1d-reference-framing/RESULTS.md) tested2fixed-ROI input references with unchanged E1c prompt/audio/seed/model. Native ai2v conditioning changed face area but did not reliably suppress hand entry or emphasized articulation; tight headroom and male one-frame SyncNet difference remain. Do not adopt as hand/expression fix or repeat crop/seed grids. Audit explicit motion/driving-video/rig interfaces before another bounded generation; current single-person CLI is not an established skeleton controller. Human AV acceptance and realtime integration remain separate.
+
+
+E1d review recovery (2026-10-23):[guide](E1D_REVIEW_GUIDE.md) adds a local draft export bound to the frozen clip hashes. Preference and explicit audiovisual acceptance remain independent; unreviewed fields stay null, and no human record is written by playback or export. This finishes review tooling without rerendering or revising the frozen E1d quality decision.
+
+
+E1e explicit motion (2026-10-23): results — local-only artifact: `../experiments/2026-10-23-e1e-motion-control/RESULTS.md` add one CPU-only LivePortrait0.65render from the existing original portrait/E1c motion/accepted4.96s audio. Head/eyelids move; three partial closures, soft teeth and80ms model-estimated video lead remain. No DUIX deployment or new LongCat generation. Next validate independent eyelid/pose composition, since WIP relative retargeting can replace pose displacement; human AV acceptance remains pending.
+
+
+E1f independent blink (2026-10-23): results — local-only artifact: `../experiments/2026-10-23-e1f-independent-blink/RESULTS.md` compose learned eyelid correction over exact E1e pixels. Three closure windows pass,22active eye frames,102whole frames/outside-eyeYUV/AAC preserved. The existing lighter head/mouth and80ms estimated lead remain; human naturalness pending. CPU-only,341.509s, no runtime deployment. [Optimization log](../experiments/OPTIMIZATION_LOG.md) preserves cumulative decisions and negative results.
+
+E1f-R regional-template follow-up (2026-10-23): [two role-matched candidates](../experiments/2026-10-23-e1f-regional-motion/RESULTS.md) retain stronger eyelid closure alongside light head/mouth motion, without the WIP pose-overwriting retarget branch. Source-image pasteback contains hands in these clips, while tooth detail/endings/model sync remain NEEDS WORK. Human AV pending; preserve the current driver/template before separately testing oral detail or sync. [Optimization ledger](../experiments/PROGRESS_LEDGER.md) records decisions and evidence across rounds.
+
+
+E1g mouth timing/closed ending (2026-10-24): results — local-only artifact: `../experiments/2026-10-24-e1g-mouth-sync-tail/RESULTS.md` preserve E1f blinks/light head movement and originalAAC. Mouth-only80ms delay gives full/early/late0ms diagnostic offsets; confidence/minimum distance regress, so no overall or generalization claim. A separate0.48s silent picture ending closes6/6fixed tail frames; sync-only control retains the aperture. Outside-mouthYUV/248eyeRGB patches exact,119,040sourcePCM preserved. CPU worker38.089s includes5learned frames/two136frame composites/encoding/proofs, sampledRSS2.294GiB, no service changes. Next human comparison/new phrases, then oral detail; not a realtime deployment.
+
+
+E1h oral detail(2026-10-24): results — local-only artifact: `../experiments/2026-10-24-e1h-oral-detail/RESULTS.md` compare base/unsharp/boundedGFPGAN at fixed E1g geometry/time. Model not superior, not default; light unsharp optional. Outside-oralYUV/eyes/lips/whole ending/AAC exact, all full/early/late sync0ms. CPU125.811s/2.049GiB excludes setup and earlier failed guard. Deployment assessment — local-only artifact: `../experiments/2026-10-24-e1h-oral-detail/DEPLOYMENT_READINESS.md`: offline output can be frozen after acceptance; next new-audio async single-user staging, not automatic realtime readiness. E2–E5/current services remain unchanged.
