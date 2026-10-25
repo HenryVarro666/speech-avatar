@@ -23,9 +23,18 @@
 | E1h口腔细节 |固定E1g，同内口腔亮度高频：轻锐化vs受限GFPGAN；原时序/眨眼/收尾不动 |2帧各1像素跨平台计数保护失败后同参数重跑；轻锐化边缘略强，模型未胜出不默认采用；新音频/部署另验 |计划 — local-only artifact: `2026-10-24-e1h-oral-detail/PLAN.md`、失败与调整 — local-only artifact: `2026-10-24-e1h-oral-detail/PREPARATION.md`、结果 — local-only artifact: `2026-10-24-e1h-oral-detail/RESULTS.md`、部署准备 — local-only artifact: `2026-10-24-e1h-oral-detail/DEPLOYMENT_READINESS.md` |
 | E2–E5实时原型 |一个实际播放器＋3驱动模式，4固定语音换句、GPU贴片和故障恢复 |12完整/样本核验，10故障检查；计划音频起点51.6–81.9ms；E5真实上游/照片真实神经画质待验 |[计划](2026-10-24-e2-e5-realtime/PLAN.md)、[执行/失败](2026-10-24-e2-e5-realtime/EXECUTION.md)、[结果](2026-10-24-e2-e5-realtime/RESULTS.md)、[下一轮GPU](2026-10-24-e2-e5-realtime/GPU_PROTOCOL.md) |
 | E5a真实TTS流 |固定原模型双角色、真实逐块PCM接播放器，插话与断流恢复 |7请求5完整/1取消/1不完整，RTF3.135–3.591实时性能未过；显式恢复通过 |[计划](2026-10-24-e5-live-tts/PLAN.md)、[执行](2026-10-24-e5-live-tts/EXECUTION.md)、[结果](2026-10-24-e5-live-tts/RESULTS.md) |
+| E2新音频异步 |用户保留原轻锐化；同人物/音色12新句→真实嘴型→验证后播放；单活动/单等待/epoch与客户端意图 |12片/1152帧、源PCM精确/闭嘴/眨眼模板保持，两轮各12播完；7单元/9后台/13浏览器通过；CPU98.474–266.092s；新句同步与人工待验 |计划 — local-only artifact: `2026-10-24-e2-async-single-user/PLAN.md`、每步失败 — local-only artifact: `2026-10-24-e2-async-single-user/PREPARATION.md`、结果 — local-only artifact: `2026-10-24-e2-async-single-user/RESULTS.md`、操作 — local-only artifact: `2026-10-24-e2-async-single-user/RUNBOOK.md` |
 
 ## 记录覆盖与剩余边界
 
 本轮启动时逐目录核对见记录盘点 — local-only artifact: `2026-10-23-e1f-regional-motion/record-audit.json`。E1使用trial_plan而非名为manifest的文件；E1b计划拆在EXECUTION及音频/视频冻结协议中，不能仅凭缺少同名PLAN判为没有设计。大文件、原始音视频、模型与运行目录仅本机/独立实验磁盘保存，哈希与公开可审元数据分开。
 
 各轮并非都采用同一记录模板，早期也没有统一的逐命令总日志。持续补总账和链接，不伪造未留存历史。失败、负结果、未触发的条件实验、输入差异、测量时间边界和人工pending都应保留。今后每次新试验固定增加：冻结计划/输入哈希、实际命令和attempt、资源环境、技术/视觉验收、采用或停止理由、下一步及双方状态历史。
+
+
+## 2026-10-25 E5b：CUDA路径已准备，GPU对照待空闲资源
+
+[本轮记录](2026-10-25-e5-gpu-comparison/RESULTS.md)：固定同模型/revision/参数/4文本/12帧分块/24kHz协议，新增显式CUDA/UUID资源保护和独立后端选择。分配前GPU1已被其他任务占用，GPU推理0次；速度/停顿改善和GPU恢复验收均未完成，不能以41项本地测试替代实卡验收。新CPU路由9实际请求：7完整/1播放中取消/1断流incomplete；显式重试、新句恢复与旧错误丢弃通过，7PCM/hash/样本/code检查通过。首PCM3.040–4.471s、RTF3.088–3.571、最大计划间隙2.696s，CPU性能门槛仍未过。
+
+[独立预览49917](http://127.0.0.1:49917/index.html)；原50451保留。新GPU入口只在无其他计算PID、空闲且完成自有上下文复查后使用；未操作apex/共享包/其他进程。独立H100最近资源核验2026-10-25；841旧冻结记录不变。下一步等空闲卡，GPU预热后执行4句交叉主对照和7请求恢复；真人麦克风/ASR/翻译/人工AV/部署均未验收。用户授权本轮审查后源码/元数据公开备份，推送回执另记。
+

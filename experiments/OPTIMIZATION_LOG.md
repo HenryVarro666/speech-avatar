@@ -24,6 +24,7 @@
 | E1h口腔细节 — local-only artifact: `2026-10-24-e1h-oral-detail/RESULTS.md` |固定E1g，内口腔亮度高频修复与同范围轻锐化；保留跨平台1像素保护失败/原控制 |106活动帧相对HF-RMS均值+21.59%/−6.63%；模型未建立优于对照的细节；原动作/同步/闭嘴精确保留 |不默认采用受限GFPGAN；轻锐化仅人工候选，优先新音频试用闭环 — local-only artifact: `2026-10-24-e1h-oral-detail/DEPLOYMENT_READINESS.md` |
 | [E2–E5实时原型](2026-10-24-e2-e5-realtime/RESULTS.md) |从熟悉旧片转向任意音频调度，静止/RMS/HeadAudio＋WebGL2贴片 |12完整播放/样本核验、10故障恢复；计划音频起点51.6–81.9ms；修正初轮待机张嘴及完成回调竞态 |保留单音频时钟/可降级支路；E5真实上游、中文自然度和神经GPU首帧/帧率另验 |
 | [E5a真实TTS流](2026-10-24-e5-live-tts/RESULTS.md) |从固定WAV回放转为真实code帧解码/24kHz流，保留取消/明确end |7真实请求5完整/1取消/1不完整；源PCM/结束摘要/样本5/5，CPU欠载2.84s |采用生命周期契约；速度门槛未过，先独占GPU再扩真人/多句，不部署 |
+| E2新音频异步闭环 — local-only artifact: `2026-10-24-e2-async-single-user/RESULTS.md` |原轻锐化模板＋12新Serena句，真实新音频MuseTalk嘴帧，单用户队列/播放/取消/回退 |12片1152帧、两轮各12播放、7单元/9后台/13浏览器通过；8/20音移控制恢复，人工/新句同步未验收 |保留独立试用；不把旧0ms泛化，不接业务默认；完整过程 — local-only artifact: `2026-10-24-e2-async-single-user/PREPARATION.md`保留失败及UI修复 |
 
 ## 每轮具体保存什么
 
@@ -37,3 +38,11 @@
 本机可编辑记录在 `/path/to/projects/speech-avatar/experiments/`。H100最新E1g材料在 `/mnt/raid/voice_ai/speech-avatar/e1g-mouth-sync-tail-20261024`，E1f保留在 `/mnt/raid/voice_ai/speech-avatar/e1f-independent-blink-20261023`，前轮E1e在相邻独立目录；本机媒体位于 `outputs/`，H100环境、模型、临时数据均使用RAID。迁移前实验路径通过兼容链接继续可用。
 
 本地/RAID保存与GitHub公开同步是两个独立状态。当前新轮文档、脚本和媒体未因实验结束而自动推送；公开备份继续排除凭据、模型和音视频，并先审查允许清单。用户明确要求推送时再进行公开导出。
+
+
+## 2026-10-25 E5b：CUDA路径已准备，GPU对照待空闲资源
+
+[本轮记录](2026-10-25-e5-gpu-comparison/RESULTS.md)：固定同模型/revision/参数/4文本/12帧分块/24kHz协议，新增显式CUDA/UUID资源保护和独立后端选择。分配前GPU1已被其他任务占用，GPU推理0次；速度/停顿改善和GPU恢复验收均未完成，不能以41项本地测试替代实卡验收。新CPU路由9实际请求：7完整/1播放中取消/1断流incomplete；显式重试、新句恢复与旧错误丢弃通过，7PCM/hash/样本/code检查通过。首PCM3.040–4.471s、RTF3.088–3.571、最大计划间隙2.696s，CPU性能门槛仍未过。
+
+[独立预览49917](http://127.0.0.1:49917/index.html)；原50451保留。新GPU入口只在无其他计算PID、空闲且完成自有上下文复查后使用；未操作apex/共享包/其他进程。独立H100最近资源核验2026-10-25；841旧冻结记录不变。下一步等空闲卡，GPU预热后执行4句交叉主对照和7请求恢复；真人麦克风/ASR/翻译/人工AV/部署均未验收。用户授权本轮审查后源码/元数据公开备份，推送回执另记。
+

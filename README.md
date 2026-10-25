@@ -33,6 +33,7 @@ MuseTalk is retained as a lower-cost mouth/regression baseline. LongCat is the o
 | E1h oral detail — local-only artifact: `experiments/2026-10-24-e1h-oral-detail/RESULTS.md` | Inner-oral lumaHF only: base/unsharp/boundedGFPGAN | +21.59%/-6.63%mean relativeHF-RMS; model not superior, not default; blinks/lips/tail/AAC exact, all sync0ms |
 | [E2–E5 realtime pilot](experiments/2026-10-24-e2-e5-realtime/RESULTS.md) |4inputs×idle/RMS/HeadAudio, actual player clock and localGPUtexture portrait |12complete/sample checks,10fault/recovery checks; planned audio start51.6–81.9ms; prepared audio only; actual TTS follows in E5a |
 | [E5a actual TTS](experiments/2026-10-24-e5-live-tts/RESULTS.md) |7newly generated requests/4Chinese texts/two voices; barge-in/drop/retry |5complete/1cancelled/1incomplete; firstPCM3.133–5.363s, RTF3.135–3.591; CPU realtime gate unmet |
+| [E5b GPU comparison preparation](experiments/2026-10-25-e5-gpu-comparison/RESULTS.md) | Same-model CUDA route/ownership guard and CPU routing regression;41tests | 0 GPU inferences: resource gate blocked; CPU9requests/7complete/1cancel/1incomplete, firstPCM3.040–4.471s/maxgap2.696s; acceleration unverified |
 
 E1 timing excludes shared model loading; E1b/E1c complete-process times include loading. They cannot be compared as identical benchmarks or used as voice-to-video conversation latency. E1c new processes took 267.418/263.161 s at640×608/25fps.
 
@@ -60,7 +61,7 @@ E5a now decodes/transports genuinely new TTS audio in an independent instance, k
 
 <!-- e2-async-trial -->
 
-The user retained the exact E1h light-unsharp clip; this is a bounded visual selection, not acceptance of new content. The independent new-audio asynchronous trial — local-only artifact: `experiments/2026-10-24-e2-async-single-user/RUNBOOK.md` now prepares12new Serena utterances and genuine MuseTalk mouth renders on RAID/CPU. Seven process/queue/epoch checks pass; the full12-render/browser/fault matrix is in progress. Fixed80ms compensation is not assumed to generalize.
+The user retained the exact E1h light-unsharp clip. The independent new-audio asynchronous trial — local-only artifact: `experiments/2026-10-24-e2-async-single-user/RESULTS.md` now completes12new Serena utterances and12genuine MuseTalk mouth videos:1152frames,40.32s source speech, source-exact PCM masters and closed endings. Two complete12-video browser rounds,7process tests,9real backend checks and13browser checks pass. CPU worker98.474–266.092s (median140.119s), sampled process-groupRSS7.050–7.149GiB; no CUDA. Actual cancellation exits its owned group in0.228s and a99.426s fresh recovery reproduces the original hash. Sync generalization remains unaccepted: only8/20shift controls recover,2short clips are skipped, and human AV is pending. This fixed12-utterance trial remains separate from realtime/upstream integration and existing services.
 
 <!-- /e2-async-trial -->
 
@@ -78,7 +79,7 @@ CPU checks require Python3.12, Node.js18+ and ffmpeg/ffprobe; they do not run a 
 python3.12 -m unittest discover -s tests -v
 ```
 
-Four regional-motion checks additionally require NumPy/OpenCV; without them they are explicitly skipped. The existing local quality environment runs the complete36-test suite:
+Four regional-motion checks additionally require NumPy/OpenCV; without them they are explicitly skipped. The existing local quality environment runs the complete41-test suite:
 
 ```bash
 .venv-quality/bin/python -m unittest discover -s tests -v
@@ -94,10 +95,10 @@ GPU inference requires the separately documented [MuseTalk](workers/musetalk/SET
 
 ## Next work
 
-1. Collect human judgments on the existing sync and original/new comparisons.
-2. Compare E1g original/sync-only/sync+closure continuously; validate mouth timing on separately frozen new phrases before adopting compensation.
-3. Do not adopt bounded GFPGAN by default; compare optional unsharp, then prioritize new-audio single-user staging and cancellation/fallback tests.
-4. Treat browser real-time rendering and audio-agent integration as separate future stages.
+1. Collect human content/voice/AV judgments on all12new utterances.
+2. Diagnose synchronization in the new MuseTalk combination; do not generalize the familiar clip's80ms correction.
+3. Keep the selected light unsharp; bounded GFPGAN remains off by default. Test exclusive-GPU latency separately.
+4. Extend real new-text/TTS requests and live upstream integration only through a separately measured stage.
 
 [Technical scope](docs/TECHNICAL_ROUTE.md) · [Current state](PROJECT_STATUS.md) · [Publication scope](PUBLICATION.md) · [Workspace](https://github.com/HenryVarro666/voice-ai-workspace).
 

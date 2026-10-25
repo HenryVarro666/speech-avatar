@@ -14,13 +14,13 @@
     },
     {
       "path": "EVOLUTION.md",
-      "sha256": "d93d48806e8aa50793d92997bf699fc41dfcc53db82696a6acc6f3c7978ce348",
-      "bytes": 26006
+      "sha256": "2377c9fe4034a546aada36f93bf4d23d16369cd11cb9a70bf9f64043db8331de",
+      "bytes": 27171
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "989ae6b4b7bdccd7b030a08b3f461158d9e3740132cb7419d6211f58ada6846c",
-      "bytes": 24408
+      "sha256": "247a962f6d04a1c64eef360ab808544ae4de4e328edb84ff46a24c070cc99372",
+      "bytes": 25571
     },
     {
       "path": "PUBLICATION.md",
@@ -34,13 +34,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "ce61f54d2cf076c650667149bf8b27fe2ec3dc0ded4054ffce9afc21611fe6fe",
-      "bytes": 13109
+      "sha256": "06c6cd6349dd3e6b5ab4ed5434b574aaac4a794becd0d3f20d226b4284580622",
+      "bytes": 13746
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "903023e038bbc5bd351d5eebf1d2aaedc51e3bcfd60c9c69939189e6f004fbd8",
-      "bytes": 11270
+      "sha256": "03b6d732c3edf2fb056d3208a603e303a3725aca5a42c93d21b041787d8ce288",
+      "bytes": 11858
     },
     {
       "path": "assets/avatar-prompts.json",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/E5_LIVE_TTS_GUIDE.md",
-      "sha256": "6a6489a7aa45303623a8f57e18716645ce25dd1893ecc801a6b014d4c96f2d5a",
-      "bytes": 4135
+      "sha256": "4dfb6d2208333b15d4d68aa00bf5ffdbc88d37b248ba2cc6b5cfbded7963fe68",
+      "bytes": 6754
     },
     {
       "path": "docs/REALTIME_PILOT_GUIDE.md",
@@ -74,8 +74,8 @@
     },
     {
       "path": "docs/TECHNICAL_ROUTE.md",
-      "sha256": "fc56f1cbe6ce66d4aa016678d6b3cd2439ce4d5b2184330e83fa232e3ac345c5",
-      "bytes": 9991
+      "sha256": "8b2654f90b9e0e7de0254d0d1079845dc20779db77ffc4ab04e395bd693d621d",
+      "bytes": 11371
     },
     {
       "path": "docs/superpowers/plans/2026-10-20-e0-e1.md",
@@ -993,19 +993,59 @@
       "bytes": 565
     },
     {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/EXECUTION.md",
+      "sha256": "5cd8da2954ccd292bc48e635f931c65f9a17a51344bb193fccb1fd5bb2094a2a",
+      "bytes": 4379
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/PLAN.md",
+      "sha256": "13b00c73ef81074115e011fdde3459d66db59234fc7a57ff04b8ac430126a265",
+      "bytes": 4536
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/PUBLIC_SUMMARY.json",
+      "sha256": "fb0fa10b849fb8f9d6f2e705aec10fb52d4ff6f3f771e09ec9879ddca4648ec7",
+      "bytes": 989
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/RESULTS.md",
+      "sha256": "b61973eb4050835997a7a362a169d3bf8f80e5f32998694b92a48c2c1884b2d2",
+      "bytes": 5074
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/analyze.py",
+      "sha256": "904650cff8e2c7ac73c5730f960ebe90eb0f5d91c26cad84396525729920ac99",
+      "bytes": 7421
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/manifest.json",
+      "sha256": "20eb432f654871fda696b377b6d0a631918fbcadc79abc8eea98d1cc15470b05",
+      "bytes": 1370
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/manifest.sha256",
+      "sha256": "58c72361e069a3ae47a3988e9c4bc5b6f652edfa8fccbcff6daf1ebd4f7c0281",
+      "bytes": 80
+    },
+    {
+      "path": "experiments/2026-10-25-e5-gpu-comparison/runtime-pin.json",
+      "sha256": "c1f14c7b789671f611144c7b02f32c4602a0cb422169f24f9750b083cd372805",
+      "bytes": 565
+    },
+    {
       "path": "experiments/INDEX.md",
-      "sha256": "a25c56803a92d421db14595337bb602a3a787ba2492ac8cca8fb8339c0fa0285",
-      "bytes": 5045
+      "sha256": "9c7b7f213e146e0ce632e115a27d10ff490b9b98d53b9a6e5c9a49b09a6b2484",
+      "bytes": 6522
     },
     {
       "path": "experiments/OPTIMIZATION_LOG.md",
-      "sha256": "1e47890ebcab93a064b4728008d48012f3eaaa90729aa3674d5ab276e916a61a",
-      "bytes": 7729
+      "sha256": "7d7b6a661726df3b3d112e0fb78cd6c4c30d5c2fc86c71aa49ef2c20ba469321",
+      "bytes": 9388
     },
     {
       "path": "experiments/PROGRESS_LEDGER.md",
-      "sha256": "51e651b05437fd43d9ec3bd27774f040f59cec296e234cf883b1b3bbcbaacefd",
-      "bytes": 8076
+      "sha256": "6d87094910533c21d86251dbaa45bebc876fe6565f0ea8611cfb06af4355eef0",
+      "bytes": 9870
     },
     {
       "path": "scripts/analyze_e1.py",
@@ -1039,8 +1079,8 @@
     },
     {
       "path": "scripts/e5_service.py",
-      "sha256": "53b0486ca73a033aa416ab14d1bd3bb03d9efeec80713fcbae77cbe941f73f6c",
-      "bytes": 5830
+      "sha256": "7f06634497055859d7f4e59ad739dbb2d4de6822a06ea914be5ede18260b4fd0",
+      "bytes": 6766
     },
     {
       "path": "scripts/inspect_e1_endings.py",
@@ -1079,8 +1119,8 @@
     },
     {
       "path": "scripts/prepare_e5_preview.py",
-      "sha256": "1dd82ed7bad56adf714733b346736c4315eadaff269059fdad3016f4c58ce3c8",
-      "bytes": 1642
+      "sha256": "0ce9516d67220b1413e7de277feb9dbf507b4d3011360b679de17db04e95ee64",
+      "bytes": 1752
     },
     {
       "path": "scripts/review_e1b_quality.py",
@@ -1118,14 +1158,19 @@
       "bytes": 1700
     },
     {
+      "path": "tests/test_e5_device.py",
+      "sha256": "805951a01f31d43f6453a493c98e5a41a24be99d9466af521edd5cd80c03c874",
+      "bytes": 1724
+    },
+    {
       "path": "tests/test_e5_jobs.py",
       "sha256": "246626c583332f57a60bb35f4babc4015a72501553a096cf452fdca2a320d2d3",
       "bytes": 1384
     },
     {
       "path": "tests/test_e5_proxy.py",
-      "sha256": "9fa75726cf41d07fd00f8e2fea5c6eaf5ef5b451b528ce285c60c8a0377212be",
-      "bytes": 2827
+      "sha256": "2a6a75f8f1f3ce5df903041c259f1bbd8bb9a7b2d249af43ddb7abb1459e3c3d",
+      "bytes": 4162
     },
     {
       "path": "tests/test_e5_transport.py",
@@ -1164,8 +1209,8 @@
     },
     {
       "path": "web/e5/app.mjs",
-      "sha256": "f34288d18a9e9b7054d5408ddd5c6bb0ebd356882b2da58693cd53e30139d9b7",
-      "bytes": 6660
+      "sha256": "ac5d80f9dbdb913c18c30fbaa15fa3e172b57afeb5e2f926d6b5187371947b54",
+      "bytes": 7787
     },
     {
       "path": "web/e5/avatar.mjs",
@@ -1174,8 +1219,8 @@
     },
     {
       "path": "web/e5/index.html",
-      "sha256": "b8bfc7479869e074d8f25c3823d09e03add5dd558185f714e70bddbeb3a2d1d6",
-      "bytes": 4166
+      "sha256": "bc34c78977a649e92f0193ed43eb1fd1f4aaea41c59a3aa9071b4d847ddad5f2",
+      "bytes": 4328
     },
     {
       "path": "web/e5/transport.mjs",
@@ -1259,8 +1304,13 @@
     },
     {
       "path": "workers/realtime_tts/SETUP.md",
-      "sha256": "bcaf853af3fa8e52faca1f2139d5f74fb3def9d2f9c60d4b86fda4411ddf6b0a",
-      "bytes": 3111
+      "sha256": "60ed44d73a178e165a6a9281c69e8590d37bba219e2e1be46884f0e7d026f83b",
+      "bytes": 4770
+    },
+    {
+      "path": "workers/realtime_tts/device.py",
+      "sha256": "4eb7ced9a1a3263f6274727d106767b80313f877e83d25700200b047d9b37480",
+      "bytes": 1954
     },
     {
       "path": "workers/realtime_tts/jobs.py",
@@ -1274,8 +1324,8 @@
     },
     {
       "path": "workers/realtime_tts/worker.py",
-      "sha256": "b1d1e2d26ac3276a80216ef664ecae18e1ab3e976111d8487518075d4b677de4",
-      "bytes": 9711
+      "sha256": "1d5c0919d6727507691c463ac035ba46b0692350e68be31eb1fa0643811bd7f2",
+      "bytes": 11315
     },
     {
       "path": "workers/tts/SETUP.md",

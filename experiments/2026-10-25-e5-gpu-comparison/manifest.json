@@ -1,0 +1,46 @@
+{
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "sample_rate": 24000,
+  "chunk_frames": 12,
+  "left_context_frames": 25,
+  "seed": 42,
+  "speaker_by_role": {
+    "female": "Serena",
+    "male": "Uncle_Fu"
+  },
+  "instruct": "用自然、亲切的日常中文说话，语速适中，停顿自然，不要播音腔。",
+  "generation": {
+    "max_new_tokens": 180,
+    "do_sample": true,
+    "top_k": 50,
+    "top_p": 1.0,
+    "temperature": 0.9,
+    "repetition_penalty": 1.05
+  },
+  "utterances": [
+    {
+      "id": "welcome",
+      "text": "您好，请告诉我您想预约哪一天。我会先核对时间，再和您确认。",
+      "role": "female"
+    },
+    {
+      "id": "confirm",
+      "text": "好的，我们改到周二下午五点。请确认这个时间是否方便。",
+      "role": "male"
+    },
+    {
+      "id": "interrupt",
+      "text": "等一下，请保留原来的预约，不要取消。",
+      "role": "female"
+    },
+    {
+      "id": "recovery",
+      "text": "连接已经恢复。这是新的一句话，前面的内容不会自动重播。",
+      "role": "male"
+    }
+  ],
+  "human_av_accepted": null,
+  "max_requests": 32,
+  "scope": "Actual newly generated TTS PCM streaming into existing player; controlled client barge-in, not human microphone/ASR/translation"
+}

@@ -1,6 +1,6 @@
-"""Isolated CPU Qwen3-TTS stream worker. No shared model/runtime writes."""
+"""Isolated CPU/CUDA Qwen3-TTS stream worker. Shared files remain read-only."""
 import os
-os.environ.update(CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='4',MKL_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',PYTHONDONTWRITEBYTECODE='1')
+os.environ.update(OMP_NUM_THREADS='4',MKL_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',PYTHONDONTWRITEBYTECODE='1')
 import argparse
 import base64
 import hashlib
@@ -15,6 +15,7 @@ import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
 from workers.realtime_tts.jobs import Jobs
 from workers.realtime_tts.streaming import CodecBlocks,Cancelled
+from workers.realtime_tts.device import configure_device,snapshot
 
 
 def sha(path):
@@ -25,7 +26,8 @@ def sha(path):
 
 
 class Engine:
-    def __init__(self,root,prior):
+    def __init__(self,root,prior,device='cpu',gpu_uuid=None):
+        self.device=device;self.gpu_uuid=gpu_uuid;configure_device(device,gpu_uuid)
         self.root=root;self.spec=json.loads((root/'manifest.json').read_text());self.jobs=Jobs(self.spec['max_requests'])
         pins=json.loads((root/'runtime-pin.json').read_text())
         for p,h in pins.items():assert sha(prior/p)==h,('Pinned runtime mismatch',p)
@@ -39,16 +41,32 @@ class Engine:
         import torch
         from qwen_tts import Qwen3TTSModel
         self.np,self.torch=np,torch;torch.set_num_threads(4);torch.set_num_interop_threads(1)
-        assert not torch.cuda.is_available()
-        self.model=Qwen3TTSModel.from_pretrained(str(prior/'model'),device_map='cpu',dtype=torch.bfloat16,attn_implementation='sdpa')
-        assert all(p.device.type=='cpu' for p in self.model.model.parameters())
+        if device=='cuda':
+            self.preflight=snapshot(gpu_uuid)
+            self.reservation=torch.ones(256*1024,device='cuda',dtype=torch.float32);torch.cuda.synchronize()
+            self.claim=snapshot(gpu_uuid,resident=True)
+            (root/'cuda-claim.json').write_text(json.dumps({'before':self.preflight,'reserved':self.claim},indent=2)+'\n')
+            threading.Thread(target=self.watch_gpu,daemon=True).start()
+        else:assert not torch.cuda.is_available()
+        self.model=Qwen3TTSModel.from_pretrained(str(prior/'model'),device_map=device,dtype=torch.bfloat16,attn_implementation='sdpa')
+        assert all(p.device.type==device for p in self.model.model.parameters())
+        if device=='cuda':torch.cuda.synchronize();snapshot(gpu_uuid,resident=True)
         self.samples_per_frame=int(self.model.model.speech_tokenizer.model.decoder.total_upsample)
-        self.load={'load_s':time.perf_counter()-started,'device':'cpu','model_revision':model_manifest['revision'],
+        self.load={'load_s':time.perf_counter()-started,'device':device,'gpu_uuid':gpu_uuid,'model_revision':model_manifest['revision'],
                    'samples_per_frame':self.samples_per_frame,'rate':24000,'torch':torch.__version__,'pid':os.getpid(),
                    'affinity':sorted(os.sched_getaffinity(0)),'threads':torch.get_num_threads(),'model_files_checked':len(model_manifest['files'])}
         (root/'load.json').write_text(json.dumps(self.load,indent=2)+'\n')
 
+    def watch_gpu(self):
+        while True:
+            try:snapshot(self.gpu_uuid,resident=True)
+            except Exception as e:
+                (self.root/'cuda-released.json').write_text(json.dumps({'pid':os.getpid(),'reason':str(e),'action':'exit owned worker only','at':time.time()},indent=2)+'\n')
+                os._exit(75)
+            time.sleep(1)
+
     def generate(self,job,req,send):
+        if self.device=='cuda':snapshot(self.gpu_uuid,resident=True);self.torch.cuda.reset_peak_memory_stats()
         np,torch=self.np,self.torch;model=self.model;ident=job['id'];out=self.root/'jobs'/ident;out.mkdir(parents=True)
         pcm_file=(out/'stream.pcm').open('xb');started=time.perf_counter();chunks=[]
         def check():
@@ -87,13 +105,16 @@ class Engine:
                 ins=model._tokenize_texts([model._build_instruct_text(self.spec['instruct'])])[0]
                 kwargs=model._merge_generate_kwargs(**self.spec['generation'])
                 codes,_=model.model.generate(input_ids=ids,instruct_ids=[ins],languages=['Chinese'],speakers=[self.spec['speaker_by_role'][req['role']]],non_streaming_mode=True,**kwargs)
+                if self.device=='cuda':torch.cuda.synchronize()
                 job['lm_complete_s']=time.perf_counter()-started
                 assert np.array_equal(codes[0].cpu().numpy(),np.asarray(blocks.rows)), 'Captured codes differ from official generation'
                 assert len(blocks.rows)<self.spec['generation']['max_new_tokens']-2,'Token limit reached; do not report truncated speech complete'
                 blocks.finish()
-            job.update(samples=blocks.samples,pcm_sha256=blocks.sha256,codec_frames=len(blocks.rows),codes_exact=True,
+            if self.device=='cuda':torch.cuda.synchronize()
+            job.update(device=self.device,peak_cuda_allocated_mib=torch.cuda.max_memory_allocated()/1024**2 if self.device=='cuda' else 0,
+                       samples=blocks.samples,pcm_sha256=blocks.sha256,codec_frames=len(blocks.rows),codes_exact=True,
                        first_chunk_before_lm_complete=job.get('first_pcm_s',float('inf'))<job['lm_complete_s'],generation_s=time.perf_counter()-started)
-            send({'type':'end','samples':blocks.samples,'sha256':blocks.sha256,'worker':{k:job[k] for k in ['first_pcm_s','lm_complete_s','generation_s','codec_frames','codes_exact','first_chunk_before_lm_complete','peak_rss_kib']}})
+            send({'type':'end','samples':blocks.samples,'sha256':blocks.sha256,'worker':{k:job[k] for k in ['device','peak_cuda_allocated_mib','first_pcm_s','lm_complete_s','generation_s','codec_frames','codes_exact','first_chunk_before_lm_complete','peak_rss_kib']}})
             self.jobs.finish(job,'complete')
         except (Cancelled,BrokenPipeError,ConnectionResetError):
             job['cancel'].set();self.jobs.finish(job,'cancelled')
@@ -110,17 +131,17 @@ class Engine:
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--prior',type=Path,required=True);p.add_argument('--port',type=int,default=0);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--prior',type=Path,required=True);p.add_argument('--port',type=int,default=0);p.add_argument('--device',choices=['cpu','cuda'],default='cpu');p.add_argument('--gpu-uuid');a=p.parse_args()
     root=a.root.resolve();assert root.is_dir() and not(root/'worker.json').exists(),'New run directory required'
     os.sched_setaffinity(0,{80,81,82,83});os.nice(19)
-    engine=Engine(root,a.prior.resolve())
+    engine=Engine(root,a.prior.resolve(),a.device,a.gpu_uuid)
     class Handler(BaseHTTPRequestHandler):
         protocol_version='HTTP/1.1'
         def log_message(self,*args):pass
         def json(self,value,status=200):
             b=json.dumps(value).encode();self.send_response(status);self.send_header('Content-Type','application/json');self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
         def do_GET(self):
-            if self.path=='/health':return self.json({'ready':True,'device':'cpu','rate':24000,'model':engine.spec['model']})
+            if self.path=='/health':return self.json({'ready':True,'device':engine.device,'rate':24000,'model':engine.spec['model']})
             if self.path.startswith('/job/'):
                 return self.json(engine.jobs.snapshot(self.path.split('/')[-1]))
             return self.json({'error':'not found'},404)
@@ -139,7 +160,7 @@ def main():
                 with engine.jobs.claim(job):engine.generate(job,req,send)
             except (Cancelled,TimeoutError):engine.jobs.finish(job,'cancelled')
     server=ThreadingHTTPServer(('127.0.0.1',a.port),Handler)
-    (root/'worker.json').write_text(json.dumps({'pid':os.getpid(),'port':server.server_address[1],'device':'cpu','bind':'127.0.0.1'},indent=2)+'\n')
+    (root/'worker.json').write_text(json.dumps({'pid':os.getpid(),'port':server.server_address[1],'device':engine.device,'bind':'127.0.0.1'},indent=2)+'\n')
     print('E5_WORKER_READY',server.server_address[1],flush=True);server.serve_forever()
 
 

@@ -46,3 +46,36 @@ python3.12 scripts/e5_service.py --root outputs/e5 \
 传输消息必须从start开始，audio的seq/offset连续，最后有匹配samples的end。HTTP EOF、模型异常或缺end都属于不完整。结束摘要SHA与保存源PCM核对，客户端采样数另核对；物理播放结束由播放器状态另记。失败/取消后的显式新请求使用新ID，不复用旧任务或旧视频。
 
 目前CPU RTF3.13–3.59且最大计划音频空隙2.84s，**尚不适合低延迟实战**。下一阶段先取得空闲GPU并测同协议的持续速度/首块，再接麦克风/VAD/ASR/翻译和长回复切句；真人回声/插话与中文听感必须独立验收。
+
+## E5b 同模型 GPU 对照路径
+
+[本轮冻结计划](../experiments/2026-10-25-e5-gpu-comparison/PLAN.md)沿用同一模型revision、男女音色、4文本、BF16/SDPA、seed42、12codec帧/块与25帧左上下文。CPU/GPU先各预热1次，之后按CPU→GPU、GPU→CPU交替顺序比较4句。GPU是否实际完成与性能数字以[本轮记录](../experiments/2026-10-25-e5-gpu-comparison/RESULTS.md)为准；实现CUDA入口或安装CUDA版torch不代表已执行GPU实验。
+
+在新的尝试目录启动模型，GPU需满足[独占检查](../workers/realtime_tts/SETUP.md)：
+
+```bash
+python -m workers.realtime_tts.worker --root NEW_CPU_ATTEMPT --prior EXISTING_E1B_TTS --device cpu
+python -m workers.realtime_tts.worker --root NEW_GPU_ATTEMPT --prior EXISTING_E1B_TTS \
+  --device cuda --gpu-uuid FULL_GPU_UUID
+```
+
+两实例复用只读模型/环境，端口各自独立，不访问apex。只在无其他任务的计算PID、利用率≤2%、空闲≥16GiB的所选卡分配自有CUDA上下文；分配后必须看见自有PID，再加载模型。驻留期间每秒检查，发生竞争只退出本实验worker。该保护不能替代集群调度器的原子租约。
+
+新页面单独准备，不覆盖旧50451预览的资源：
+
+```bash
+python3.12 scripts/prepare_e5_preview.py --output outputs/e5-gpu \
+  --experiment experiments/2026-10-25-e5-gpu-comparison
+```
+
+将两远端loopback端口分别SSH转发到本地。私有`BACKENDS_JSON`只保存映射，例如`{"cpu":"http://127.0.0.1:50040","gpu":"http://127.0.0.1:50041"}`，然后运行：
+
+```bash
+python3.12 scripts/e5_service.py --root outputs/e5-gpu \
+  --upstream http://127.0.0.1:50040 --backends BACKENDS_JSON \
+  --ledger PRIVATE_EVENTS_JSONL --receipt PRIVATE_SERVER_JSON
+```
+
+页面选择后端后检查该后端的健康状态；不可用则禁用“生成并播放”，不会静默改走CPU。恢复后重新选择或刷新页面。取消、状态查询、断流后上游清理都绑定请求原后端，选择框切换不改变旧任务归属。CPU/GPU都使用同一实际ReplySpeaker，导出记录增加backend用于核对；源PCM格式/seq/offset/end不变。
+
+每次从浏览器请求计首PCM和计划音频起点，另算worker生成RTF及相邻计划片段之间的空隙。完整收到end和样本/摘要一致不等于无欠载；RTF<1也不保证短期没有空隙。GPU改变随机数和数值路径，音频长度/波形可以不同，分别检查每次官方返回code行和保存PCM，不能要求跨设备波形逐位相同。四文本小样本不是长期SLO，计划音频起点也不是物理扬声器首声。

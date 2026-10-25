@@ -3,24 +3,25 @@ import {pcmStream} from './transport.mjs';
 import {AvatarView} from './avatar.mjs';
 const $=id=>document.getElementById(id),speaker=new ReplySpeaker(),runs=[],events=[];
 let spec,assets,view,active,prior,lastRequest;
+const api=(r,path)=>r?.backend?'/api/'+r.backend+'/'+path:'/api/'+path;
 const status=text=>$('status').textContent=text;
 function log(kind,data={}){events.push({t:performance.now(),kind,...data});$('events').textContent=events.slice(-12).map(x=>JSON.stringify(x)).join('\n')}
-function table(){const body=$('results');body.replaceChildren();for(const r of runs){const tr=document.createElement('tr');for(const x of [r.text+' / '+r.role,r.firstPcmMs==null?'—':r.firstPcmMs.toFixed(0)+'ms',r.requestToScheduleMs==null?'—':(r.requestToScheduleMs+r.scheduleLeadMs).toFixed(0)+'ms',r.scheduledSamples,r.status]){const td=document.createElement('td');td.textContent=x;tr.append(td)}body.append(tr)}}
-async function serverJob(r){try{const p=await fetch('/api/job/'+r.id);r.server=await p.json();log('worker_state',{id:r.id,status:r.server.status});table()}catch(e){log('worker_state_unavailable',{id:r.id})}}
+function table(){const body=$('results');body.replaceChildren();for(const r of runs){const tr=document.createElement('tr');for(const x of [r.text+' / '+r.role+(r.backend?' / '+r.backend:''),r.firstPcmMs==null?'—':r.firstPcmMs.toFixed(0)+'ms',r.requestToScheduleMs==null?'—':(r.requestToScheduleMs+r.scheduleLeadMs).toFixed(0)+'ms',r.scheduledSamples,r.status]){const td=document.createElement('td');td.textContent=x;tr.append(td)}body.append(tr)}}
+async function serverJob(r){try{const p=await fetch(api(r,'job/'+r.id));r.server=await p.json();log('worker_state',{id:r.id,status:r.server.status});table()}catch(e){log('worker_state_unavailable',{id:r.id})}}
 function stop(reason='user'){
   const r=active;if(r&&!['complete','incomplete','failed','cancelled'].includes(r.status)){
     r.cancelled=true;r.status='cancelled';r.stopAt=performance.now();r.playbackActive=false;r.abort.abort();prior=r;
-    void fetch('/api/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:r.id})}).then(p=>p.json()).then(s=>{r.cancelAck=s;log('cancel_ack',{id:r.id,status:s.status});setTimeout(()=>void serverJob(r),1200)}).catch(()=>log('cancel_rpc_failed',{id:r.id}));
+    void fetch(api(r,'cancel'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:r.id})}).then(p=>p.json()).then(s=>{r.cancelAck=s;log('cancel_ack',{id:r.id,status:s.status});setTimeout(()=>void serverJob(r),1200)}).catch(()=>log('cancel_rpc_failed',{id:r.id}));
   }
   speaker.stop();if(r)r.audioStoppedAfterCall=!speaker.speaking;log('stop',{id:r?.id,reason,speaking:speaker.speaking});table();
 }
 function updateIfCurrent(r,text){if(active!==r||r.cancelled){log('stale_ui_discarded',{id:r.id});return false}status(text);return true}
 async function play(request={text:$('text').value.trim(),role:$('role').value},profile='normal'){
   if(!request.text)return;stop('replacement');
-  const r={...request,id:'e5-'+crypto.randomUUID(),profile,status:'requesting',requestAt:performance.now(),abort:new AbortController(),pendingSources:[],firstAudioContext:null,firstVisualContext:null,scheduledSamples:0,schedules:[],classifierCallbacks:0,animatedFrames:0,analysisReady:false,chunks:0,pcmSamples:0,playbackActive:false,humanAvAccepted:null};
+  const r={...request,backend:spec.backends?.length?$('device').value:null,id:'e5-'+crypto.randomUUID(),profile,status:'requesting',requestAt:performance.now(),abort:new AbortController(),pendingSources:[],firstAudioContext:null,firstVisualContext:null,scheduledSamples:0,schedules:[],classifierCallbacks:0,animatedFrames:0,analysisReady:false,chunks:0,pcmSamples:0,playbackActive:false,humanAvAccepted:null};
   active=r;lastRequest=request;runs.push(r);view.begin(r);updateIfCurrent(r,'正在实际生成：'+r.text);log('request',{id:r.id,role:r.role,profile});table();
   try{
-    const response=await fetch('/api/tts/stream',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:r.id,text:request.text,role:request.role,profile}),signal:r.abort.signal});
+    const response=await fetch(api(r,'tts/stream'),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:r.id,text:request.text,role:request.role,profile}),signal:r.abort.signal});
     if(!response.ok)throw Error('TTS请求失败：HTTP'+response.status);if(active!==r||r.cancelled){await response.body.cancel();return}
     const pipe=pcmStream(response.body,r.id,f=>{
       if(active!==r||r.cancelled)return;
@@ -49,4 +50,9 @@ spec=await (await fetch('/config')).json();assets=await (await fetch('./assets.j
 view=new AvatarView(speaker,assets,f=>{$('pose').textContent=f.pose?'说话口型':'待机';$('audio').textContent=f.active?'有声片段播放中':f.waiting?'等下一块／欠载':'未播放';$('chunks').textContent=active?.chunks||0;$('epoch').textContent=view.timeline.epoch;$('renderer').textContent='WebGL2：'+f.renderer},log);
 for(const u of spec.utterances){const o=document.createElement('option');o.textContent=u.id+' · '+u.text;o.value=u.id;$('utterance').append(o)}$('utterance').onchange();
 view.begin({role:'female',pendingSources:[],cancelled:false});
-try{const h=await(await fetch('/health')).json();if(!h.ready)throw Error('worker未就绪');$('backend').textContent='独立CPU worker已连接；Serena／Uncle_Fu，24kHz，串行生成。';$('speak').disabled=false;status('真实 TTS 已就绪。每次点击都会重新合成。')}catch(e){status('TTS worker不可用，请检查本机代理/SSH转发。')}
+if(spec.backends?.length){$('device-control').hidden=false;for(const name of spec.backends){const o=document.createElement('option');o.value=name;o.textContent=name==='gpu'?'H100 GPU · 同模型':'CPU · 同模型';$('device').append(o)}$('device').value='gpu';$('intro').textContent='E5b · 同模型 CPU / H100 GPU 对照';$('description').textContent='相同 Qwen3-TTS、中文文本、12帧分块、24kHz PCM 协议与播放器。选择后端后，每次点击重新合成；首块等待及块间停顿见导出记录。真人麦克风与完整口译尚未接入。'}
+async function health(){
+  $('speak').disabled=true;const backend=spec.backends?.length?$('device').value:null;
+  try{const h=await(await fetch(backend?'/api/'+backend+'/health':'/health')).json();if(!h.ready)throw Error('worker未就绪');if(backend&&backend!==$('device').value)return;$('backend').textContent='独立 '+h.device+' worker 已连接；Serena／Uncle_Fu，24kHz，串行生成。';$('speak').disabled=false;status('真实 TTS 已就绪。每次点击都会重新合成。')}catch(e){if(!backend||backend===$('device').value){$('backend').textContent=(backend||'CPU')+' worker 当前不可用。';status('TTS worker不可用；请检查资源、代理/SSH，再刷新页面。')}}
+}
+$('device').onchange=()=>void health();await health();

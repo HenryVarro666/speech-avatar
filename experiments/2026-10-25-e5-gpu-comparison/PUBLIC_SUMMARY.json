@@ -1,0 +1,33 @@
+{
+  "status": "GPU_NOT_RUN_RESOURCE_GATE",
+  "gpu_inference_requests": 0,
+  "matched_comparison_completed": false,
+  "cpu_preparation_requests": 9,
+  "cpu_complete": 7,
+  "cpu_cancelled": 1,
+  "cpu_disconnect_incomplete": 1,
+  "cpu_explicit_retry_and_new_phrase_recovery": true,
+  "cpu_stale_ui_discarded": true,
+  "cpu_first_pcm_s": [
+    3.039699999988079,
+    4.470900000035763
+  ],
+  "cpu_planned_audio_start_s": [
+    3.0901999999880903,
+    4.5235
+  ],
+  "cpu_worker_rtf": [
+    3.0876551814400024,
+    3.5712177362633737
+  ],
+  "cpu_max_scheduled_gap_s": 2.6959999999999775,
+  "source_pcm_hash_sample_and_code_proofs": 7,
+  "gpu_first_pcm_s": null,
+  "gpu_rtf": null,
+  "gpu_gap_s": null,
+  "gpu_lifecycle_pass": null,
+  "human_microphone_asr_translation_tested": false,
+  "human_av_accepted": null,
+  "production_deployed": false,
+  "scope": "CPU preparation and routing regression only; GPU runtime/performance/lifecycle unverified; no claim of acceleration or eliminated gaps"
+}

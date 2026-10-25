@@ -33,6 +33,7 @@ MuseTalk 保留为低成本口型/回归基线；LongCat 是离线完整表情�
 | E1h口腔细节 — local-only artifact: `experiments/2026-10-24-e1h-oral-detail/RESULTS.md` |内口腔亮度高频：原版/轻锐化/受限GFPGAN |逐帧相对HF-RMS均值+21.59%/−6.63%；模型未胜出不默认采用；眨眼/唇缘/尾段/AAC精确，同步均0ms |
 | [E2–E5实时原型](experiments/2026-10-24-e2-e5-realtime/RESULTS.md) |4语音×静止/RMS/HeadAudio，实际播放时钟＋本机GPU贴片 |12完整播放/样本核验、10故障恢复；计划音频起点51.6–81.9ms；本轮为已备音频；真实TTS见E5a |
 | [E5a真实TTS](experiments/2026-10-24-e5-live-tts/RESULTS.md) |7新生成请求，4中文文本/男女两声；插话/断流/重试 |5完整、1取消、1不完整；首PCM3.133–5.363s、RTF3.135–3.591，CPU实时性能未过 |
+| [E5b GPU对照准备](experiments/2026-10-25-e5-gpu-comparison/RESULTS.md) | 同模型CUDA入口/资源保护与CPU路由回归，41项测试 | GPU推理0次，资源门槛未满足；CPU9请求/7完整/1取消/1不完整，首PCM3.040–4.471s/最大间隙2.696s，加速未验证 |
 
 E1 计时不含共享模型加载；E1b/E1c 整进程包含加载，不能当同口径比较或语音对话视频延迟。E1c 两新片整进程 267.418/263.161 秒，640×608/25fps。
 
@@ -60,7 +61,7 @@ E5a已在独立实例逐块解码和传输实际新生成声音，保持一个�
 
 <!-- e2-async-trial -->
 
-用户已选择保留E1h原轻锐化片，这项视觉选择不等于新内容接受。独立新音频异步试用 — local-only artifact: `experiments/2026-10-24-e2-async-single-user/RUNBOOK.md`已准备12条新Serena配音，正在RAID/CPU上真正推理新嘴型。7项进程/队列/轮次检查通过，完整12片/浏览器/故障矩阵进行中；不假定原80ms补偿泛化。
+用户已选择保留原E1h轻锐化片。独立新音频异步试用 — local-only artifact: `experiments/2026-10-24-e2-async-single-user/RESULTS.md`完成12条新Serena语句与12个真实MuseTalk口型视频：1152帧、40.32s原配音、源PCM精确母版及闭嘴收尾。两轮各12片完整浏览器播放，7进程测试/9真实后台检查/13浏览器检查通过。CPU worker98.474–266.092s（中位140.119s）、采样进程组RSS7.050–7.149GiB，无CUDA。真实取消0.228s退出，另99.426s完整重新推理复现原SHA。新句同步仍未验收：音移控制仅8/20恢复、2短片跳过，人工音画待验；当前固定12句异步试用，与实时/上游接入和现有服务分别管理。
 
 <!-- /e2-async-trial -->
 
@@ -78,7 +79,7 @@ CPU 检查需要 Python3.12、Node.js18+ 和 ffmpeg/ffprobe，不运行生成模
 python3.12 -m unittest discover -s tests -v
 ```
 
-另有4项分区动作检查需要NumPy/OpenCV；缺少时明确跳过。现有本地质量环境可运行完整36项：
+另有4项分区动作检查需要NumPy/OpenCV；缺少时明确跳过。现有本地质量环境可运行完整41项：
 
 ```bash
 .venv-quality/bin/python -m unittest discover -s tests -v
@@ -94,10 +95,10 @@ GPU 推理需要独立的 [MuseTalk](workers/musetalk/SETUP.md) / [LongCat](work
 
 ## 下一步
 
-1. 收集现有同步及原片/新片对照的人工判断。
-2. 连续比较E1g原版/只修同步/同步＋闭嘴；在另冻新短句上验证补偿后再决定采用。
-3. 不默认采用受限GFPGAN；比较可选轻锐化，优先新音频单用户闭环及取消/失败回退验证。
-4. 浏览器实时生成及语音 Agent 接入作为后续独立阶段。
+1. 人工连续看完12条新语句，核对内容、音色与音画。
+2. 诊断新MuseTalk组合的同步，不把熟悉片的80ms修正直接泛化。
+3. 保留已选轻锐化，受限GFPGAN仍不默认采用；独占GPU速度单独实测。
+4. 任意新文本/TTS请求、真实上游与流式实时接入另设阶段并测量。
 
 [技术边界](docs/TECHNICAL_ROUTE.md) · [当前状态](PROJECT_STATUS.md) · [公开范围](PUBLICATION.md) · [工作区](https://github.com/HenryVarro666/voice-ai-workspace)。
 

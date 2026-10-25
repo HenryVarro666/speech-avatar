@@ -39,3 +39,20 @@ class LiveProxyTests(unittest.TestCase):
         for q,origin in [({'id':'a','text':'你','role':'female'},'https://example.com'),({'id':'a','text':'你'*121,'role':'female'},None)]:
             with self.assertRaises(urllib.error.HTTPError):self.post(q,origin)
         self.assertEqual(self.calls,[])
+
+    def test_explicit_backend_routes_stream_cancel_and_health_without_fallback(self):
+        root=Path(self.tmp.name)
+        server=create_server(root,f'http://127.0.0.1:{self.up.server_port}',root/'routed.jsonl',backends={'cpu':f'http://127.0.0.1:{self.up.server_port}','gpu':'http://127.0.0.1:1'})
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        base=f'http://127.0.0.1:{server.server_port}'
+        try:
+            with urllib.request.urlopen(base+'/config') as f:self.assertEqual(json.load(f)['backends'],['cpu','gpu'])
+            req=lambda path:urllib.request.Request(base+path,data=json.dumps({'id':'routed','text':'你好','role':'female'}).encode(),headers={'Content-Type':'application/json'})
+            with urllib.request.urlopen(req('/api/cpu/tts/stream')) as f:self.assertEqual(json.loads(list(f)[-1])['type'],'end')
+            with urllib.request.urlopen(req('/api/cpu/cancel')) as f:json.load(f)
+            before=len(self.calls)
+            for path in ['/api/gpu/tts/stream','/api/unknown/tts/stream']:
+                with self.assertRaises(urllib.error.HTTPError):urllib.request.urlopen(req(path))
+            self.assertEqual(len(self.calls),before)
+            self.assertIn(('/cancel',{'id':'routed'}),self.calls)
+        finally:server.shutdown();server.server_close()

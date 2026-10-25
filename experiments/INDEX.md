@@ -22,9 +22,18 @@ Goal: a clear and expressive visual companion to speech. Scope: rendering, sync,
 | E1h oral detail — local-only artifact: `2026-10-24-e1h-oral-detail/RESULTS.md` | Same E1g oral lumaHF; base/unsharp/boundedGFPGAN | Model not superior; unsharp optional; outside-oral/eyes/lips/tail/AAC exact; all sync0ms; human pending |
 | [E2–E5 realtime pilot](2026-10-24-e2-e5-realtime/RESULTS.md) |4localPCMfixtures×idle/RMS/HeadAudio, actual DSH player observer/WebGL2 |12complete/sample-exact runs;10fault/recovery checks; planned audio start51.6–81.9ms; E5live upstream and neuralGPU pending |
 | [E5a actual TTS](2026-10-24-e5-live-tts/RESULTS.md) |7real new requests/4Chinese texts/2voices; sameplayer |5complete/1cancelled/1incomplete; explicit recovery/stale rejection; CPU RTF3.135–3.591 fails realtime gate |
+| E2 asynchronous new utterances — local-only artifact: `2026-10-24-e2-async-single-user/RESULTS.md` |Same retained avatar/Serena,12new audio-driven MuseTalk videos, single-user isolated queue |12/12source/media/tail proofs; two12plays,9backend/13browser checks; CPU98.474–266.092s; sync/human acceptance remains open |
 
 E1b/E1c full-process timings include model loading and cannot be directly compared with E1's shared-load-excluded timings. SyncNet is a diagnostic, not human preference or semantic correctness. Public JSON/figures preserve numeric evidence; private media/contact sheets remain local and are explicitly marked when referenced.
 
 Realtime next: isolated actual TTS/ASR/translation input with cancellation/fallback and a dedicated-GPU arbitrary-audio benchmark; current fixture adapter alone is partialE5. Offline quality track: collect continuous E1g original/sync-only/sync+closure judgments, then test timing on separately frozen new phrases. Preserve complete blinks/light head motion and the closed-ending candidate; oral detail and lower SyncNet confidence remain separate. No parameter grid or production default based on this familiar clip.
 
 Detailed optimization history: [step-by-step progress ledger](PROGRESS_LEDGER.md). E1f-R preserves both role clips; collect human comparison before another render, and keep oral-detail/sync interventions separate.
+
+
+## 2026-10-25 E5b：CUDA路径已准备，GPU对照待空闲资源
+
+[本轮记录](2026-10-25-e5-gpu-comparison/RESULTS.md)：固定同模型/revision/参数/4文本/12帧分块/24kHz协议，新增显式CUDA/UUID资源保护和独立后端选择。分配前GPU1已被其他任务占用，GPU推理0次；速度/停顿改善和GPU恢复验收均未完成，不能以41项本地测试替代实卡验收。新CPU路由9实际请求：7完整/1播放中取消/1断流incomplete；显式重试、新句恢复与旧错误丢弃通过，7PCM/hash/样本/code检查通过。首PCM3.040–4.471s、RTF3.088–3.571、最大计划间隙2.696s，CPU性能门槛仍未过。
+
+[独立预览49917](http://127.0.0.1:49917/index.html)；原50451保留。新GPU入口只在无其他计算PID、空闲且完成自有上下文复查后使用；未操作apex/共享包/其他进程。独立H100最近资源核验2026-10-25；841旧冻结记录不变。下一步等空闲卡，GPU预热后执行4句交叉主对照和7请求恢复；真人麦克风/ASR/翻译/人工AV/部署均未验收。用户授权本轮审查后源码/元数据公开备份，推送回执另记。
+
